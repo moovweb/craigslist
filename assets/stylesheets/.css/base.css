@@ -1,0 +1,22 @@
+/* line 7, ../base.scss */
+body {
+  background: #eeeeee;
+  color: #222222;
+  font-size: 60px;
+  text-align: center;
+}
+
+/* line 14, ../base.scss */
+a, a:hover, a:visited {
+  text: #336699;
+}
+
+/* line 18, ../base.scss */
+[data-ur-toggler-component="content"][data-ur-state="disabled"] {
+  display: none;
+}
+
+/* line 21, ../base.scss */
+[data-ur-toggler-component="content"][data-ur-state="enabled"] {
+  display: block;
+}

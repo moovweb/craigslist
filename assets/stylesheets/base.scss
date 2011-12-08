@@ -1,0 +1,23 @@
+
+$body_background: #eee;
+$text_color:      #222;
+$link_color:      #369;
+$font_size:       60px;
+
+body {
+  background: $body_background;
+  color: $text_color;
+  font-size: $font_size;
+  text-align: center;
+}
+
+a, a:hover, a:visited {
+  text: $link_color;
+}
+
+[data-ur-toggler-component="content"][data-ur-state="disabled"] {
+  display: none;
+}
+[data-ur-toggler-component="content"][data-ur-state="enabled"] {
+  display: block;
+}

@@ -1,0 +1,40 @@
+--- 
+source_host: sfbay.craigslist.org
+rewrite_link_matcher: !ruby/regexp /(^|\/\/|\"|\')(?!mlocal\.)(www\.)?([a-z0-9\-\.]*)craigslist\.org/
+rewrite_link_matcher_str: (^|\/\/|\"|\')(?!mlocal\.)(www\.)?([a-z0-9\-\.]*)craigslist\.org
+rewrite_link_replacement: \1mlocal.\3craigslist.org
+rewrite_cookie_matcher: !ruby/regexp /\.?(www\.)?([a-z0-9\-\.]*craigslist\.org)/
+rewrite_cookie_replacement: .\2
+rewrite_cookie_missing_replacement: 
+rewrite_incoming_json: "[{\"matcher\":\"^m[a-z]*\\\\.craigslist\\\\.org\",\"replacement\":\"www.craigslist.org\"},{\"matcher\":\"m[a-z]*\\\\.([a-z0-9\\\\-\\\\.]*craigslist\\\\.org)\",\"replacement\":\"\\\\1\"}]"
+secure: true
+host: mlocal.sfbay.craigslist.org
+connection: close
+user_agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.874.121 Safari/535.2
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+referer: http://mlocal.sfbay.craigslist.org/
+accept_encoding: gzip,deflate,sdch
+accept_language: en-GB,en-US;q=0.8,en;q=0.6
+accept_charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+cookie: cl_def_lang=en; cl_def_hp=sfbay; cl_b=1322676958207655340315991042
+cache_control: public, max-age=600
+last_modified: Wed, 30 Nov 11 18:07:31 GMT
+date: Wed, 30 Nov 2011 18:07:31 GMT
+content_encoding: gzip
+vary: Accept-Encoding
+content_length: "7014"
+content_type: text/html; charset=iso-8859-1;
+server: Apache
+expires: Wed, 30 Nov 11 18:22:31 GMT
+device_stylesheet: devices/webkit.css
+stylesheet_asset_location: /stylesheets/.css/
+image_asset_location: /images/
+js_asset_location: /javascript/
+User-Agent-matched-default: "true"
+User-Agent-matched-webkit: "true"
+path: /apa/
+status: "200"
+asset_host: http://localhost:3003
+encoding: !ruby/object:Encoding {}
+
+request_id: am017

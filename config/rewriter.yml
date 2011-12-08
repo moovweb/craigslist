@@ -1,0 +1,13 @@
+rewriter:
+  host:
+    - matcher: ^m[a-z]*\.craigslist\.org
+      replacement: www.craigslist.org
+    - matcher: m[a-z]*\.([a-z0-9\-\.]*craigslist\.org)
+      replacement: \1
+  link:
+    host: m(?<prefix>[a-z]*)\.[a-z0-9\-\.]*craigslist\.org
+    matcher: (^|\/\/|\"|\')(?!m$prefix\.)(www\.)?([a-z0-9\-\.]*)craigslist\.org
+    replacement: \1m$prefix.\3craigslist.org
+  cookie_domain:
+    matcher: \.?(www\.)?([a-z0-9\-\.]*craigslist\.org)
+    replacement: .\2

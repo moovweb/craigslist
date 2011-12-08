@@ -1,0 +1,217 @@
+       INFO 2011-11-30 09:47:59 moov: Running Event Machine SSL proxy on 443
+       INFO 2011-11-30 09:48:00 project: Tritium::Engines::Standard loaded (0.52036s)
+       INFO 2011-11-30 09:48:03 proxy: Ruby garbage collection kicks in every 5 requests
+       INFO 2011-11-30 09:48:03 moov: Running Event Machine Proxy on 80
+am002  INFO 2011-11-30 09:53:41 project: Tritium::Engines::Standard loaded (1.192593s)
+am002  INFO 2011-11-30 09:53:41 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+am002  INFO 2011-11-30 09:53:41 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+am002  INFO 2011-11-30 09:53:41 tritium: --> STATUS: 200
+am002  INFO 2011-11-30 09:53:41 proxy: Request Stats. Total: 0.284496, Upstream: 0.07513, Processing: 0.184634
+am004  INFO 2011-11-30 09:55:40 project: Tritium::Engines::Standard loaded (0.211113s)
+am004  INFO 2011-11-30 09:55:40 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+am004  INFO 2011-11-30 09:55:40 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+am004  INFO 2011-11-30 09:55:41 tritium: --> STATUS: 200
+am004  INFO 2011-11-30 09:55:41 proxy: Request Stats. Total: 0.356269, Upstream: 0.081899, Processing: 0.26566
+am005  INFO 2011-11-30 09:56:10 project: Tritium::Engines::Standard loaded (0.153798s)
+am005  INFO 2011-11-30 09:56:10 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+am005  INFO 2011-11-30 09:56:10 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+am005  INFO 2011-11-30 09:56:10 tritium: I'm importing home
+am005  INFO 2011-11-30 09:56:10 tritium: --> STATUS: 200
+am005  INFO 2011-11-30 09:56:11 proxy: Request Stats. Total: 0.244626, Upstream: 0.062882, Processing: 0.175799
+am006  INFO 2011-11-30 09:57:07 project: Tritium::Engines::Standard loaded (0.173098s)
+am006  INFO 2011-11-30 09:57:07 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+am006  INFO 2011-11-30 09:57:08 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+am006  INFO 2011-11-30 09:57:08 tritium: I'm importing home
+am006  INFO 2011-11-30 09:57:08 tritium: --> STATUS: 200
+am006  INFO 2011-11-30 09:57:08 proxy: Request Stats. Total: 0.643521, Upstream: 0.400833, Processing: 0.235684
+am007  INFO 2011-11-30 09:58:43 project: Tritium::Engines::Standard loaded (0.1868s)
+am007  INFO 2011-11-30 09:58:43 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+am007  INFO 2011-11-30 09:58:43 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+am007  INFO 2011-11-30 09:58:44 tritium: I'm importing home
+am007  INFO 2011-11-30 09:58:44 tritium: --> STATUS: 200
+am007  INFO 2011-11-30 09:58:44 proxy: Request Stats. Total: 0.407878, Upstream: 0.130123, Processing: 0.265849
+am008  INFO 2011-11-30 09:58:57 project: Tritium::Engines::Standard loaded (0.359297s)
+am008  INFO 2011-11-30 09:58:57 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+am008  INFO 2011-11-30 09:58:57 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+am008  INFO 2011-11-30 09:58:57 tritium: I'm importing home
+am008  INFO 2011-11-30 09:58:57 tritium: --> STATUS: 200
+am008  INFO 2011-11-30 09:58:57 proxy: Request Stats. Total: 0.319405, Upstream: 0.142035, Processing: 0.15626
+am009  INFO 2011-11-30 09:59:32 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+am009  INFO 2011-11-30 09:59:32 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+am009  INFO 2011-11-30 09:59:32 tritium: I'm importing home
+am009  INFO 2011-11-30 09:59:32 tritium: --> STATUS: 200
+am009  INFO 2011-11-30 09:59:33 proxy: Request Stats. Total: 0.371028, Upstream: 0.088951, Processing: 0.272126
+am010  INFO 2011-11-30 10:00:26 project: Tritium::Engines::Standard loaded (0.151328s)
+am010  INFO 2011-11-30 10:00:26 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+am010  INFO 2011-11-30 10:00:26 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+am010  INFO 2011-11-30 10:00:27 tritium: I'm importing home
+am010  INFO 2011-11-30 10:00:27 tritium: --> STATUS: 200
+am010  INFO 2011-11-30 10:00:27 proxy: Request Stats. Total: 0.301823, Upstream: 0.071538, Processing: 0.213112
+am011  INFO 2011-11-30 10:03:43 project: Tritium::Engines::Standard loaded (0.22114s)
+am011  INFO 2011-11-30 10:03:43 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+am011  INFO 2011-11-30 10:03:43 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+am011  INFO 2011-11-30 10:03:43 tritium: I'm importing home
+am011  INFO 2011-11-30 10:03:43 tritium: --> STATUS: 200
+am011  INFO 2011-11-30 10:03:43 proxy: Request Stats. Total: 0.255648, Upstream: 0.074508, Processing: 0.174947
+am012  INFO 2011-11-30 10:05:12 project: Tritium::Engines::Standard loaded (0.258444s)
+am012  INFO 2011-11-30 10:05:12 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+am012  INFO 2011-11-30 10:05:13 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+am012  INFO 2011-11-30 10:05:13 tritium: I'm importing home
+am012  INFO 2011-11-30 10:05:13 tritium: --> STATUS: 200
+am012  INFO 2011-11-30 10:05:13 proxy: Request Stats. Total: 0.319384, Upstream: 0.126954, Processing: 0.183051
+am013  INFO 2011-11-30 10:05:43 project: Tritium::Engines::Standard loaded (0.355562s)
+am013  INFO 2011-11-30 10:05:43 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+am013  INFO 2011-11-30 10:05:43 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+am013  INFO 2011-11-30 10:05:44 tritium: I'm importing home
+am013  INFO 2011-11-30 10:05:44 tritium: --> STATUS: 200
+am013  INFO 2011-11-30 10:05:44 proxy: Request Stats. Total: 0.364971, Upstream: 0.102307, Processing: 0.255306
+am014  INFO 2011-11-30 10:14:24 project: Tritium::Engines::Standard loaded (1.448625s)
+am014  INFO 2011-11-30 10:14:24 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+am014  INFO 2011-11-30 10:14:24 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+am014  INFO 2011-11-30 10:14:25 tritium: I'm importing home
+am014  INFO 2011-11-30 10:14:25 tritium: --> STATUS: 200
+am014  INFO 2011-11-30 10:14:25 proxy: Request Stats. Total: 0.886673, Upstream: 0.75622, Processing: 0.121071
+am015  INFO 2011-11-30 10:14:50 project: Tritium::Engines::Standard loaded (0.607353s)
+am015  INFO 2011-11-30 10:14:51 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+am015  INFO 2011-11-30 10:14:51 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+am015  INFO 2011-11-30 10:14:51 tritium: I'm importing home
+am015  INFO 2011-11-30 10:14:51 tritium: --> STATUS: 200
+am015  INFO 2011-11-30 10:14:51 proxy: Request Stats. Total: 0.32458, Upstream: 0.105684, Processing: 0.198794
+am016  INFO 2011-11-30 10:15:59 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+am016  INFO 2011-11-30 10:15:59 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+am016  INFO 2011-11-30 10:15:59 tritium: I'm importing home
+am016  INFO 2011-11-30 10:15:59 tritium: --> STATUS: 200
+am016  INFO 2011-11-30 10:15:59 proxy: Request Stats. Total: 0.297262, Upstream: 0.160683, Processing: 0.126887
+am017  INFO 2011-11-30 10:16:07 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /apa/
+am017  INFO 2011-11-30 10:16:07 quadrium: Received 200 text/html; charset=iso-8859-1; response for /apa/
+am017  INFO 2011-11-30 10:16:07 tritium: I'm importing home
+am017  INFO 2011-11-30 10:16:07 tritium: --> STATUS: 200
+am017  INFO 2011-11-30 10:16:07 proxy: Request Stats. Total: 0.173595, Upstream: 0.11133, Processing: 0.056553
+am018  INFO 2011-11-30 10:16:08 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /eby/apa/2728616257.html
+am018  INFO 2011-11-30 10:16:08 quadrium: Received 200 text/html; charset=iso-8859-1; response for /eby/apa/2728616257.html
+am018  INFO 2011-11-30 10:16:08 tritium: I'm importing home
+am018  INFO 2011-11-30 10:16:08 tritium: --> STATUS: 200
+am018  INFO 2011-11-30 10:16:08 proxy: Request Stats. Total: 0.445773, Upstream: 0.213207, Processing: 0.200631
+am019  INFO 2011-11-30 10:16:09 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /eby/apa/2728615935.html
+am019  INFO 2011-11-30 10:16:09 quadrium: Received 200 text/html; charset=iso-8859-1; response for /eby/apa/2728615935.html
+am019  INFO 2011-11-30 10:16:09 tritium: I'm importing home
+am019  INFO 2011-11-30 10:16:09 tritium: --> STATUS: 200
+am019  INFO 2011-11-30 10:16:09 proxy: Request Stats. Total: 0.317621, Upstream: 0.246512, Processing: 0.054214
+am020  INFO 2011-11-30 10:16:09 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /pen/apa/2728615637.html
+am020  INFO 2011-11-30 10:16:10 quadrium: Received 200 text/html; charset=iso-8859-1; response for /pen/apa/2728615637.html
+am020  INFO 2011-11-30 10:16:10 tritium: I'm importing home
+am020  INFO 2011-11-30 10:16:10 tritium: --> STATUS: 200
+am020  INFO 2011-11-30 10:16:10 proxy: Request Stats. Total: 0.270974, Upstream: 0.119407, Processing: 0.060284
+am021  INFO 2011-11-30 10:57:03 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+am021  INFO 2011-11-30 10:57:03 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+am021  INFO 2011-11-30 10:57:03 tritium: I'm importing home
+am021  INFO 2011-11-30 10:57:03 tritium: --> STATUS: 200
+am021  INFO 2011-11-30 10:57:04 proxy: Request Stats. Total: 0.951716, Upstream: 0.198842, Processing: 0.684921
+am022  INFO 2011-11-30 10:57:55 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+am022  INFO 2011-11-30 10:57:55 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+am022  INFO 2011-11-30 10:57:55 tritium: I'm importing home
+am022  INFO 2011-11-30 10:57:55 tritium: --> STATUS: 200
+am022  INFO 2011-11-30 10:57:55 proxy: Request Stats. Total: 0.23481, Upstream: 0.092805, Processing: 0.131931
+am023  INFO 2011-11-30 12:26:35 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+am023  INFO 2011-11-30 12:26:36 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+am023  INFO 2011-11-30 12:26:36 tritium: I'm importing home
+am023  INFO 2011-11-30 12:26:36 tritium: --> STATUS: 200
+am023  INFO 2011-11-30 12:26:36 proxy: Request Stats. Total: 0.786163, Upstream: 0.569305, Processing: 0.204196
+am024  INFO 2011-11-30 12:27:27 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+am024  INFO 2011-11-30 12:27:27 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+am024  INFO 2011-11-30 12:27:28 tritium: I'm importing home
+am024  INFO 2011-11-30 12:27:28 tritium: --> STATUS: 200
+am024  INFO 2011-11-30 12:27:28 proxy: Request Stats. Total: 0.328105, Upstream: 0.081794, Processing: 0.232155
+       INFO 2011-11-30 16:23:59 moov: >> Stopping ssl web server...
+am024  INFO 2011-11-30 16:23:59 moov: >> Stopping web server...
+       INFO 2011-12-01 14:13:33 moov: Running Event Machine SSL proxy on 443
+       INFO 2011-12-01 14:13:34 project: Tritium::Engines::Standard loaded (0.789165s)
+       INFO 2011-12-01 14:13:35 proxy: Ruby garbage collection kicks in every 5 requests
+       INFO 2011-12-01 14:13:35 moov: Running Event Machine Proxy on 80
+jn001  INFO 2011-12-01 14:13:52 project: Tritium::Engines::Standard loaded (0.291917s)
+jn001  INFO 2011-12-01 14:13:52 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+jn001  INFO 2011-12-01 14:13:52 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+jn001  INFO 2011-12-01 14:13:52 tritium: I'm importing home
+jn001  INFO 2011-12-01 14:13:52 tritium: --> STATUS: 200
+jn001  INFO 2011-12-01 14:13:52 proxy: Request Stats. Total: 0.432532, Upstream: 0.283034, Processing: 0.136594
+jn002  INFO 2011-12-01 14:14:52 project: Tritium::Engines::Standard loaded (0.243041s)
+jn002  INFO 2011-12-01 14:14:52 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+jn002  INFO 2011-12-01 14:14:52 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+jn002  INFO 2011-12-01 14:14:52 tritium: I'm importing home
+jn002  INFO 2011-12-01 14:14:53 tritium: --> STATUS: 200
+jn002  INFO 2011-12-01 14:14:53 proxy: Request Stats. Total: 0.406962, Upstream: 0.13993, Processing: 0.258994
+jn003  INFO 2011-12-01 14:15:12 project: Tritium::Engines::Standard loaded (0.15867s)
+jn003  INFO 2011-12-01 14:15:12 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+jn003  INFO 2011-12-01 14:15:12 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+jn003  INFO 2011-12-01 14:15:12 tritium: I'm importing home
+jn003  INFO 2011-12-01 14:15:13 tritium: --> STATUS: 200
+jn003  INFO 2011-12-01 14:15:13 proxy: Request Stats. Total: 0.2984, Upstream: 0.17699, Processing: 0.109167
+jn004  INFO 2011-12-01 14:15:39 project: Tritium::Engines::Standard loaded (0.258808s)
+jn004  INFO 2011-12-01 14:15:39 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+jn004  INFO 2011-12-01 14:15:40 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+jn004  INFO 2011-12-01 14:15:40 tritium: I'm importing home
+jn004  INFO 2011-12-01 14:15:40 tritium: --> STATUS: 200
+jn004  INFO 2011-12-01 14:15:40 proxy: Request Stats. Total: 0.203164, Upstream: 0.084968, Processing: 0.112467
+jn005  INFO 2011-12-01 14:17:10 project: Tritium::Engines::Standard loaded (0.271077s)
+jn005  INFO 2011-12-01 14:17:10 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+jn005  INFO 2011-12-01 14:17:10 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+jn005  INFO 2011-12-01 14:17:10 tritium: I'm importing home
+jn005  INFO 2011-12-01 14:17:10 tritium: selecing ul
+jn005  INFO 2011-12-01 14:17:10 tritium: --> STATUS: 200
+jn005  INFO 2011-12-01 14:17:10 proxy: Request Stats. Total: 0.376767, Upstream: 0.197305, Processing: 0.15895
+jn006  INFO 2011-12-01 14:17:37 project: Tritium::Engines::Standard loaded (0.190614s)
+jn006  INFO 2011-12-01 14:17:37 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+jn006  INFO 2011-12-01 14:17:37 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+jn006  INFO 2011-12-01 14:17:37 tritium: I'm importing home
+jn006  INFO 2011-12-01 14:17:37 tritium: selecing ul
+jn006  INFO 2011-12-01 14:17:37 tritium: --> STATUS: 200
+jn006  INFO 2011-12-01 14:17:37 proxy: Request Stats. Total: 0.332304, Upstream: 0.129668, Processing: 0.167611
+jn007  INFO 2011-12-05 10:17:13 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+jn007  INFO 2011-12-05 10:17:14 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+jn007  INFO 2011-12-05 10:17:15 tritium: I'm importing home
+jn007  INFO 2011-12-05 10:17:15 tritium: selecing ul
+jn007  INFO 2011-12-05 10:17:15 tritium: --> STATUS: 200
+jn007  INFO 2011-12-05 10:17:17 proxy: Request Stats. Total: 1.968832, Upstream: 0.35856, Processing: 1.382377
+jn008  INFO 2011-12-05 10:38:41 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+jn008  INFO 2011-12-05 10:38:46 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+jn008  INFO 2011-12-05 10:38:46 tritium: I'm importing home
+jn008  INFO 2011-12-05 10:38:46 tritium: selecing ul
+jn008  INFO 2011-12-05 10:38:46 tritium: --> STATUS: 200
+jn008  INFO 2011-12-05 10:38:46 proxy: Request Stats. Total: 5.151244, Upstream: 4.432798, Processing: 0.600631
+jn009  INFO 2011-12-05 10:39:00 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /csr/
+jn009  INFO 2011-12-05 10:39:03 quadrium: Received 200 text/html; charset=iso-8859-1; response for /csr/
+jn009  INFO 2011-12-05 10:39:04 tritium: I'm importing home
+jn009  INFO 2011-12-05 10:39:04 tritium: --> STATUS: 200
+jn009  INFO 2011-12-05 10:39:05 proxy: Request Stats. Total: 3.560342, Upstream: 3.047593, Processing: 0.497206
+jn010  INFO 2011-12-05 10:39:16 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /csr/
+jn010  INFO 2011-12-05 10:39:16 quadrium: Received 200 text/html; charset=iso-8859-1; response for /csr/
+jn010  INFO 2011-12-05 10:39:16 tritium: I'm importing home
+jn010  INFO 2011-12-05 10:39:16 tritium: --> STATUS: 200
+jn010  INFO 2011-12-05 10:39:16 proxy: Request Stats. Total: 0.146562, Upstream: 0.088086, Processing: 0.048619
+jn011  INFO 2011-12-05 10:39:21 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+jn011  INFO 2011-12-05 10:39:21 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+jn011  INFO 2011-12-05 10:39:21 tritium: I'm importing home
+jn011  INFO 2011-12-05 10:39:21 tritium: selecing ul
+jn011  INFO 2011-12-05 10:39:21 tritium: --> STATUS: 200
+jn011  INFO 2011-12-05 10:39:21 proxy: Request Stats. Total: 0.390205, Upstream: 0.288398, Processing: 0.096284
+jn012  INFO 2011-12-05 10:39:39 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+jn012  INFO 2011-12-05 10:39:39 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+jn012  INFO 2011-12-05 10:39:39 tritium: I'm importing home
+jn012  INFO 2011-12-05 10:39:39 tritium: selecing ul
+jn012  INFO 2011-12-05 10:39:39 tritium: --> STATUS: 200
+jn012  INFO 2011-12-05 10:39:40 proxy: Request Stats. Total: 0.337702, Upstream: 0.23199, Processing: 0.098919
+jn013  INFO 2011-12-05 10:39:47 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+jn013  INFO 2011-12-05 10:39:48 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+jn013  INFO 2011-12-05 10:39:48 tritium: I'm importing home
+jn013  INFO 2011-12-05 10:39:48 tritium: selecing ul
+jn013  INFO 2011-12-05 10:39:48 tritium: --> STATUS: 200
+jn013  INFO 2011-12-05 10:39:48 proxy: Request Stats. Total: 0.96242, Upstream: 0.723706, Processing: 0.225054
+jn014  INFO 2011-12-05 15:43:14 project: Tritium::Engines::Standard loaded (6.069596s)
+jn014  INFO 2011-12-05 15:43:14 quadrium: GET mlocal.sfbay.craigslist.org Rewritten: sfbay.craigslist.org Path: /
+jn014  INFO 2011-12-05 15:43:15 quadrium: Received 200 text/html; charset=iso-8859-1; response for /
+jn014  INFO 2011-12-05 15:43:15 tritium: I'm importing home
+jn014  INFO 2011-12-05 15:43:15 tritium: selecing ul
+jn014  INFO 2011-12-05 15:43:15 tritium: --> STATUS: 200
+jn014  INFO 2011-12-05 15:43:15 proxy: Request Stats. Total: 0.896214, Upstream: 0.717407, Processing: 0.161631
+jn014  INFO 2011-12-06 13:38:53 moov: >> Stopping web server...
+       INFO 2011-12-06 13:38:53 moov: >> Stopping ssl web server...

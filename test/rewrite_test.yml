@@ -1,0 +1,67 @@
+
+host:
+  - test: m.craigslist.com
+    expected: www.craigslist.com
+  - test: m.craigslist.com
+    expected: www.craigslist.com
+  - test: m.product.craigslist.com
+    expected: product.craigslist.com
+  - test: m.www1.craigslist.com
+    expected: www1.craigslist.com
+  - test: mlocal.craigslist.com
+    expected: www.craigslist.com
+  - test: mstage.craigslist.com
+    expected: www.craigslist.com
+  - test: mlocal.smartphone.craigslist.com
+    expected: smartphone.craigslist.com
+  - test: mstage.mconfig.craigslist.com
+    expected: mconfig.craigslist.com
+link:
+  - host: m.craigslist.com
+    test: www.craigslist.com
+    expected: m.craigslist.com
+  - host: m.craigslist.com
+    test: craigslist.com
+    expected: m.craigslist.com
+  - host: m.burma.craigslist.com
+    test: thailand.craigslist.com
+    expected: m.thailand.craigslist.com
+  - host: m.craigslist.com
+    test: pipeline.craigslist.com
+    expected: m.pipeline.craigslist.com
+  - host: m.craigslist.com
+    test: magic.craigslist.com
+    expected: m.magic.craigslist.com
+  - host: mlocal.craigslist.com
+    test: www.craigslist.com
+    expected: mlocal.craigslist.com
+  - host: m.craigslist.com
+    test: http://craigslist.com/location?x=y
+    expected: http://m.craigslist.com/location?x=y
+  - host: m.smartphone.craigslist.com
+    test: http://smartphone.craigslist.com
+    expected: http://m.smartphone.craigslist.com
+  - host: mstage.mconfig.craigslist.com
+    test: http://smartphone.craigslist.com
+    expected: http://mstage.smartphone.craigslist.com
+  - host: m.mconfig.craigslist.com
+    test: http://mconfig.craigslist.com/loc?x=y
+    expected: http://m.mconfig.craigslist.com/loc?x=y
+
+
+cookie_domain:
+  - host: m.craigslist.com
+    test: .craigslist.com
+    expected: .craigslist.com
+  - host: mlocal.craigslist.com
+    test: .craigslist.com
+    expected: .craigslist.com
+  - host: m.craigslist.com
+    test: www.craigslist.com
+    expected: .craigslist.com
+  - host: m.craigslist.com
+    test: muay.craigslist.com
+    expected: .muay.craigslist.com
+  - host: m.craigslist.com
+    test: .thai.craigslist.com
+    expected: .thai.craigslist.com

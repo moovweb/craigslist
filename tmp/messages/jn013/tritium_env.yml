@@ -1,0 +1,42 @@
+--- 
+source_host: sfbay.craigslist.org
+rewrite_link_matcher: !ruby/regexp /(^|\/\/|\"|\')(?!mlocal\.)(www\.)?([a-z0-9\-\.]*)craigslist\.org/
+rewrite_link_matcher_str: (^|\/\/|\"|\')(?!mlocal\.)(www\.)?([a-z0-9\-\.]*)craigslist\.org
+rewrite_link_replacement: \1mlocal.\3craigslist.org
+rewrite_cookie_matcher: !ruby/regexp /\.?(www\.)?([a-z0-9\-\.]*craigslist\.org)/
+rewrite_cookie_replacement: .\2
+rewrite_cookie_missing_replacement: 
+rewrite_incoming_json: "[{\"matcher\":\"^m[a-z]*\\\\.craigslist\\\\.org\",\"replacement\":\"www.craigslist.org\"},{\"matcher\":\"m[a-z]*\\\\.([a-z0-9\\\\-\\\\.]*craigslist\\\\.org)\",\"replacement\":\"\\\\1\"}]"
+secure: true
+host: mlocal.sfbay.craigslist.org
+user_agent: Mozilla/5.0 (iPhone Simulator; U; CPU iPhone OS 4_3_2 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8H7 Safari/6533.18.5
+accept: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+cache_control: max-age=3600, public
+accept_language: en-us
+accept_encoding: gzip, deflate
+cookie: cl_b=1323110378223431898222113798; cl_def_hp=sfbay; cl_def_lang=en
+connection: close
+last_modified: Mon, 05 Dec 11 18:05:07 GMT
+set_cookie: 
+- cl_def_lang=en; domain=.craigslist.org; path=/; expires=Tue, 04-Dec-12 18:05:07 GMT
+- cl_def_hp=sfbay; domain=.craigslist.org; path=/; expires=Tue, 04-Dec-12 18:05:07 GMT
+date: Mon, 05 Dec 2011 18:05:07 GMT
+content_encoding: gzip
+vary: Accept-Encoding
+content_length: "6373"
+content_type: text/html; charset=iso-8859-1;
+server: Apache
+expires: Mon, 05 Dec 11 19:05:07 GMT
+device_stylesheet: devices/iphone.css
+stylesheet_asset_location: /stylesheets/.css/
+image_asset_location: /images/
+js_asset_location: /javascript/
+User-Agent-matched-default: "true"
+User-Agent-matched-webkit: "true"
+User-Agent-matched-iphone: "true"
+path: /
+status: "200"
+asset_host: http://localhost:3003
+encoding: !ruby/object:Encoding {}
+
+request_id: jn013

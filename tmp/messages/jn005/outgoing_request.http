@@ -1,0 +1,13 @@
+GET / HTTP/1.0
+Host: sfbay.craigslist.org
+Connection: close
+Cache-Control: max-age=0
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.874.121 Safari/535.2
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip,deflate
+Accept-Language: en-GB,en-US;q=0.8,en;q=0.6
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Cookie: cl_def_lang=en; cl_def_hp=sfbay; cl_b=132277773961087073032146546
+If-Modified-Since: Thu, 01 Dec 11 21:45:37 GMT
+Via: 1.0 moovweb
+

@@ -1,0 +1,274 @@
+HTTP/1.1 200 OK
+Connection: close
+Cache-control: public, max-age=600
+Last-Modified: Wed, 30 Nov 11 18:07:31 GMT
+Date: Wed, 30 Nov 2011 18:07:31 GMT
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Content-Length: 7014
+Content-Type: text/html; charset=iso-8859-1;
+Server: Apache
+Expires: Wed, 30 Nov 11 18:22:31 GMT
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+	<title>SF bay area apts/housing for rent classifieds  - craigslist</title>
+
+	<meta name="description" content="SF bay area apts/housing for rent classifieds  - craigslist">
+	<link rel="alternate" type="application/rss+xml" href="/apa/index.rss" title="RSS feed for craigslist | apts/housing for rent  in SF bay area ">
+	<link type="text/css" rel="stylesheet" media="all" href="http://www.craigslist.org/styles/craigslist.css?v=9">
+	
+</head>
+
+<body class="toc">
+
+<a name="top"></a>
+
+<div class="bchead">
+	<span id="ef">
+			
+			[ <a href="http://www.craigslist.org/about/help/">help</a> ]
+			[ <a href="https://post.craigslist.org/c/sfo/H?lang=en">post</a> ]</span>
+			
+	<a href="/">SF bay area craigslist</a>   &gt; <a href="/hhh/">housing</a>  &gt; <a href="/apa/">apts/housing for rent</a>
+	<div id="satabs"> <a href="/apa/">all SF bay area</a> <a href="/sfc/apa/">san francisco</a> <a href="/sby/apa/">south bay</a> <a href="/eby/apa/">east bay</a> <a href="/pen/apa/">peninsula</a> <a href="/nby/apa/">north bay</a> <a href="/scz/apa/">santa cruz</a></div>
+
+</div>
+
+<blockquote>
+<form action="/search/apa" id="searchform" method="get">
+
+	<script type="text/javascript"><!--
+		var catAbb = "apa";
+
+        function flipCatAndSubmit(cat) {
+            var sf = document.getElementById('searchform');
+            var cs = document.getElementById('catAbb');
+            for(var i=0; i < cs.length; i++) {
+                if(cs[i].value == cat) {
+                    cs[i].selected = true;
+                }
+            }
+            sf.submit();
+        }
+	//-->
+	</script> 
+
+    <fieldset id="searchfieldset">
+    <legend id="searchlegend">apts/housing for rent</legend>
+	<table id="searchtable" width="100%" cellpadding="2" summary="">
+		<tr>
+			<td align="right" width="1">search for:</td>
+
+			<td colspan="2" width="30%"><input id="query" name="query" size="30" value=""> in:
+				<select id="catAbb" name="catAbb">
+
+					<option value="ccc">all community
+
+					<option value="eee">all event
+
+					<option value="sss">all for sale / wanted
+
+					<option value="ggg">all gigs
+
+					<option value="hhh">all housing
+<option disabled value="">--
+<option value="hou"> apts wanted
+<option value="apa" selected> apts/housing for rent
+<option value="swp"> housing swap
+<option value="hsw"> housing wanted
+<option value="off"> office &amp; commercial
+<option value="prk"> parking &amp; storage
+<option value="reb"> real estate - by broker
+<option value="reo"> real estate - by owner
+<option value="rea"> real estate for sale
+<option value="rew"> real estate wanted
+<option value="roo"> rooms &amp; shares
+<option value="sha"> rooms wanted
+<option value="sbw"> sublet/temp wanted
+<option value="sub"> sublets &amp; temporary
+<option value="vac"> vacation rentals
+<option disabled value="">--
+
+					<option value="jjj">all jobs
+
+					<option value="ppp">all personals
+
+					<option value="res">all resume
+
+					<option value="bbb">all services offered
+</select>
+			</td>
+
+			<td>
+				<label><input type="radio" name="srchType" value="T"
+					title="search only posting titles">title only</label>
+				<label><input type="radio" name="srchType" value="A" checked="checked"
+					title="search the entire posting">entire post</label>
+				<input type="submit" value="Search">
+			</td>
+		</tr>
+
+		<tr>
+			<td align="right" width="1">rent:</td>
+			<td><input name="minAsk" class="min" size="6" value="">&nbsp;<input name="maxAsk" class="max" size="6" value="">&nbsp;&nbsp;&nbsp;<select name="bedrooms">
+<option value="">0+ BR
+<option value="1">1 BR
+<option value="2">2 BR
+<option value="3">3 BR
+<option value="4">4 BR
+<option value="5">5 BR
+<option value="6">6 BR
+<option value="7">7 BR
+<option value="8">8 BR
+</select>
+&nbsp;&nbsp;&nbsp;
+					<label><input type="checkbox" name="addTwo"  value="purrr">cats</label>
+					<label><input type="checkbox" name="addThree" value="wooof">dogs</label>
+</td>
+			<td id="hoodpicker"></td>
+			<td align="left"><label><input type="checkbox" name="hasPic" value="1">has image</label></td>
+		</tr>
+	</table>
+    </fieldset>
+</form>
+</blockquote>
+
+<span id="showPics"></span><span id="hidePics"></span>
+
+<blockquote>
+<table width="100%" summary="">
+        <tr>
+        	<td valign="top">[ Wed, 30 Nov 10:07:31 ]</td>
+			<td valign="top" id="messages"><span class="hl"> [ <a href="http://www.ftc.gov/bcp/edu/pubs/consumer/credit/cre34.shtm">free credit reports</a> ] </span> <span class="hl"> [ <a href="http://www.bbb.org/alerts/article.asp?ID=593"><b>"foreclosure rescue" fraud alert</b></a> ] </span> <span class="hl"> [ <a href="/forums/?forumID=6">housing forum</a> ]</span> <span class="hl"> [ <a href="/about/FHA">stating a discriminatory preference in a housing post is illegal</a> ] </span> <span class="hl">[ <a href="http://www.211.org/">dial 2-1-1 for social services</a> ]</span> <span class="hl"> [ <b><a href="/about/scams">AVOIDING SCAMS &amp; FRAUD</a></b> ] </span> <span class="hl"> [ <b><a href="/about/safety">PERSONAL SAFETY TIPS</a></b> ] </span> <span class="hl"> [ <a href="http://youtube.com/craigslist">craigslist {tv}</a> ] </span> <span class="hl"> [ <a href="http://www.eskimo.com/~newowl/Flagged_FAQ.htm">unofficial flagging faq</a> ] </span> <span class="hl"> [ <a href="http://blog.craigslist.org/">craigslist blog</a> ] </span> <span class="hl"> [ <a href="/cgi-bin/success.stories.cgi">success story?</a> ]</span> </td>
+        </tr>
+</table>
+
+<h4 class="ban">Wed Nov 30</h4>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728616257.html">$1495 / 3br - GATEWAY TO NAPA VALLEY, CLOSE TO SCHOOLS &amp; SHOPPING</a> - <font size="-1"> (vallejo / benicia)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/scz/apa/2728615904.html">4br - Pajaro Dunes Beach House</a> - <font size="-1"> (watsonville)</font></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728615935.html">$995 / 2br - Free rent, Granite Counter Tops, Wood Flooring, Park view....</a> - <font size="-1"> (oakland east)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/pen/apa/2728615637.html">$2448 / 2br - Spacious end unit facing South, near schools - $500 OFF apply now!</a> - <font size="-1"> (millbrae)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2723154460.html">$2050 / 2br - 950ft&sup2; - Start a New Year in your NEW apartment! Beautifully upgraded!</a> - <font size="-1"> (danville / san ramon)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/sby/apa/2728615206.html">$1475 / 1br - 660ft&sup2; - &#1757;Spacious and Quiet 1st Floor 1 Bedroom!&#1757; </a> - <font size="-1"> (campbell)</font> <span class="p"> pic&nbsp;img</span></p>
+<p><a href="http://sfbay.craigslist.org/pen/apa/2728615126.html">$2495 / 2br - 1112ft&sup2; - Great Community! Garage Parking! Fall In Love With Pescadero Apts.</a> - <font size="-1"> (redwood shores)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728614839.html">$814 / 2br - Richmond City Center -- Waitlist Only</a> - <font size="-1"> (richmond / point / annex)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728614797.html">$1295 / 3br - Antioch, 2 blocks west of L St.</a> - <font size="-1"> (pittsburg / antioch)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/sby/apa/2728614446.html">$2402 / 2br - * Aviare's Largest 2 Bedroom* Available Now With $350 OFF your Move In</a> - <font size="-1"> (cupertino)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/sfc/apa/2728614461.html">$2750 / 4br - 1431ft&sup2; - Gorgeous House in San Francisco 4 bed/ 2 bath</a> - <font size="-1"> (ingleside / SFSU / CCSF)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2723144794.html">$1750 / 2br - 750ft&sup2; - W/D! Vaulted ceilings! Water view! Must see! </a> - <font size="-1"> (danville / san ramon)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728613815.html">$696 / 1br - Richmond City Center -- Waitlist Only</a> - <font size="-1"> (richmond / point / annex)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/nby/apa/2728613627.html">$1550 / 1000ft&sup2; - BEAUTIFULLY UPDATED DUPLEX - CLOSE TO DOWNTOWN</a> - <font size="-1"> (novato)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/sfc/apa/2728613461.html">$3400 / 2br - Charming 2 BR/ 2 BA w/ Washer &amp; Dryer, fireplace &amp; Parking!</a> - <font size="-1"> (lower pac hts)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728613381.html">$1829 / 2br - Fall into a great special! 1 Month free Move in immediately!</a> - <font size="-1"> (dublin / pleasanton / livermore)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2723138867.html">$1375 / 1br - 625ft&sup2; - Valuable luxury! W/D! Vaulted ceilings! Water view! Fireplace! </a> - <font size="-1"> (danville / san ramon)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728613185.html">$1250 / 3br - 3 bedroom and 1 bath apartment unit # 3 is renting  for $1250 a month.</a> - <font size="-1"> (oakland east)</font></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728612895.html">$950 / 2br - 655ft&sup2; - Apartment for rent ! </a> - <font size="-1"> (vallejo / benicia)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/nby/apa/2728612565.html">$1150 / 1br - 600ft&sup2; - 1/2 OFF 1st FULL Months Rent! Cute End Unit 1x1 </a> - <font size="-1"> (novato)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/sfc/apa/2728611960.html">$2199 / 1br - OPEN HOUSE TODAY 3-4PM- Cozy 1Bed w Fireplace &amp; Patio-$500 Deposit</a> - <font size="-1"> (pacific heights)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/nby/apa/2707681180.html">$2124 / 2br - 981ft&sup2; - Great Views From Your Livingroom! 2 Bed/ 2 Bath Available Now!</a> - <font size="-1"> (san rafael)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728611323.html">$1200 / 1br - Close to UC Berkeley</a> - <font size="-1"> (berkeley)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/nby/apa/2709366224.html">$2503 / 3br - 1159ft&sup2; - Ground Floor 3 Bedroom/2 Bathroom Available Now!</a> - <font size="-1"> (san rafael)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/nby/apa/2721659786.html">$1781 / 1br - 861ft&sup2; - Amazing, Spacious 1 Bedroom/1 Bathroom with Den Available December 7!</a> - <font size="-1"> (san rafael)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/sfc/apa/2707396588.html">$1900 / 1br - 94 Walk Score! Lg 1 bd, hardwood fls, lots of natural light</a> - <font size="-1"> (laurel hts / presidio)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728609759.html">$3200 / 3br - DONT MISS OUT ON DECEMBER SPECIALS! STOP BY TODAY!</a> - <font size="-1"> (dublin / pleasanton / livermore)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/sby/apa/2728609508.html">$1495 / 1br - 700ft&sup2; - Exquisite Charm in a Garden Getaway</a> - <font size="-1"> (santa clara)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/pen/apa/2728609027.html">$2685 / 2br - Charming two bedroom plus den/office</a> - <font size="-1"> (los altos)</font></p>
+<p><a href="http://sfbay.craigslist.org/sfc/apa/2697294144.html">$2999 / 2br - &gt;&gt;&gt;DOGS OK-Cats ok-Remodeled-Granite Kit&amp;Bath-Great Natural Light&lt;&amp;l</a> - <font size="-1"> (lower pac hts)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/sby/apa/2728606135.html">$600 / 1br - 849ft&sup2; - Studio/1BA Apartment 925 South Wolfe Road, Sunnyvale CA 94086</a> - <font size="-1"> (sunnyvale)</font></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728606165.html">$1040 / 3br - Richmond City Center - Available Now - One Month Free!</a> - <font size="-1"> (richmond / point / annex)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/nby/apa/2728606020.html">$1400 / 2br - 872ft&sup2; - BRIGHT AND CHEERY END UNIT</a> - <font size="-1"> (novato)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/sby/apa/2728606040.html">$2500 / 4br - 1676ft&sup2; - Single Story Remodeled Home</a> - <font size="-1"> (san jose south)</font></p>
+<p><a href="http://sfbay.craigslist.org/sfc/apa/2709134045.html">$3995 ***Golden Gate Bridge View-Bay View&amp;Marin Headlands-Hardwood-Parking**</a> - <font size="-1"> (pacific heights)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728605910.html">$2495 / 3br - November FREE rent!  Unique 3 bedroom house in Lafayette</a> - <font size="-1"> (lafayette / orinda / moraga)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/sfc/apa/2683205368.html">$4199 / 1br - **Views of the Golden Gate&amp;Bay-Broadway Apt-Parking**</a> - <font size="-1"> (pacific heights)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/pen/apa/2728605390.html">$1795 / 1br - Marlin Cove - Like No Place Else!</a> - <font size="-1"> (foster city)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/nby/apa/2728605081.html">1, 2 &amp; 3 Bedroom Homes Newly Remodeled - VERY NICE!</a> - <font size="-1"> (santa rosa)</font></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728604815.html">$3300 / 4br - 2300ft&sup2; - 4 Bd/2.5 Ba home with Spectacular views!</a> - <font size="-1"> (concord / pleasant hill / martinez)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728604679.html">$2700 / 2br - 1600ft&sup2; - Walnut Creek - 2 Bd +office Quail Ridge Townhouse</a> - <font size="-1"> (walnut creek)</font></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728604419.html">$1950 / 4br - Spacious 4 bedroom 3 bathroom house in Antioch</a> - <font size="-1"> (pittsburg / antioch)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/sby/apa/2728604353.html">$16758 / 2br - Spacious Home in Quiet Community</a> - <font size="-1"> (mountain view)</font></p>
+<p><a href="http://sfbay.craigslist.org/pen/apa/2728604302.html">$5000 / 4br - 2300ft&sup2; - Spacious Home with cottage</a> - <font size="-1"> (los altos)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/sfc/apa/2728604123.html">$1550 / 1br - 800ft&sup2; - Nice in-law app. in a quiet neighborhood, close to trans, shops, SFSU</a> - <font size="-1"> (ingleside / SFSU / CCSF)</font></p>
+<p><a href="http://sfbay.craigslist.org/sfc/apa/2728603573.html">$1775 / 2br - 1 block to UCSF Loft bedroom Plus 1 Garden In-law</a> - <font size="-1"> (inner sunset / UCSF)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728603464.html">$1038 / 3br - Strobridge Family Apartments - Waitlist Only</a> - <font size="-1"> (hayward / castro valley)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/sby/apa/2728603412.html">$2600 / 2000ft&sup2; - Well maintained spacious 3 bedroom, 2 bath </a> - <font size="-1"> (san jose south)</font></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728603339.html">$1400 / 3br - Pet friendly charmer with dog run, beautiful hardwood floors &amp; more</a> - <font size="-1"> (vallejo / benicia)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728601947.html">$1275 / 2br - Hurry Last Unit available!!! Triplex in Union City 2 bed / 1 bath </a> - <font size="-1"> (fremont / union city / newark)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/sfc/apa/2728601853.html">$900 In Law Studio for Rent</a> - <font size="-1"> (sunset / parkside)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/sby/apa/2728601815.html">$1395 / 1br - Apartment Home available Now</a> - <font size="-1"> (mountain view)</font></p>
+<p><a href="http://sfbay.craigslist.org/pen/apa/2728601761.html">$1995 / 1br - 745ft&sup2; - Pescadero - Like No Place Else!</a> - <font size="-1"> (redwood shores)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/sby/apa/2728601713.html">$1550 / 1br - 650ft&sup2; - 1BR- Villa Cortina</a> - <font size="-1"> (san jose west)</font></p>
+<p><a href="http://sfbay.craigslist.org/nby/apa/2728601658.html">$1525 / 2br - 700ft&sup2; - Clean Upper at Covenient Location </a> - <font size="-1"> (mill valley)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728601529.html">$1025 / 1br - 800ft&sup2; - Charming 1 bedroom duplex in Concord</a> - <font size="-1"> (concord / pleasant hill / martinez)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728601541.html">$600 / 1br - 847ft&sup2; - 1BR/1BA Condo 1591 Ellis Street #112, Concord CA 94520</a> - <font size="-1"> (concord / pleasant hill / martinez)</font></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2690546076.html">$2800 / 4br - 4 bdroom , 3 1/2 bathrooms for a Family </a> - <font size="-1"> (hayward / castro valley)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728600248.html">$1420 / 2br - Updated two bedroom condo in Pleasant Hill</a> - <font size="-1"> (concord / pleasant hill / martinez)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/sby/apa/2728600031.html">$4650 / 4br - 2400ft&sup2; - BEAUTIFUL 4BD/3BD HOME IN CHERRY CHASE NEIGHBORHOOD</a> - <font size="-1"> (sunnyvale)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728599777.html">Cottage Style-extra privacy-newly remodeled-Great Price!</a> - <font size="-1"> (dublin / pleasanton / livermore)</font> <span class="p"> pic&nbsp;img</span></p>
+<p><a href="http://sfbay.craigslist.org/sfc/apa/2728599721.html">$4190 / 2br - 1100ft&sup2; - Upper Flat Victorian with new kitchen and amazing location</a> - <font size="-1"> (castro / upper market)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/pen/apa/2728598128.html">$1995 / 1br - One Bedroom in Downtown Palo Alto</a> - <font size="-1"> (palo alto)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/pen/apa/2728598114.html">$2635 / 3br - Cozy 3 Bedrooms 2 Bathrooms Downstairs </a> - <font size="-1"> (los altos)</font></p>
+<p><a href="http://sfbay.craigslist.org/nby/apa/2728597952.html">$1595 / 2br - 896ft&sup2; - REMODELED END UNIT BACKS TO A CREEK</a> - <font size="-1"> (novato)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/sfc/apa/2728595991.html">$7500 / 3br - 3000ft&sup2; - Prepaid rents, one of a kind house</a> - <font size="-1"> (russian hill)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2717435758.html">$2299 / 3br - 2010ft&sup2; - Large Home in Antioch w/ Inviting 2-Story Floor Plan</a> - <font size="-1"> (pittsburg / antioch)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2717428678.html">$1699 / 3br - Roomy, Open Floor Plan w/ Vaulted Ceilings and Nice Sunroom</a> - <font size="-1"> (brentwood / oakley)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/pen/apa/2728595378.html">$2050 / 2br - 996ft&sup2; - RISE &amp; SHINE AT THE BEST</a> - <font size="-1"> (mountain view)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/sfc/apa/2728595036.html">$3934 / 2br - Top 12th Floor FURNISHED 2 Bed 1.5 Bath -Boutiques, Eateries,SUNSHINE</a> - <font size="-1"> (pacific heights)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/pen/apa/2728594967.html">$3405 / 2br - 1368ft&sup2; - Plus Den-Top Floor-Fireplace-Water Views</a> - <font size="-1"> (redwood city)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2693713795.html">$1800 / 4br - 1818ft&sup2; - Beautiful 2 story home for Rent in Antioch!!!! Available now!</a> - <font size="-1"> (pittsburg / antioch)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728594146.html">$850 / 2br - 832ft&sup2; - $199.00 REDUCED SECURITY DEPOSIT AVAILABLE!!!!</a> - <font size="-1"> (fairfield / vacaville)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/pen/apa/2728593427.html">$1845 / 1br - 743ft&sup2; - You Deserve the Comfort and Convenience of Pescadero</a> - <font size="-1"> (redwood shores)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/sby/apa/2728593104.html">$1425 / 2br - 1025ft&sup2; - Ground Floor Corner Unit - Available Now W/ Special $600 Off!!</a> - <font size="-1"> (san jose west)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/pen/apa/2728593044.html">$1650 / 1br - 771ft&sup2; - CONVENIENT LOCATION &amp; SUPERIOR AMENITIES!</a> - <font size="-1"> (mountain view)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728592978.html">$1451 / 1br - 800ft&sup2; - Change your life in this new redesign apartment! </a> - <font size="-1"> (fremont / union city / newark)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728592799.html">$775 / 1br - CURRENT AVAILABILITY!! Spacious One Bedroom!!</a> - <font size="-1"> (fairfield / vacaville)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728592825.html">$1280 / 2br - 934ft&sup2; - Cozy fireplace and vaulted ceilings!</a> - <font size="-1"> (fairfield / vacaville)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728592471.html">$1141 / 4br - Strobridge Family Apartments - Waitlist Only</a> - <font size="-1"> (hayward / castro valley)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728592062.html">$1885 / 2br - 1115ft&sup2; - Near 680/580, Top Flr ~ Ready 1/5/2012</a> - <font size="-1"> (danville / san ramon)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2711231514.html">$925 / 1br - 650ft&sup2; - 5 Plex</a> - <font size="-1"> (walnut creek)</font></p>
+<p><a href="http://sfbay.craigslist.org/sfc/apa/2728591224.html">$4000 / 3br - 1500ft&sup2; - Amazing 3 bed/2 bath Home in San Francisco</a> - <font size="-1"> (sunset / parkside)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/sby/apa/2728590404.html">$1650 / 2br - 1024ft&sup2; - Modern 2 BR 2 BA Apartment with Washer &amp; Dryer</a> - <font size="-1"> (gilroy)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728590205.html">$1450 / 3br - 2007ft&sup2; - 3 Bed/ 2.5 Bath Charming Home on 5th St. Richmond</a> - <font size="-1"> (richmond / point / annex)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/sby/apa/2728590226.html">$1865 / 2br - 1070ft&sup2; - Immediate Move-in Special! Call Now!</a> - <font size="-1"> (santa clara)</font> <span class="p"> pic&nbsp;img</span></p>
+<p><a href="http://sfbay.craigslist.org/sby/apa/2728590077.html">$1300 / 1br - 635ft&sup2; - **The Perfect First Floor One Bedroom! The Place for You!**</a> - <font size="-1"> (milpitas)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/sby/apa/2728589765.html">$1635 / 1br - 600ft&sup2; - Ever Dream of Living Close to the Pruneyard?</a> - <font size="-1"> (campbell)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/sby/apa/2715979324.html">$3200 / 3br - 2100ft&sup2; - Beautiful Home In Gated Community</a> - <font size="-1"> (san jose south)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/sby/apa/2728588826.html">$1895 / 2br - 1076ft&sup2; - Price Reduction 2x2.5 Townhome With W/D Hook Ups..</a> - <font size="-1"> (sunnyvale)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/nby/apa/2728588477.html">$900 / 1br - Nice 1 Bedroom Mobile Home </a> - <font size="-1"> (santa rosa)</font></p>
+<p><a href="http://sfbay.craigslist.org/sfc/apa/2728588481.html">$3181 / 1br - Furnished, Accessorized, Util Incld</a> - <font size="-1"> (north beach / telegraph hill)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2683363302.html">$1450 / 3br - 1200ft&sup2; - 2 bath, 1 gargage, downstair, clean, end unit condo</a> - <font size="-1"> (Bay Point/Pittsburg)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728587938.html">$850 / 2br - $199 SECURITY DEPOSIT! THE PRICE IS RIGHT! 2X1 @ $850</a> - <font size="-1"> (fairfield / vacaville)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728587624.html">$745 / 4br - Woods Grove Apartments - One Month Free! </a> - <font size="-1"> (pittsburg / antioch)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728587474.html">$1010 / 2br - 866ft&sup2; - 2 Bedroom 2 Bath with a great special don't miss out come in today</a> - <font size="-1"> (pittsburg / antioch)</font> <span class="p"> pic</span></p>
+<p><a href="http://sfbay.craigslist.org/pen/apa/2728587125.html">$3300 / 2br - 1196ft&sup2; - Townhome On The Water-Fierplace-Direct Access Garage</a> - <font size="-1"> (redwood city)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/sby/apa/2728586848.html">$2000 / 1br - 976ft&sup2; - Furnished Charming Modern Luxury Loft Condo</a> - <font size="-1"> (san jose downtown)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728585973.html">$1075 / 1br - Awesome 1-br w/Tons of Charm &amp; Appeal</a> - <font size="-1"> (hayward / castro valley)</font> <span class="p"> img</span></p>
+<p><a href="http://sfbay.craigslist.org/eby/apa/2728585826.html">$1560 / 1br - 734ft&sup2; - All the Treasures of San Ramon within reach!!!</a> - <font size="-1"> (danville / san ramon)</font> <span class="p"> img</span></p>
+
+
+<p align="center"><font size="4"><a href="index100.html">next 100 postings</a></font>
+
+<div id="footer">
+	<hr>
+	<span id="copy">
+		Copyright &copy; 2011 craigslist, inc.<br>
+	</span>
+	<span class="rss">
+		<a class="l" href="/apa/index.rss">RSS</a>
+		<a href="http://www.craigslist.org/about/rss">(?)</a><br>
+	</span>
+</div>
+<br><br>
+
+<div id="floater">&nbsp;</div>
+
+</blockquote>
+<script type="text/javascript" src="http://www.craigslist.org/js/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="http://www.craigslist.org/js/toChecklist.js"></script>
+<script type="text/javascript" src="http://www.craigslist.org/js/jquery.form-defaults.js"></script>
+<script type="text/javascript" src="http://www.craigslist.org/js/tocs.js?v=3"></script>
+
+</body>
+</html>

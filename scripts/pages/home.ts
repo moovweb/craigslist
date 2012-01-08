@@ -9,7 +9,7 @@ $("/html") {
     $("script") {
       remove()
     }
-    
+
     # step 3 --> dump table
     $(".//table") {
       name("div")
@@ -35,43 +35,43 @@ $("/html") {
         }
       }
       # account tab content
-    $("./ul[@id='postlks']") {
-      attributes(data-ur-tab-id: "account_tab", data-ur-tabs-component: "content", data-ur-state: "disabled")
-      # remove duplicated link. "help. faq, abuse, legal" and "help" go to the same page
-      $("li[3]") {
-        remove()
-      }
-$("li/a") {
-  add_class("mw_bar3")
-}
-    }
-    $("ul[@id='leftlinks']") {
-       attributes(data-ur-tab-id: "info_tab", data-ur-tabs-component: "content", data-ur-state: "disabled")
-      move_here("./following-sibling::*", "bottom")
-      
-      # remove white space
-      $("p[@id='sflinks']") {
-        wrap_text_children("span") {
+      $("./ul[@id='postlks']") {
+        attributes(data-ur-tab-id: "account_tab", data-ur-tabs-component: "content", data-ur-state: "disabled")
+        # remove duplicated link. "help. faq, abuse, legal" and "help" go to the same page
+        $("li[3]") {
           remove()
         }
+        $("li/a") {
+          add_class("mw_bar3")
+        }
       }
-      
-      $(".//a") {
-        add_class("mw_bar3")
+      $("ul[@id='leftlinks']") {
+        attributes(data-ur-tab-id: "info_tab", data-ur-tabs-component: "content", data-ur-state: "disabled")
+        move_here("./following-sibling::*", "bottom")
+
+        # remove white space
+        $("p[@id='sflinks']") {
+          wrap_text_children("span") {
+            remove()
+          }
+        }
+
+        $(".//a") {
+          add_class("mw_bar3")
+        }
+      }
+      # search tab content
+      $("./form[@id='search']") {
+        attributes(data-ur-tab-id: "search_tab", data-ur-tabs-component: "content", data-ur-state: "disabled")
+      }
+      # remove calendar title
+      $("div[@id='calttl']") {
+        remove()
+      }
+      $("./div[@summary='calendar']") {
+        attributes(data-ur-tab-id: "calendar_tab", data-ur-tabs-component: "content", data-ur-state: "disabled")
       }
     }
-    # search tab content
-  $("./form[@id='search']") {
-    attributes(data-ur-tab-id: "search_tab", data-ur-tabs-component: "content", data-ur-state: "disabled")
-  }
-  # remove calendar title
-  $("div[@id='calttl']") {
-    remove()
-  }
-  $("./div[@summary='calendar']") {
-    attributes(data-ur-tab-id: "calendar_tab", data-ur-tabs-component: "content", data-ur-state: "disabled")
-  }
-  }
     $(".//div[@id='main']") {
 
       # post categories
@@ -123,7 +123,7 @@ $("li/a") {
         }
       }
     }
-    
+
     # insert footer copy right
     insert("a", "Mobile Site Powered by Moovweb", class: "mw_moovfooter", href: "http://moovweb.com", target: "_blank")
   }

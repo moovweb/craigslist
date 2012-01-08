@@ -1,0 +1,12 @@
+tmp/
+log/
+.sass-cache/
+assets/images/icons-*.png
+assets/javascript/.remote/
+assets/javascript/bundle*.js
+assets/javascript/main.js
+assets/stylesheets/.css/
+BUILD_VERSION
+GENERATOR_OPTIONS
+.DS_Store
+.rvmrc

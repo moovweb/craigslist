@@ -1,7 +1,12 @@
 
+@import "compass";
 @import "compass/reset";
 
-@import "base.scss";
+@import "icons/*.png";
+@include all-icons-sprites;
+
+@import "_lib.scss";
+@import "_base.scss";
 
 @import "sections/header.scss";
 @import "sections/footer.scss";

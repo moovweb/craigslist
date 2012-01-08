@@ -4,10 +4,21 @@ $("/html") {
 
   # Strip out comments and links
   # PASSTHROUGH: To passthrough comments and links, delete the 3 lines below
-  #$(".//comment()|.//link|.//style") {
-  #  remove()
-  #}
+  $(".//comment()|.//link|.//style") {
+    remove()
+  }
 
+  # Remove only existing meta tags for which we will add our own
+  $(".//meta[@name='viewport']|.//meta[@name='format-detection']") {
+    remove()
+  }
+  # Add our meta tags
+  $("./head") {
+    insert("meta", http-equiv: "Content-Type", content: "text/html")
+    insert("meta", name: "viewport", content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+    insert("meta", name: "format-detection", content: "telephone=no")
+    insert("script", data-mw_keep: "true", type: "text/javascript", src: asset("javascript/main.js"))
+  }
   # Add assets
   $("./head") {
     insert("link", rel: "stylesheet", type: "text/css", href: asset("main.css", "stylesheet"))

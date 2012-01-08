@@ -1,16 +1,12 @@
 $("/html") {
   log("I'm importing home")
-  $("./head") {
-    # step 1 --> inject moovweb library
-    insert("script", src:"http://d1topzp4nao5hp.cloudfront.net/uranium-upload/0.1.46/uranium.js")
-  }
   $("./body") {
-    # step 2 --> remove not used script from desktop site
+    # step 1 --> remove not used script from desktop site
     $("script") {
       remove()
     }
 
-    # step 3 --> dump table
+    # step 2 --> dump table
     $(".//table") {
       name("div")
       attribute("class", "oldtable")
@@ -22,7 +18,7 @@ $("/html") {
         }
       }
     }
-    # step 4  --> style left colmun
+    # step 3  --> style left colmun, header tab
     $(".//span[@id='leftbar']") {
       attributes(data-ur-set: "tabs", data-ur-closeable: "true")
       # insert header icons for account, search, calendar, info
@@ -72,6 +68,8 @@ $("/html") {
         attributes(data-ur-tab-id: "calendar_tab", data-ur-tabs-component: "content", data-ur-state: "disabled")
       }
     }
+    
+    # step 4  --> main content accordians
     $(".//div[@id='main']") {
 
       # post categories
@@ -109,6 +107,7 @@ $("/html") {
 
 
     }
+    # location accoridan
     $(".//ul[contains(@class,'menu')]/li") {
       #create accordian set
       attributes(data-ur-set: "toggler")

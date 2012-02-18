@@ -9,7 +9,7 @@ begin
   gem "manhattan", manhattan_version
 rescue Exception => e
   puts "Couldn't find version #{manhattan_version}. Please verify your MANHATTAN_VERSION file."
-	exit 1
+  exit 1
 end
 
 require "manhattan/project/tasks"

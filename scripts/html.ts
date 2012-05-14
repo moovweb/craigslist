@@ -4,14 +4,13 @@ $("/html") {
 
   # Strip out comments and links
   # PASSTHROUGH: To passthrough comments and links, delete the 3 lines below
-  $(".//comment()|.//link|.//style") {
-    remove()
-  }
+  remove(".//comment()|.//link|.//style")
 
   # Remove only existing meta tags for which we will add our own
   $(".//meta[@name='viewport']|.//meta[@name='format-detection']") {
     remove()
   }
+
   # Add our meta tags
   $("./head") {
     insert("meta", http-equiv: "Content-Type", content: "text/html")
@@ -19,11 +18,12 @@ $("/html") {
     insert("meta", name: "format-detection", content: "telephone=no")
     insert("script", data-mw_keep: "true", type: "text/javascript", src: asset("javascript/main.js"))
   }
+
   # Add assets
   $("./head") {
-    insert("link", rel: "stylesheet", type: "text/css", href: asset("main.css", "stylesheet"))
-    insert("link", rel: "shortcut icon", href: asset("favicon.ico", "image"))
-    insert("link", rel: "apple-touch-icon", href: asset("apple-touch-icon.png", "image"))
+    insert("link", rel: "stylesheet", type: "text/css", href: sass($device_stylesheet))
+    insert("link", rel: "shortcut icon", href: asset("images/favicon.ico"))
+    insert("link", rel: "apple-touch-icon", href: asset("images/apple-touch-icon.png"))
   }
   $("./body") {
     # Rewrite links
@@ -44,6 +44,12 @@ $("/html") {
       }
     }
 
+    # Add AJAX rewrite config
+    insert("div") {
+      attribute("id", "mw_link_passthrough_config")
+      attribute("rewrite_link_matcher", $rewrite_link_matcher_str)
+      attribute("rewrite_link_replacement", $rewrite_link_replacement)
+    }
   }
 
   # Absolutize IMG and SCRIPT SRCs
@@ -76,11 +82,24 @@ $("/html") {
   }
 
 
+  @import "keep_desktop_js.ts"
 
-  @import sections/header.ts
-  @import sections/footer.ts
-  @import pages/home.ts
-  @import mappings.ts
+
+  @import "sections/header.ts"
+  @import "sections/footer.ts"
+  
+  @import "mappings.ts"
+
+
+  # Remove desktop site javascript
+  # PASSTHROUGH: To passthrough javascript, delete the 3 lines below  
+  $("//script[@src and (not(@data-mw_keep) or @data-mw_keep='false')]") {
+    remove()
+  }
+
+
+  # Include mw_analytics file to track the mobile site
+  @import "mw_analytics.ts"
 
 
 }

@@ -19,6 +19,7 @@
 #     * via - Used to check if the proxy is making a request to itself
 #     * host - Used to make sure the host was rewritten
 #     * user_agent - The device used to make the request OR the fixed value
+#     * cookie - The cookie header of the incoming request
 #   Other:
 #     * method - The http request method (Usually GET or POST).
 #     * path - The path to the resource (Full URL in the case of proxy requests)
@@ -66,6 +67,11 @@ match($found, "false") {
 # Get via header (Before we add it)
 replace(/^via\:\s*([^\r\n]*)/i) {
   export("via", $1)
+}
+
+# Get the cookie header
+replace(/^cookie\:\s*([^\r\n]*)/i) {
+  export("cookie", $1)
 }
 
 # Add or fix the via header as specified in the spec:

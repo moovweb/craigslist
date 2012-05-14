@@ -15,6 +15,7 @@
 #     * source_host
 #     * user_agent
 #     * secure
+#     * cookie
 #   Headers:
 #     * content_encoding - The compression method used on the body
 #     * content_type - The type of content in the body
@@ -29,6 +30,7 @@ export("host", $host)
 export("source_host", $source_host)
 export("user_agent", $user_agent)
 export("secure", $secure)
+export("cookie", $cookie)
 
 # Get the HTTP response status code
 replace(/\A[^\r\n]+\s+(\d{3})/) {

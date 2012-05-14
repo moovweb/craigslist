@@ -135,48 +135,49 @@ match($cookie_domain_missing_replacement, not("")) {
 # cookie domains or locations that have been explicitly set by the user
 match($body, "true") {
 
-  match($content_type, not("")) {
+  match(var("Content-Type"), not("")) {
     replace(/^(content-type\:\s*)([^\;\r\n])+/i) {
       set("$1")
-      append($content_type)
+      append(var("Content-Type"))
     }
   }
 
-  match($content_type_charset, not("")) {
+  match(var("Content-Type-Charset"), not("")) {
     $found = "false"
     replace(/(content-type:[^\r\n]+charset=)([^\;\r\n]+)/i) {
       $found = "true"
       set("$1")
-      append($content_type_charset)
+      append(var("Content-Type-Charset"))
     }
     match($found, "false") {
       replace(/^(content-type\:[^\r\n]+)/i) {
         set("$1")
         append("; charset=")
-        append($content_type_charset)
+        append(var("Content-Type-Charset"))
       }
     }
   }
 
-  match($cache_time, not("")) {
+  match(var("Cache-Time"), not("")) {
     replace(/\s+^cache-control\:[^\r\n]*/i, "")
     replace(/\s+^pragma\:[^\r\n]*/i, "")
     replace(/\s+^expires\:[^\r\n]*/i, "")
     append("\r\nCache-Control: public, max-age=")
-    append($cache_time)
+    append(var("Cache-Time"))
   }
 
-  match($location, not("")) {
+  match($Location, not("")) {
     $found = "false"
     replace(/^(location\:\s*)([^\r\n]*)/i) {
       $found = "true"
       set("$1")
-      append($location)
+      append($Location)
     }
     match($found, "false") {
       replace(/(\A[^\r\n]+\s+)200/, "\\1302")
       append("\r\nLocation: ")
-      append($location)
+      append($Location)
     }
   }
 }
+

@@ -1,14 +1,24 @@
-
 @import "compass";
 @import "compass/reset";
+
 
 @import "icons/*.png";
 @include all-icons-sprites;
 
+// Generate a sprite from all .png images in the sprite folder
+// Set the spacing to be 10px apart (remove for no spacing)
+
+// Uncomment the three lines below to create a sprite
+// $sprite-spacing: 10px;
+// @import "sprite/*.png";
+// @include all-sprite-sprites;
+
+
 @import "_lib.scss";
 @import "_base.scss";
 
-@import "sections/header.scss";
-@import "sections/footer.scss";
+@import "sections/_header.scss";
+@import "sections/_footer.scss";
 
-@import "pages/home.scss";
+@import "pages/_home.scss";
+

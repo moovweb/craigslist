@@ -1,12 +1,17 @@
 body._home {
+	// Styling the category headers
 	._category {
 		border-bottom: #fff;
 		border-top: 1px solid #ddd; 
 		@include background(linear-gradient(#eff8fc, #d5e3ef));
+
+		// If the item is a link, there should be a right arrow
 		> a {
 			@include bar_inner_base;
 			@extend .icons-blackArrowRight;
 		}
+		// If the item is an accordion, there should be a plus that turns into a minus
+		// when the accordion is opened
 		&[data-ur-toggler-component="button"] {
 			> div {
 	      @include bar_inner_base;
@@ -18,6 +23,7 @@ body._home {
 		  }
     }
 	}
+	// Styling the subcategories that appear
 	._subcategory {
 		> a, > div {
 		  border-bottom: #fff;
@@ -26,6 +32,8 @@ body._home {
       @extend .icons-blackArrowRight;
 	  }
 	}
+
+	// Styling the logo bar header
 	#logo {
 	  background: $color2;
 	  border-bottom: $border1;
@@ -52,9 +60,12 @@ body._home {
 	    }
 	  } 
 	}
+	// Fixing the empty div that appears
 	h4._category > div:empty {
 	  display: none !important;
 	}
+
+	// Styling the links that appear in the header bar
 	._header_bar {
 	  @include bar_inner_base;
 	  border-bottom: $border1;
@@ -63,6 +74,8 @@ body._home {
 	  text-align: left;
 	  @extend .icons-blackArrowRight;
 	}
+
+	// Styling the search tab
 	#search {
 	  padding: 10px;
 	  font-weight: bold;

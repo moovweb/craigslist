@@ -25,6 +25,8 @@ a {
   color: $link_color;
 }
 
+// Styling for Uranium widgets (see http://uraniumjs.com)
+
 [data-ur-toggler-component="content"][data-ur-state="disabled"] {
   display: none;
 }
@@ -33,6 +35,7 @@ a {
   display: none;
 }
 
+// Specifying sizes of icons for Compass
 .icons-account, .icons-info, .icons-search {
   width: 36px;
   height: 35px;

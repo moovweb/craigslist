@@ -1,3 +1,4 @@
+// Defining a mixin for the bars (for more about mixins, see http://sass-lang.com)
 @mixin bar_inner_base {
   background-position-x: right;
   display: block;

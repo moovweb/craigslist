@@ -21,7 +21,7 @@ match($status) {
 
     match($path) {
       with(/^\/$/) {
-        // Include a log with every import to make it simple to know what scripts are running
+        # Include a log with every import to make it simple to know what scripts are running
         log("--> Importing pages/homes.ts in mappings.ts")
         @import "pages/home.ts"
         

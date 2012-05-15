@@ -1,4 +1,4 @@
-# HTML Transformations go here
+# HTML Transformations that apply to every page go here
 
 $("/html") {
 

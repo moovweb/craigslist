@@ -18,18 +18,19 @@ match($status) {
 
   with(/200/) {
     log("--> STATUS: 200")
-
+    
+    # Here we match particular paths with regex and point the page 
+    # to a specific Tritium file
     match($path) {
+      # The following Regex specifies an URL without 
+      # a path (i.e. the "home" url)
       with(/^\/$/) {
         # Include a log with every import to make it simple to know what scripts are running
         log("--> Importing pages/homes.ts in mappings.ts")
         @import "pages/home.ts"
-        
-          # Uncomment the line below to set the variable that is used
-          # in the mw_analytics.ts file and embed a custom tag for this page
-          # $mw_analytics = "project_name_home"
-        
       }
+      # The following imports have no Tritium; they are set up
+      # for illustrative purposes
       with(/\d{6}/) {
         log("--> Importing pages/item.ts in mappings.ts")
         @import "pages/item.ts"

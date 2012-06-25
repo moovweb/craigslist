@@ -6,6 +6,9 @@ $("/html/body") {
 	remove(".//script")
 	remove(".//br")
 
+	# Removing the copyright banner
+	remove(".//span[@id='copy']")
+
 	# Changing tables so they are comprised of divs and spans
   $(".//table") {
   	name("div")

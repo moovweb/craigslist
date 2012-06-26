@@ -1,114 +1,113 @@
 body._home {
-	// Styling the category headers
-	._category {
-		border-bottom: #fff;
-		border-top: 1px solid #ddd; 
-		@include background(linear-gradient(#eff8fc, #d5e3ef));
-
-		// If the item is a link, there should be a right arrow
-		> a {
-			@include bar_inner_base;
-			@extend .icons-blackArrowRight;
-		}
-		// If the item is an accordion, there should be a plus that turns into a minus
-		// when the accordion is opened
-		&[data-ur-toggler-component="button"] {
-			> div {
-	      @include bar_inner_base;
-	      @extend .icons-blackPlus;
-		  }
-		  &[data-ur-state="enabled"] > div {
-		  	@include bar_inner_base;
-		  	@extend .icons-blackMinus;
-		  }
-    }
-	}
-	// Styling the subcategories that appear
-	._subcategory {
-		> a, > div {
-		  border-bottom: #fff;
-		  border-top: 1px solid #ddd; 
+  // Styling the category headers
+  ._category {
+    border-bottom: #fff;
+    border-top: 1px solid #ddd; 
+    @include background(linear-gradient(#eff8fc, #d5e3ef));  
+    // If the item is a link, there should be a right arrow
+    > a {
       @include bar_inner_base;
       @extend .icons-blackArrowRight;
-	  }
-	}
+    }
+    // If the item is an accordion, there should be a plus that turns into a minus
+    // when the accordion is opened
+    &[data-ur-toggler-component="button"] {
+      > div {
+        @include bar_inner_base;
+        @extend .icons-blackPlus;
+      }
+      &[data-ur-state="enabled"] > div {
+        @include bar_inner_base;
+        @extend .icons-blackMinus;
+      }
+    }
+  }
+  // Styling the subcategories that appear
+  ._subcategory {
+    > a, > div {
+      border-bottom: #fff;
+      border-top: 1px solid #ddd; 
+      @include bar_inner_base;
+      @extend .icons-blackArrowRight;
+    }
+  }
 
-	// Styling the logo bar header
-	#logo {
-	  background: $color2;
-	  border-bottom: $border1;
-	  overflow: hidden;
-	  position: relative;
-	  > a {
-	    text-decoration: none;
-	    font-size: 25px;
-	    font-weight: 500;
-	    font-family: serif;
-	    line-height: 100%;
-	    display: inline-block;
-	    padding: 10px;
-	  }
-	  > div {
-	    position: absolute;
-	    bottom: 0;
-	    right: 5px;
-	    opacity: .8;
-	    margin-bottom: -3px;
-	    > div {
-	      display: inline-block;
-	      padding-top: 3px;
-	    }
-	  } 
-	}
-	// Fixing the empty div that appears
-	h4._category > div:empty {
-	  display: none !important;
-	}
+  // Styling the logo bar header
+  #logo {
+    background: $color2;
+    border-bottom: $border1;
+    overflow: hidden;
+    position: relative;
+    > a {
+      text-decoration: none;
+      font-size: 25px;
+      font-weight: 500;
+      font-family: serif;
+      line-height: 100%;
+      display: inline-block;
+      padding: 10px;
+    }
+    > div {
+      position: absolute;
+      bottom: 0;
+      right: 5px;
+      opacity: .8;
+      margin-bottom: -3px;
+      > div {
+        display: inline-block;
+        padding-top: 3px;
+      }
+    } 
+  }
+  // Fixing the empty div that appears
+  h4._category > div:empty {
+    display: none !important;
+  }
 
-	// Styling the links that appear in the header bar
-	._header_bar {
-	  @include bar_inner_base;
-	  border-bottom: $border1;
-	  background-color: #fff;
-	  color: #555;
-	  text-align: left;
-	  @extend .icons-blackArrowRight;
-	}
+  // Styling the links that appear in the header bar
+  ._header_bar {
+    @include bar_inner_base;
+    border-bottom: $border1;
+    background-color: #fff;
+    color: #555;
+    text-align: left;
+    @extend .icons-blackArrowRight;
+  }
 
-	// Styling the search tab
-	#search {
-	  padding: 10px;
-	  font-weight: bold;
-	  text-transform: capitalize;
-	  color: #777;
-	  background: #efefef;
-	  border-bottom: $border1;
-	  > select {
-	    margin: 0 5px;
-	  }
-	  > div {
-	    padding-bottom: 5px;
-	  }
-	}
-	#topban {
-	  padding:10px;
-	  > sup {
-	    display: none;
-	  }
-	  > h2 {
-	    font-size: 16px;
-	    display: inline;
-	    line-height: 16px;
-	  }
-	  > .sublinks {
-	    float: right;
-	    > a {
-	      text-decoration: none;
-	      font-size:14px;
-	      margin-left: 5px;
-	      padding-left: 5px;
-	      line-height: 16px;
-	    }
-	  }
-	}
+  // Styling the search tab
+  #search {
+    padding: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #777;
+    background: #efefef;
+    border-bottom: $border1;
+    > select {
+      margin: 0 5px;
+    }
+    > div {
+      padding-bottom: 5px;
+    }
+  }
+  #topban {
+    padding:10px;
+    > sup {
+      display: none;
+    }
+    > h2 {
+      font-size: 16px;
+      display: inline;
+      line-height: 16px;
+    }
+    > .sublinks {
+      float: right;
+      > a {
+        text-decoration: none;
+        font-size:14px;
+        margin-left: 5px;
+        padding-left: 5px;
+        line-height: 16px;
+      }
+    }
+  }
 }

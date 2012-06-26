@@ -1,8 +1,8 @@
 
 (function () {
 /**
-	Basics
-	======
+  Basics
+  ======
     
     xui is available as the global `x$` function. It accepts a CSS selector string or DOM element, or an array of a mix of these, as parameters,
     and returns the xui object. For example:
@@ -12,8 +12,8 @@
     For more information on CSS selectors, see the [W3C specification](http://www.w3.org/TR/CSS2/selector.html). Please note that there are
     different levels of CSS selector support (Levels 1, 2 and 3) and different browsers support each to different degrees. Be warned!
     
-	The functions described in the docs are available on the xui object and often manipulate or retrieve information about the elements in the
-	xui collection.
+  The functions described in the docs are available on the xui object and often manipulate or retrieve information about the elements in the
+  xui collection.
 
 */
 var undefined,
@@ -69,36 +69,36 @@ function cssstyle(name) {
 xui.fn = xui.prototype = {
 
 /**
-	extend
-	------
+  extend
+  ------
 
-	Extends XUI's prototype with the members of another object.
+  Extends XUI's prototype with the members of another object.
 
-	### syntax ###
+  ### syntax ###
 
-		xui.extend( object );
+    xui.extend( object );
 
-	### arguments ###
+  ### arguments ###
 
-	- object `Object` contains the members that will be added to XUI's prototype.
+  - object `Object` contains the members that will be added to XUI's prototype.
  
-	### example ###
+  ### example ###
 
-	Given:
+  Given:
 
-		var sugar = {
-		    first: function() { return this[0]; },
-		    last:  function() { return this[this.length - 1]; }
-		}
+    var sugar = {
+        first: function() { return this[0]; },
+        last:  function() { return this[this.length - 1]; }
+    }
 
-	We can extend xui's prototype with members of `sugar` by using `extend`:
+  We can extend xui's prototype with members of `sugar` by using `extend`:
 
-		xui.extend(sugar);
+    xui.extend(sugar);
 
-	Now we can use `first` and `last` in all instances of xui:
+  Now we can use `first` and `last` in all instances of xui:
 
-		var f = x$('.button').first();
-		var l = x$('.notice').last();
+    var f = x$('.button').first();
+    var l = x$('.notice').last();
 */
     extend: function(o) {
         for (var i in o) {
@@ -107,37 +107,37 @@ xui.fn = xui.prototype = {
     },
 
 /**
-	find
-	----
+  find
+  ----
 
-	Find the elements that match a query string. `x$` is an alias for `find`.
+  Find the elements that match a query string. `x$` is an alias for `find`.
 
-	### syntax ###
+  ### syntax ###
 
-		x$( window ).find( selector, context );
+    x$( window ).find( selector, context );
 
-	### arguments ###
+  ### arguments ###
 
-	- selector `String` is a CSS selector that will query for elements.
-	- context `HTMLElement` is the parent element to search from _(optional)_.
+  - selector `String` is a CSS selector that will query for elements.
+  - context `HTMLElement` is the parent element to search from _(optional)_.
  
-	### example ###
+  ### example ###
 
-	Given the following markup:
+  Given the following markup:
 
-		<ul id="first">
-		    <li id="one">1</li>
-		    <li id="two">2</li>
-		</ul>
-		<ul id="second">
-		    <li id="three">3</li>
-		    <li id="four">4</li>
-		</ul>
+    <ul id="first">
+        <li id="one">1</li>
+        <li id="two">2</li>
+    </ul>
+    <ul id="second">
+        <li id="three">3</li>
+        <li id="four">4</li>
+    </ul>
 
-	We can select list items using `find`:
+  We can select list items using `find`:
 
-		x$('li');                 // returns all four list item elements.
-		x$('#second').find('li'); // returns list items "three" and "four"
+    x$('li');                 // returns all four list item elements.
+    x$('#second').find('li'); // returns list items "three" and "four"
 */
     find: function(q, context) {
         var ele = [], tempNode;
@@ -191,14 +191,14 @@ q.toString() == '[object HTMLCollection]' || typeof q.length == 'number') {
     },
 
 /**
-	set
-	---
+  set
+  ---
 
-	Sets the objects in the xui collection.
+  Sets the objects in the xui collection.
 
-	### syntax ###
+  ### syntax ###
 
-		x$( window ).set( array );
+    x$( window ).set( array );
 */
     set: function(elements) {
         var ret = xui();
@@ -209,19 +209,19 @@ q.toString() == '[object HTMLCollection]' || typeof q.length == 'number') {
     },
 
 /**
-	reduce
-	------
+  reduce
+  ------
 
-	Reduces the set of elements in the xui object to a unique set.
+  Reduces the set of elements in the xui object to a unique set.
 
-	### syntax ###
+  ### syntax ###
 
-		x$( window ).reduce( elements, index );
+    x$( window ).reduce( elements, index );
 
-	### arguments ###
+  ### arguments ###
 
-	- elements `Array` is an array of elements to reduce _(optional)_.
-	- index `Number` is the last array index to include in the reduction. If unspecified, it will reduce all elements _(optional)_.
+  - elements `Array` is an array of elements to reduce _(optional)_.
+  - index `Number` is the last array index to include in the reduction. If unspecified, it will reduce all elements _(optional)_.
 */
     reduce: function(elements, b) {
         var a = [],
@@ -236,32 +236,32 @@ q.toString() == '[object HTMLCollection]' || typeof q.length == 'number') {
     },
 
 /**
-	has
-	---
+  has
+  ---
 
-	Returns the elements that match a given CSS selector.
+  Returns the elements that match a given CSS selector.
 
-	### syntax ###
+  ### syntax ###
 
-		x$( window ).has( selector );
+    x$( window ).has( selector );
 
-	### arguments ###
+  ### arguments ###
 
-	- selector `String` is a CSS selector that will match all children of the xui collection.
+  - selector `String` is a CSS selector that will match all children of the xui collection.
 
-	### example ###
+  ### example ###
 
-	Given:
+  Given:
 
-		<div>
-		    <div class="round">Item one</div>
-		    <div class="round">Item two</div>
-		</div>
-	
-	We can use `has` to select specific objects:
+    <div>
+        <div class="round">Item one</div>
+        <div class="round">Item two</div>
+    </div>
+  
+  We can use `has` to select specific objects:
 
-		var divs    = x$('div');          // got all three divs.
-		var rounded = divs.has('.round'); // got two divs with the class .round
+    var divs    = x$('div');          // got all three divs.
+    var rounded = divs.has('.round'); // got two divs with the class .round
 */
      has: function(q) {
          var list = xui(q);
@@ -276,32 +276,32 @@ q.toString() == '[object HTMLCollection]' || typeof q.length == 'number') {
      },
 
 /**
-	filter
-	------
+  filter
+  ------
 
-	Extend XUI with custom filters. This is an interal utility function, but is also useful to developers.
+  Extend XUI with custom filters. This is an interal utility function, but is also useful to developers.
 
-	### syntax ###
+  ### syntax ###
 
-		x$( window ).filter( fn );
+    x$( window ).filter( fn );
 
-	### arguments ###
+  ### arguments ###
 
-	- fn `Function` is called for each element in the XUI collection.
+  - fn `Function` is called for each element in the XUI collection.
 
-	        // `index` is the array index of the current element
-	        function( index ) {
-	            // `this` is the element iterated on
-	            // return true to add element to new XUI collection
-	        }
+          // `index` is the array index of the current element
+          function( index ) {
+              // `this` is the element iterated on
+              // return true to add element to new XUI collection
+          }
 
-	### example ###
+  ### example ###
 
-	Filter all the `<input />` elements that are disabled:
+  Filter all the `<input />` elements that are disabled:
 
-		x$('input').filter(function(index) {
-		    return this.checked;
-		});
+    x$('input').filter(function(index) {
+        return this.checked;
+    });
 */
     filter: function(fn) {
         var elements = [];
@@ -311,34 +311,34 @@ q.toString() == '[object HTMLCollection]' || typeof q.length == 'number') {
     },
 
 /**
-	not
-	---
+  not
+  ---
 
-	The opposite of `has`. It modifies the elements and returns all of the elements that do __not__ match a CSS query.
+  The opposite of `has`. It modifies the elements and returns all of the elements that do __not__ match a CSS query.
 
-	### syntax ###
+  ### syntax ###
 
-		x$( window ).not( selector );
+    x$( window ).not( selector );
 
-	### arguments ###
+  ### arguments ###
 
-	- selector `String` a CSS selector for the elements that should __not__ be matched.
+  - selector `String` a CSS selector for the elements that should __not__ be matched.
 
-	### example ###
+  ### example ###
 
-	Given:
+  Given:
 
-		<div>
-		    <div class="round">Item one</div>
-		    <div class="round">Item two</div>
-		    <div class="square">Item three</div>
-		    <div class="shadow">Item four</div>
-		</div>
+    <div>
+        <div class="round">Item one</div>
+        <div class="round">Item two</div>
+        <div class="square">Item three</div>
+        <div class="shadow">Item four</div>
+    </div>
 
-	We can use `not` to select objects:
+  We can use `not` to select objects:
 
-		var divs     = x$('div');          // got all four divs.
-		var notRound = divs.not('.round'); // got two divs with classes .square and .shadow
+    var divs     = x$('div');          // got all four divs.
+    var notRound = divs.not('.round'); // got two divs with classes .square and .shadow
 */
     not: function(q) {
         var list = slice(this),
@@ -356,31 +356,31 @@ q.toString() == '[object HTMLCollection]' || typeof q.length == 'number') {
     },
 
 /**
-	each
-	----
+  each
+  ----
 
-	Element iterator for an XUI collection.
+  Element iterator for an XUI collection.
 
-	### syntax ###
+  ### syntax ###
 
-		x$( window ).each( fn )
+    x$( window ).each( fn )
 
-	### arguments ###
+  ### arguments ###
 
-	- fn `Function` callback that is called once for each element.
+  - fn `Function` callback that is called once for each element.
 
-		    // `element` is the current element
-		    // `index` is the element index in the XUI collection
-		    // `xui` is the XUI collection.
-		    function( element, index, xui ) {
-		        // `this` is the current element
-		    }
+        // `element` is the current element
+        // `index` is the element index in the XUI collection
+        // `xui` is the XUI collection.
+        function( element, index, xui ) {
+            // `this` is the current element
+        }
 
-	### example ###
+  ### example ###
 
-		x$('div').each(function(element, index, xui) {
-		    alert("Here's the " + index + " element: " + element);
-		});
+    x$('div').each(function(element, index, xui) {
+        alert("Here's the " + index + " element: " + element);
+    });
 */
     each: function(fn) {
         // we could compress this by using [].forEach.call - but we wouldn't be able to support
@@ -396,59 +396,59 @@ q.toString() == '[object HTMLCollection]' || typeof q.length == 'number') {
 xui.fn.find.prototype = xui.fn;
 xui.extend = xui.fn.extend;
 /**
-	DOM
-	===
+  DOM
+  ===
 
-	Set of methods for manipulating the Document Object Model (DOM).
+  Set of methods for manipulating the Document Object Model (DOM).
 
 */
 xui.extend({
 /**
-	html
-	----
+  html
+  ----
 
-	Manipulates HTML in the DOM. Also just returns the inner HTML of elements in the collection if called with no arguments.
+  Manipulates HTML in the DOM. Also just returns the inner HTML of elements in the collection if called with no arguments.
 
-	### syntax ###
+  ### syntax ###
 
-		x$( window ).html( location, html );
+    x$( window ).html( location, html );
 
-	or this method will accept just a HTML fragment with a default behavior of inner:
+  or this method will accept just a HTML fragment with a default behavior of inner:
 
-		x$( window ).html( html );
+    x$( window ).html( html );
 
-	or you can use shorthand syntax by using the location name argument as the function name:
+  or you can use shorthand syntax by using the location name argument as the function name:
 
-		x$( window ).outer( html );
-		x$( window ).before( html );
-	
-	or you can just retrieve the inner HTML of elements in the collection with:
-	
-	    x$( document.body ).html();
+    x$( window ).outer( html );
+    x$( window ).before( html );
+  
+  or you can just retrieve the inner HTML of elements in the collection with:
+  
+      x$( document.body ).html();
 
-	### arguments ###
+  ### arguments ###
 
-	- location `String` can be one of: _inner_, _outer_, _top_, _bottom_, _remove_, _before_ or _after_.
-	- html `String` is a string of HTML markup or a `HTMLElement`.
+  - location `String` can be one of: _inner_, _outer_, _top_, _bottom_, _remove_, _before_ or _after_.
+  - html `String` is a string of HTML markup or a `HTMLElement`.
 
-	### example ###
+  ### example ###
 
-		x$('#foo').html('inner', '<strong>rock and roll</strong>');
-		x$('#foo').html('outer', '<p>lock and load</p>');
-		x$('#foo').html('top',   '<div>bangers and mash</div>');
-		x$('#foo').html('bottom','<em>mean and clean</em>');
-		x$('#foo').html('remove');
-		x$('#foo').html('before', '<p>some warmup html</p>');
-		x$('#foo').html('after',  '<p>more html!</p>');
+    x$('#foo').html('inner', '<strong>rock and roll</strong>');
+    x$('#foo').html('outer', '<p>lock and load</p>');
+    x$('#foo').html('top',   '<div>bangers and mash</div>');
+    x$('#foo').html('bottom','<em>mean and clean</em>');
+    x$('#foo').html('remove');
+    x$('#foo').html('before', '<p>some warmup html</p>');
+    x$('#foo').html('after',  '<p>more html!</p>');
 
-	or
+  or
 
-		x$('#foo').html('<p>sweet as honey</p>');
-		x$('#foo').outer('<p>free as a bird</p>');
-		x$('#foo').top('<b>top of the pops</b>');
-		x$('#foo').bottom('<span>bottom of the barrel</span>');
-		x$('#foo').before('<pre>first in line</pre>');
-		x$('#foo').after('<marquee>better late than never</marquee>');
+    x$('#foo').html('<p>sweet as honey</p>');
+    x$('#foo').outer('<p>free as a bird</p>');
+    x$('#foo').top('<b>top of the pops</b>');
+    x$('#foo').bottom('<span>bottom of the barrel</span>');
+    x$('#foo').before('<pre>first in line</pre>');
+    x$('#foo').after('<marquee>better late than never</marquee>');
 */
     html: function(location, html) {
         clean(this);
@@ -527,29 +527,29 @@ xui.extend({
     },
 
 /**
-	attr
-	----
+  attr
+  ----
 
-	Gets or sets attributes on elements. If getting, returns an array of attributes matching the xui element collection's indices.
+  Gets or sets attributes on elements. If getting, returns an array of attributes matching the xui element collection's indices.
 
-	### syntax ###
+  ### syntax ###
 
-		x$( window ).attr( attribute, value );
+    x$( window ).attr( attribute, value );
 
-	### arguments ###
+  ### arguments ###
 
-	- attribute `String` is the name of HTML attribute to get or set.
-	- value `Varies` is the value to set the attribute to. Do not use to get the value of attribute _(optional)_.
+  - attribute `String` is the name of HTML attribute to get or set.
+  - value `Varies` is the value to set the attribute to. Do not use to get the value of attribute _(optional)_.
 
-	### example ###
+  ### example ###
 
-	To get an attribute value, simply don't provide the optional second parameter:
+  To get an attribute value, simply don't provide the optional second parameter:
 
-		x$('.someClass').attr('class');
+    x$('.someClass').attr('class');
 
-	To set an attribute, use both parameters:
+  To set an attribute, use both parameters:
 
-		x$('.someClass').attr('disabled', 'disabled');
+    x$('.someClass').attr('disabled', 'disabled');
 */
     attr: function(attribute, val) {
         if (arguments.length == 2) {
@@ -617,56 +617,56 @@ function clean(collection) {
     });
 }
 /**
-	Event
-	=====
+  Event
+  =====
 
-	A good old fashioned events with new skool handling. Shortcuts exist for:
+  A good old fashioned events with new skool handling. Shortcuts exist for:
 
-	- click
-	- load
-	- touchstart
-	- touchmove
-	- touchend
-	- touchcancel
-	- gesturestart
-	- gesturechange
-	- gestureend
-	- orientationchange
-	
+  - click
+  - load
+  - touchstart
+  - touchmove
+  - touchend
+  - touchcancel
+  - gesturestart
+  - gesturechange
+  - gestureend
+  - orientationchange
+  
 */
 xui.events = {}; var cache = {};
 xui.extend({
 
 /**
-	on
-	--
+  on
+  --
 
-	Registers a callback function to a DOM event on the element collection.
+  Registers a callback function to a DOM event on the element collection.
 
-	### syntax ###
+  ### syntax ###
 
-		x$( 'button' ).on( type, fn );
+    x$( 'button' ).on( type, fn );
 
-	or
+  or
 
-		x$( 'button' ).click( fn );
+    x$( 'button' ).click( fn );
 
-	### arguments ###
+  ### arguments ###
 
-	- type `String` is the event to subscribe (e.g. _load_, _click_, _touchstart_, etc).
-	- fn `Function` is a callback function to execute when the event is fired.
+  - type `String` is the event to subscribe (e.g. _load_, _click_, _touchstart_, etc).
+  - fn `Function` is a callback function to execute when the event is fired.
 
-	### example ###
+  ### example ###
 
-		x$( 'button' ).on( 'click', function(e) {
-		    alert('hey that tickles!');
-		});
+    x$( 'button' ).on( 'click', function(e) {
+        alert('hey that tickles!');
+    });
 
-	or
+  or
 
-		x$(window).load(function(e) {
-		  x$('.save').touchstart( function(evt) { alert('tee hee!'); }).css(background:'grey');
-		});
+    x$(window).load(function(e) {
+      x$('.save').touchstart( function(evt) { alert('tee hee!'); }).css(background:'grey');
+    });
 */
     on: function(type, fn, details) {
         return this.each(function (el) {
@@ -689,48 +689,48 @@ xui.extend({
     },
 
 /**
-	un
-	--
+  un
+  --
 
-	Unregisters a specific callback, or if no specific callback is passed in, 
-	unregisters all event callbacks of a specific type.
+  Unregisters a specific callback, or if no specific callback is passed in, 
+  unregisters all event callbacks of a specific type.
 
-	### syntax ###
+  ### syntax ###
 
-	Unregister the given function, for the given type, on all button elements:
+  Unregister the given function, for the given type, on all button elements:
 
-		x$( 'button' ).un( type, fn );
+    x$( 'button' ).un( type, fn );
 
-	Unregisters all callbacks of the given type, on all button elements:
+  Unregisters all callbacks of the given type, on all button elements:
 
-		x$( 'button' ).un( type );
+    x$( 'button' ).un( type );
 
-	### arguments ###
+  ### arguments ###
 
-	- type `String` is the event to unsubscribe (e.g. _load_, _click_, _touchstart_, etc).
-	- fn `Function` is the callback function to unsubscribe _(optional)_.
+  - type `String` is the event to unsubscribe (e.g. _load_, _click_, _touchstart_, etc).
+  - fn `Function` is the callback function to unsubscribe _(optional)_.
 
-	### example ###
+  ### example ###
 
-		// First, create a click event that display an alert message
-		x$('button').on('click', function() {
-		    alert('hi!');
-		});
-		
-		// Now unsubscribe all functions that response to click on all button elements
-		x$('button').un('click');
+    // First, create a click event that display an alert message
+    x$('button').on('click', function() {
+        alert('hi!');
+    });
+    
+    // Now unsubscribe all functions that response to click on all button elements
+    x$('button').un('click');
 
-	or
+  or
 
-		var greeting = function() { alert('yo!'); };
-		
-		x$('button').on('click', greeting);
-		x$('button').on('click', function() {
-		    alert('hi!');
-		});
-		
-		// When any button is clicked, the 'hi!' message will fire, but not the 'yo!' message.
-		x$('button').un('click', greeting);
+    var greeting = function() { alert('yo!'); };
+    
+    x$('button').on('click', greeting);
+    x$('button').on('click', function() {
+        alert('hi!');
+    });
+    
+    // When any button is clicked, the 'hi!' message will fire, but not the 'yo!' message.
+    x$('button').un('click', greeting);
 */
     un: function(type, fn) {
         return this.each(function (el) {
@@ -752,25 +752,25 @@ xui.extend({
     },
 
 /**
-	fire
-	----
+  fire
+  ----
 
-	Triggers a specific event on the xui collection.
+  Triggers a specific event on the xui collection.
 
-	### syntax ###
+  ### syntax ###
 
-		x$( selector ).fire( type, data );
+    x$( selector ).fire( type, data );
 
-	### arguments ###
+  ### arguments ###
 
-	- type `String` is the event to fire (e.g. _load_, _click_, _touchstart_, etc).
-	- data `Object` is a JSON object to use as the event's `data` property.
+  - type `String` is the event to fire (e.g. _load_, _click_, _touchstart_, etc).
+  - data `Object` is a JSON object to use as the event's `data` property.
 
-	### example ###
+  ### example ###
 
-		x$('button#reset').fire('click', { died:true });
-		
-		x$('.target').fire('touchstart');
+    x$('button#reset').fire('click', { died:true });
+    
+    x$('.target').fire('touchstart');
 */
     fire: function (type, data) {
         return this.each(function (el) {
@@ -783,8 +783,8 @@ xui.extend({
             event.eventName = type;
           
             el.dispatchEvent(event);
-  	    });
-  	}
+        });
+    }
 });
 
 "click load submit touchstart touchmove touchend touchcancel gesturestart gesturechange gestureend orientationchange".split(' ').forEach(function (event) {
@@ -819,20 +819,20 @@ xui.touch = (function () {
 })();
 
 /**
-	ready
-	----
+  ready
+  ----
 
   Event handler for when the DOM is ready. Thank you [domready](http://www.github.com/ded/domready)!
 
-	### syntax ###
+  ### syntax ###
 
-		x$.ready(handler);
+    x$.ready(handler);
 
-	### arguments ###
+  ### arguments ###
 
-	- handler `Function` event handler to be attached to the "dom is ready" event.
+  - handler `Function` event handler to be attached to the "dom is ready" event.
 
-	### example ###
+  ### example ###
 
     x$.ready(function() {
       alert('mah doms are ready');
@@ -875,61 +875,61 @@ function _createResponder(element, eventName, handler) {
     return responder;
 }
 /**
-	Fx
-	==
+  Fx
+  ==
 
-	Animations, transforms, and transitions for getting the most out of hardware accelerated CSS.
+  Animations, transforms, and transitions for getting the most out of hardware accelerated CSS.
 
 */
 
 xui.extend({
 
 /**
-	Tween
-	-----
+  Tween
+  -----
 
-	Transforms a CSS property's value.
+  Transforms a CSS property's value.
 
-	### syntax ###
+  ### syntax ###
 
-		x$( selector ).tween( properties, callback );
+    x$( selector ).tween( properties, callback );
 
-	### arguments ###
+  ### arguments ###
 
-	- properties `Object` or `Array` of CSS properties to tween.
-	    - `Object` is a JSON object that defines the CSS properties.
-	    - `Array` is a `Object` set that is tweened sequentially.
-	- callback `Function` to be called when the animation is complete. _(optional)_.
+  - properties `Object` or `Array` of CSS properties to tween.
+      - `Object` is a JSON object that defines the CSS properties.
+      - `Array` is a `Object` set that is tweened sequentially.
+  - callback `Function` to be called when the animation is complete. _(optional)_.
 
-	### properties ###
+  ### properties ###
 
-	A property can be any CSS style, referenced by the JavaScript notation.
+  A property can be any CSS style, referenced by the JavaScript notation.
 
-	A property can also be an option from [emile.js](https://github.com/madrobby/emile):
+  A property can also be an option from [emile.js](https://github.com/madrobby/emile):
 
-	- duration `Number` of the animation in milliseconds.
-	- after `Function` is called after the animation is finished.
-	- easing `Function` allows for the overriding of the built-in animation function.
+  - duration `Number` of the animation in milliseconds.
+  - after `Function` is called after the animation is finished.
+  - easing `Function` allows for the overriding of the built-in animation function.
 
-			// Receives one argument `pos` that indicates position
-			// in time between animation's start and end.
-			function(pos) {
-			    // return the new position
-			    return (-Math.cos(pos * Math.PI) / 2) + 0.5;
-			}
+      // Receives one argument `pos` that indicates position
+      // in time between animation's start and end.
+      function(pos) {
+          // return the new position
+          return (-Math.cos(pos * Math.PI) / 2) + 0.5;
+      }
 
-	### example ###
+  ### example ###
 
-		// one JSON object
-		x$('#box').tween({ left:'100px', backgroundColor:'blue' });
-		x$('#box').tween({ left:'100px', backgroundColor:'blue' }, function() {
-		    alert('done!');
-		});
-		
-		// array of two JSON objects
-		x$('#box').tween([{left:'100px', backgroundColor:'green', duration:.2 }, { right:'100px' }]); 
+    // one JSON object
+    x$('#box').tween({ left:'100px', backgroundColor:'blue' });
+    x$('#box').tween({ left:'100px', backgroundColor:'blue' }, function() {
+        alert('done!');
+    });
+    
+    // array of two JSON objects
+    x$('#box').tween([{left:'100px', backgroundColor:'green', duration:.2 }, { right:'100px' }]); 
 */
-	tween: function( props, callback ) {
+  tween: function( props, callback ) {
 
     // creates an options obj for emile
     var emileOpts = function(o) {
@@ -959,27 +959,27 @@ xui.extend({
 
     // queued animations
     /* wtf is this?
-		if (props instanceof Array) {
-		    // animate each passing the next to the last callback to enqueue
-		    props.forEach(function(a){
-		      
-		    });
-		}
+    if (props instanceof Array) {
+        // animate each passing the next to the last callback to enqueue
+        props.forEach(function(a){
+          
+        });
+    }
     */
     // this branch means we're dealing with a single tween
     var opts = emileOpts(props);
     var prop = serialize(props);
-		
-		return this.each(function(e){
-			emile(e, prop, opts, callback);
-		});
-	}
+    
+    return this.each(function(e){
+      emile(e, prop, opts, callback);
+    });
+  }
 });
 /**
-	Style
-	=====
+  Style
+  =====
 
-	Everything related to appearance. Usually, this is CSS.
+  Everything related to appearance. Usually, this is CSS.
 
 */
 function hasClass(el, className) {
@@ -996,24 +996,24 @@ function trim(text) {
 
 xui.extend({
 /**
-	setStyle
-	--------
+  setStyle
+  --------
 
-	Sets the value of a single CSS property.
+  Sets the value of a single CSS property.
 
-	### syntax ###
+  ### syntax ###
 
-		x$( selector ).setStyle( property, value );
+    x$( selector ).setStyle( property, value );
 
-	### arguments ###
+  ### arguments ###
 
-	- property `String` is the name of the property to modify.
-	- value `String` is the new value of the property.
+  - property `String` is the name of the property to modify.
+  - value `String` is the new value of the property.
 
-	### example ###
+  ### example ###
 
-		x$('.flash').setStyle('color', '#000');
-		x$('.button').setStyle('backgroundColor', '#EFEFEF');
+    x$('.flash').setStyle('color', '#000');
+    x$('.button').setStyle('backgroundColor', '#EFEFEF');
 */
     setStyle: function(prop, val) {
         prop = domstyle(prop);
@@ -1023,34 +1023,34 @@ xui.extend({
     },
 
 /**
-	getStyle
-	--------
+  getStyle
+  --------
 
-	Returns the value of a single CSS property. Can also invoke a callback to perform more specific processing tasks related to the property value.
-	Please note that the return type is always an Array of strings. Each string corresponds to the CSS property value for the element with the same index in the xui collection.
+  Returns the value of a single CSS property. Can also invoke a callback to perform more specific processing tasks related to the property value.
+  Please note that the return type is always an Array of strings. Each string corresponds to the CSS property value for the element with the same index in the xui collection.
 
-	### syntax ###
+  ### syntax ###
 
-		x$( selector ).getStyle( property, callback );
+    x$( selector ).getStyle( property, callback );
 
-	### arguments ###
+  ### arguments ###
 
-	- property `String` is the name of the CSS property to get.
-	- callback `Function` is called on each element in the collection and passed the property _(optional)_.
+  - property `String` is the name of the CSS property to get.
+  - callback `Function` is called on each element in the collection and passed the property _(optional)_.
 
-	### example ###
+  ### example ###
         <ul id="nav">
             <li class="trunk" style="font-size:12px;background-color:blue;">hi</li>
             <li style="font-size:14px;">there</li>
         </ul>
         
-		x$('ul#nav li.trunk').getStyle('font-size'); // returns ['12px']
-		x$('ul#nav li.trunk').getStyle('fontSize'); // returns ['12px']
-		x$('ul#nav li').getStyle('font-size'); // returns ['12px', '14px']
-		
-		x$('ul#nav li.trunk').getStyle('backgroundColor', function(prop) {
-		    alert(prop); // alerts 'blue' 
-		});
+    x$('ul#nav li.trunk').getStyle('font-size'); // returns ['12px']
+    x$('ul#nav li.trunk').getStyle('fontSize'); // returns ['12px']
+    x$('ul#nav li').getStyle('font-size'); // returns ['12px', '14px']
+    
+    x$('ul#nav li.trunk').getStyle('backgroundColor', function(prop) {
+        alert(prop); // alerts 'blue' 
+    });
 */
     getStyle: function(prop, callback) {
         // shortcut getComputedStyle function
@@ -1061,29 +1061,29 @@ xui.extend({
             return document.defaultView.getComputedStyle(el, "").getPropertyValue(cssstyle(p));
         }
         if (callback === undefined) {
-        	var styles = [];
+          var styles = [];
           this.each(function(el) {styles.push(s(el, prop))});
           return styles;
         } else return this.each(function(el) { callback(s(el, prop)); });
     },
 
 /**
-	addClass
-	--------
+  addClass
+  --------
 
-	Adds a class to all of the elements in the collection.
+  Adds a class to all of the elements in the collection.
 
-	### syntax ###
+  ### syntax ###
 
-		x$( selector ).addClass( className );
+    x$( selector ).addClass( className );
 
-	### arguments ###
+  ### arguments ###
 
-	- className `String` is the name of the CSS class to add.
+  - className `String` is the name of the CSS class to add.
 
-	### example ###
+  ### example ###
 
-		x$('.foo').addClass('awesome');
+    x$('.foo').addClass('awesome');
 */
     addClass: function(className) {
         var cs = className.split(' ');
@@ -1097,41 +1097,41 @@ xui.extend({
     },
 
 /**
-	hasClass
-	--------
+  hasClass
+  --------
 
-	Checks if the class is on _all_ elements in the xui collection.
+  Checks if the class is on _all_ elements in the xui collection.
 
-	### syntax ###
+  ### syntax ###
 
-		x$( selector ).hasClass( className, fn );
+    x$( selector ).hasClass( className, fn );
 
-	### arguments ###
+  ### arguments ###
 
-	- className `String` is the name of the CSS class to find.
-	- fn `Function` is a called for each element found and passed the element _(optional)_.
+  - className `String` is the name of the CSS class to find.
+  - fn `Function` is a called for each element found and passed the element _(optional)_.
 
-			// `element` is the HTMLElement that has the class
-			function(element) {
-			    console.log(element);
-			}
+      // `element` is the HTMLElement that has the class
+      function(element) {
+          console.log(element);
+      }
 
-	### example ###
+  ### example ###
         <div id="foo" class="foo awesome"></div>
         <div class="foo awesome"></div>
         <div class="foo"></div>
         
-		// returns true
-		x$('#foo').hasClass('awesome');
-		
-		// returns false (not all elements with class 'foo' have class 'awesome'),
-		// but the callback gets invoked with the elements that did match the 'awesome' class
-		x$('.foo').hasClass('awesome', function(element) {
-		    console.log('Hey, I found: ' + element + ' with class "awesome"');
-		});
-		
-		// returns true (all DIV elements have the 'foo' class)
-		x$('div').hasClass('foo');
+    // returns true
+    x$('#foo').hasClass('awesome');
+    
+    // returns false (not all elements with class 'foo' have class 'awesome'),
+    // but the callback gets invoked with the elements that did match the 'awesome' class
+    x$('.foo').hasClass('awesome', function(element) {
+        console.log('Hey, I found: ' + element + ' with class "awesome"');
+    });
+    
+    // returns true (all DIV elements have the 'foo' class)
+    x$('div').hasClass('foo');
 */
     hasClass: function(className, callback) {
         var self = this,
@@ -1150,22 +1150,22 @@ xui.extend({
     },
 
 /**
-	removeClass
-	-----------
+  removeClass
+  -----------
 
-	Removes the specified class from all elements in the collection. If no class is specified, removes all classes from the collection.
+  Removes the specified class from all elements in the collection. If no class is specified, removes all classes from the collection.
 
-	### syntax ###
+  ### syntax ###
 
-		x$( selector ).removeClass( className );
+    x$( selector ).removeClass( className );
 
-	### arguments ###
+  ### arguments ###
 
-	- className `String` is the name of the CSS class to remove. If not specified, then removes all classes from the matched elements. _(optional)_
+  - className `String` is the name of the CSS class to remove. If not specified, then removes all classes from the matched elements. _(optional)_
 
-	### example ###
+  ### example ###
 
-		x$('.foo').removeClass('awesome');
+    x$('.foo').removeClass('awesome');
 */
     removeClass: function(className) {
         if (className === undefined) this.each(function(el) { el.className = ''; });
@@ -1181,23 +1181,23 @@ xui.extend({
     },
 
 /**
-	toggleClass
-	-----------
+  toggleClass
+  -----------
 
-	Removes the specified class if it exists on the elements in the xui collection, otherwise adds it. 
+  Removes the specified class if it exists on the elements in the xui collection, otherwise adds it. 
 
-	### syntax ###
+  ### syntax ###
 
-		x$( selector ).toggleClass( className );
+    x$( selector ).toggleClass( className );
 
-	### arguments ###
+  ### arguments ###
 
-	- className `String` is the name of the CSS class to toggle.
+  - className `String` is the name of the CSS class to toggle.
 
-	### example ###
+  ### example ###
         <div class="foo awesome"></div>
         
-		x$('.foo').toggleClass('awesome'); // div above loses its awesome class.
+    x$('.foo').toggleClass('awesome'); // div above loses its awesome class.
 */
     toggleClass: function(className) {
         var cs = className.split(' ');
@@ -1210,22 +1210,22 @@ xui.extend({
     },
     
 /**
-	css
-	---
+  css
+  ---
 
-	Set multiple CSS properties at once.
+  Set multiple CSS properties at once.
 
-	### syntax ###
+  ### syntax ###
 
-		x$( selector ).css( properties );
+    x$( selector ).css( properties );
 
-	### arguments ###
+  ### arguments ###
 
-	- properties `Object` is a JSON object that defines the property name/value pairs to set.
+  - properties `Object` is a JSON object that defines the property name/value pairs to set.
 
-	### example ###
+  ### example ###
 
-		x$('.foo').css({ backgroundColor:'blue', color:'white', border:'2px solid red' });
+    x$('.foo').css({ backgroundColor:'blue', color:'white', border:'2px solid red' });
 */
     css: function(o) {
         for (var prop in o) {
@@ -1251,92 +1251,92 @@ var reClassNameCache = {},
         return re;
     };
 /**
-	XHR
-	===
+  XHR
+  ===
 
-	Everything related to remote network connections.
+  Everything related to remote network connections.
 
  */
-xui.extend({	
+xui.extend({  
 /**
-	xhr
-	---
+  xhr
+  ---
 
-	The classic `XMLHttpRequest` sometimes also known as the Greek hero: _Ajax_. Not to be confused with _AJAX_ the cleaning agent.
+  The classic `XMLHttpRequest` sometimes also known as the Greek hero: _Ajax_. Not to be confused with _AJAX_ the cleaning agent.
 
-	### detail ###
+  ### detail ###
 
-	This method has a few new tricks.
+  This method has a few new tricks.
 
-	It is always invoked on an element collection and uses the behaviour of `html`.
+  It is always invoked on an element collection and uses the behaviour of `html`.
 
-	If there is no callback, then the `responseText` will be inserted into the elements in the collection.
+  If there is no callback, then the `responseText` will be inserted into the elements in the collection.
 
-	### syntax ###
+  ### syntax ###
 
-		x$( selector ).xhr( location, url, options )
+    x$( selector ).xhr( location, url, options )
 
-	or accept a url with a default behavior of inner:
+  or accept a url with a default behavior of inner:
 
-		x$( selector ).xhr( url, options );
+    x$( selector ).xhr( url, options );
 
-	or accept a url with a callback:
-	
-		x$( selector ).xhr( url, fn );
+  or accept a url with a callback:
+  
+    x$( selector ).xhr( url, fn );
 
-	### arguments ###
+  ### arguments ###
 
-	- location `String` is the location to insert the `responseText`. See `html` for values.
-	- url `String` is where to send the request.
-	- fn `Function` is called on status 200 (i.e. success callback).
-	- options `Object` is a JSON object with one or more of the following:
-		- method `String` can be _get_, _put_, _delete_, _post_. Default is _get_.
-		- async `Boolean` enables an asynchronous request. Defaults to _false_.
-		- data `String` is a url encoded string of parameters to send.
+  - location `String` is the location to insert the `responseText`. See `html` for values.
+  - url `String` is where to send the request.
+  - fn `Function` is called on status 200 (i.e. success callback).
+  - options `Object` is a JSON object with one or more of the following:
+    - method `String` can be _get_, _put_, _delete_, _post_. Default is _get_.
+    - async `Boolean` enables an asynchronous request. Defaults to _false_.
+    - data `String` is a url encoded string of parameters to send.
                 - error `Function` is called on error or status that is not 200. (i.e. failure callback).
-		- callback `Function` is called on status 200 (i.e. success callback).
+    - callback `Function` is called on status 200 (i.e. success callback).
     - headers `Object` is a JSON object with key:value pairs that get set in the request's header set.
 
-	### response ###
+  ### response ###
 
-	- The response is available to the callback function as `this`.
-	- The response is not passed into the callback.
-	- `this.reponseText` will have the resulting data from the file.
+  - The response is available to the callback function as `this`.
+  - The response is not passed into the callback.
+  - `this.reponseText` will have the resulting data from the file.
 
-	### example ###
+  ### example ###
 
-		x$('#status').xhr('inner', '/status.html');
-		x$('#status').xhr('outer', '/status.html');
-		x$('#status').xhr('top',   '/status.html');
-		x$('#status').xhr('bottom','/status.html');
-		x$('#status').xhr('before','/status.html');
-		x$('#status').xhr('after', '/status.html');
+    x$('#status').xhr('inner', '/status.html');
+    x$('#status').xhr('outer', '/status.html');
+    x$('#status').xhr('top',   '/status.html');
+    x$('#status').xhr('bottom','/status.html');
+    x$('#status').xhr('before','/status.html');
+    x$('#status').xhr('after', '/status.html');
 
-	or
+  or
 
-		// same as using 'inner'
-		x$('#status').xhr('/status.html');
+    // same as using 'inner'
+    x$('#status').xhr('/status.html');
 
-		// define a callback, enable async execution and add a request header
-		x$('#left-panel').xhr('/panel', {
-		    async: true,
-		    callback: function() {
-		        alert("The response is " + this.responseText);
-		    },
+    // define a callback, enable async execution and add a request header
+    x$('#left-panel').xhr('/panel', {
+        async: true,
+        callback: function() {
+            alert("The response is " + this.responseText);
+        },
         headers:{
             'Mobile':'true'
         }
-		});
+    });
 
-		// define a callback with the shorthand syntax
-		x$('#left-panel').xhr('/panel', function() {
-		    alert("The response is " + this.responseText);
-		});
+    // define a callback with the shorthand syntax
+    x$('#left-panel').xhr('/panel', function() {
+        alert("The response is " + this.responseText);
+    });
 */
     xhr:function(location, url, options) {
 
       // this is to keep support for the old syntax (easy as that)
-		if (!/^(inner|outer|top|bottom|before|after)$/.test(location)) {
+    if (!/^(inner|outer|top|bottom|before|after)$/.test(location)) {
             options = url;
             url = location;
             location = 'inner';
@@ -1489,7 +1489,45 @@ xui.extend({
 }(this, document);
 })();
 
-if(typeof(Ur) == 'undefined') {
+xui.extend({
+	/**
+	 * Adds more DOM nodes to the existing element list.
+	 */
+	add: function(q) {
+	  [].push.apply(this, slice(xui(q)));
+	  return this.set(this.reduce());
+	},
+
+	/**
+	 * Pops the last selector from XUI
+	 */
+	end: function () {	
+		return this.set(this.cache || []);	 	
+	},
+  /**
+   * Sets the `display` CSS property to `block`.
+   */
+  show:function() {
+    return this.setStyle('display','block');
+  },
+  /**
+   * Sets the `display` CSS property to `none`.
+   */
+  hide:function() {
+    return this.setStyle('display','none');
+  }
+});
+
+xui.extend({
+   fade:function(to, callback) {
+       var target = 0;
+       if (typeof to == 'string' && to == 'in') target = 1;
+       else if (typeof to == 'number') target = to;
+       return this.tween({opacity:target,duration:.2}, callback);
+   } 
+});
+
+if(typeof(Ur) == "undefined") {
   Ur = {
     QuickLoaders: {},
     WindowLoaders: {},
@@ -1504,7 +1542,7 @@ if(typeof(Ur) == 'undefined') {
         // These widgets _cant_ be initialized till page load
         Ur.initialize({type: "load"}, fragment);
       } else {
-        window.addEventListener('load', function(e) { Ur.initialize(e, fragment)}, false);
+        window.addEventListener("load", function(e) { Ur.initialize(e, fragment)}, false);
       }
     },
     initialize: function(event, fragment) {
@@ -1523,6 +1561,12 @@ if(typeof(Ur) == 'undefined') {
         Ur._onLoad();
       }
     },
+    error: function(msg) {
+      console.error("Uranium: " + msg);
+    },
+    warn: function(msg) {
+      console.warn("Uranium: " + msg);
+    },
     // TODO: Make private
     _onLoad: function() {
       //iterate through the callbacks
@@ -1539,8 +1583,8 @@ if(typeof(Ur) == 'undefined') {
 
 // This event is compatible with FF/Webkit
 
-window.addEventListener('load', Ur.initialize, false);
-window.addEventListener('DOMContentLoaded', Ur.initialize, false);
+window.addEventListener("load", Ur.initialize, false);
+window.addEventListener("DOMContentLoaded", Ur.initialize, false);
 
 // Do this? OR just initialize as widgets are defined (and have uranium included at the bottom --- but that has limitations in inline JS using all of our x$() mixins) --> I think thats reason enough to try this for now
 
@@ -1564,50 +1608,40 @@ var mixins = {
     i = 0,
     that = arguments[1];
 
-    if (typeof fn == 'function') {
+    if (typeof fn == "function") {
       for (; i < len; i++) {
         fn.call(that, stuff[i], i, stuff);
       }
     }
   },
   offset: function(elm) {
-    if(typeof(elm == "undefined")) {
+    if (elm == undefined)
       elm = this[0];
-    }
-
-    cumulative_top = 0;
-    cumulative_left = 0;
-    while(elm.offsetParent) {
+    
+    var cumulative_top = 0, cumulative_left = 0;
+    while (elm.offsetParent) {
       cumulative_top += elm.offsetTop;
       cumulative_left += elm.offsetLeft;
       elm = elm.offsetParent;
     }
-    return {left: cumulative_left, top:cumulative_top};
+    return {left: cumulative_left, top: cumulative_top};
   },
   
   // TODO: Make private:
-  find_next_ancestor: function(elem, type) {
+  findNextAncestor: function(elem, type) {
     //check to make sure there's still a parent:
     if (elem.parentNode != window.document) {
-      return x$().find_set_ancestor(elem.parentNode, type);
+      return x$().findSetAncestor(elem.parentNode, type);
     } else {
       return null;
     }
   },
 
-  find_set_ancestor: function(elem, type) {
+  findSetAncestor: function(elem, type) {
     var set_name = x$(elem).attr("data-ur-set")[0];
-    if (set_name !== undefined) {
-      if(type == undefined) {
-        return elem;
-      } else if (set_name == type) {
-        return elem;
-      } else {
-        return x$().find_next_ancestor(elem, type);
-      }
-    } else {
-      return x$().find_next_ancestor(elem, type);
-    }
+    if (set_name !== undefined && (type == undefined || set_name == type))
+      return elem;
+    return x$().findNextAncestor(elem, type);
   },
 
   get_unique_uranium_id: (function() {
@@ -1618,7 +1652,7 @@ var mixins = {
     }
   })(),
 
-  find_elements: function(type, component_constructors) {
+  findElements: function(type, component_constructors) {
     var groups = {};
 
     this.each(
@@ -1630,77 +1664,76 @@ var mixins = {
   },
   // TODO: Make helper_find() private since its just a helper function
   helper_find: function(fragment, type, component_constructors, groups) {
-    var all_elements = x$(fragment).find('*[data-ur-' + type + '-component]');
+    var all_elements = x$(fragment).find("*[data-ur-" + type + "-component]");
 
-    all_elements.each(
-      function() {
+    all_elements.each(function() {
 
-        var valid_component = true;
+      var valid_component = true;
 
-        ///////// Resolve this component to its set ///////////
+      ///////// Resolve this component to its set ///////////
 
-        // Check if this has the data-ur-id attribute
-        var my_set_id = x$(this).attr("data-ur-id")[0];
+      // Check if this has the data-ur-id attribute
+      var my_set_id = x$(this).attr("data-ur-id")[0];
 
-        if (my_set_id !== undefined) {
-          if ( groups[my_set_id] === undefined) {
-            groups[my_set_id] = {};
-          }          
-        } else {
-          //Find any set ancestors
-          var my_ancestor = x$().find_set_ancestor(this, type);
+      if (my_set_id !== undefined) {
+        if ( groups[my_set_id] === undefined) {
+          groups[my_set_id] = {};
+        }
+      }
+      else {
+        //Find any set ancestors
+        var my_ancestor = x$().findSetAncestor(this, type);
 
-          var widget_disabled = x$(my_ancestor).attr("data-ur-state")[0];
-          if(widget_disabled === "disabled" && Ur.loaded == false) {
-            return;
-          }
-
-          if (my_ancestor !== null) {
-            // Check if the set has an id ... if not, 'set' it up -- HA
-
-            my_set_id = x$(my_ancestor).attr("data-ur-id")[0];
-
-            if (my_set_id === undefined) {
-              //generate ID
-              my_set_id = x$().get_unique_uranium_id();
-              x$(my_ancestor).attr("data-ur-id", my_set_id);
-            }
-
-            if (groups[my_set_id] === undefined) {
-              //setup group
-              groups[my_set_id] = {};
-            }
-            
-            groups[my_set_id]["set"] = my_ancestor;
-
-          } else {
-            // we're screwed ... report an error
-            console.log("Uranium Error: Couldn't find associated ur-set for component:",this);
-            valid_component = false;
-          }
+        var widget_disabled = x$(my_ancestor).attr("data-ur-state")[0];
+        if (widget_disabled === "disabled" && Ur.loaded == false) {
+          return;
         }
 
-        //////////// Add this component to its set /////////////
+        if (my_ancestor !== null) {
+          // Check if the set has an id ... if not, 'set' it up -- HA
 
-        var component_type = x$(this).attr("data-ur-" + type + "-component");
+          my_set_id = x$(my_ancestor).attr("data-ur-id")[0];
 
-        if (component_type === undefined) {
+          if (my_set_id === undefined) {
+            //generate ID
+            my_set_id = x$().get_unique_uranium_id();
+            x$(my_ancestor).attr("data-ur-id", my_set_id);
+          }
+
+          if (groups[my_set_id] === undefined) {
+            //setup group
+            groups[my_set_id] = {};
+          }
+          
+          groups[my_set_id]["set"] = my_ancestor;
+
+        }
+        else {
+          // we're screwed ... report an error
+          Ur.error("couldn't find associated ur-set for component:");
+          console.log(this);
           valid_component = false;
         }
-
-        if (valid_component) {
-	  // This is widget specific behavior
-	  // -- For toggler, it makes sense for content to be multiple things
-	  // -- For select-lists, it doesn't
-	  if (component_constructors !== undefined && component_constructors[component_type] !== undefined) {
-	    component_constructors[component_type](groups[my_set_id], this, component_type);
-	  } else {
-            groups[my_set_id][component_type] = this;
-          }
-        }
-
       }
-    );
+
+      //////////// Add this component to its set /////////////
+
+      var component_type = x$(this).attr("data-ur-" + type + "-component");
+
+      if (component_type === undefined) {
+        valid_component = false;
+      }
+
+      if (valid_component) {
+        // This is widget specific behavior
+        // -- For toggler, it makes sense for content to be multiple things
+        // -- For select-lists, it doesn't
+        if (component_constructors !== undefined && component_constructors[component_type] !== undefined)
+          component_constructors[component_type](groups[my_set_id], this, component_type);
+        else
+          groups[my_set_id][component_type] = this;
+      }
+    });
 
     return groups;
   }
@@ -1710,72 +1743,63 @@ xui.extend(mixins);
 
 /* Carousel  *
  * * * * * * *
- * The carousel is a widget to allow for horizontally scrolling (with touch or  
- * buttons) between a set of items. 
- * 
- * The only assumption is about the items' style -- they must be (float: left) 
- * and (display:inline-block) so that the real width can be accurately totalled.
- * 
+ * The carousel is a widget to allow for horizontally scrolling
+ * (with touch or buttons) between a set of items.
+ *
+ * The only assumption is about the items' style -- they must be
+ * float: left; so that the real width can be accurately totalled.
  */
 
-Ur.WindowLoaders['carousel'] = (function(){
+Ur.WindowLoaders["carousel"] = (function() {
+
   function Carousel(components) {
     this.container = components["view_container"];
     this.items = components["scroll_container"];
     if (this.items.length == 0) {
-      console.log("Error -- carousel missing item components");
+      Ur.error("carousel missing item components");
       return false;
     }
 
     // Optionally:
-    this.button = (components["button"] === undefined) ? {} : components["button"];
-    this.count = components["count"]; 
-    this.multi = x$(components["view_container"]).attr("data-ur-type")[0] == "multi";
-    this.vertical_scroll = (x$(components["set"]).attr("data-ur-vertical-scroll")[0] === "enabled");
+    this.button = components["button"] === undefined ? {} : components["button"];
+    this.count = components["count"];
+    this.dots = components["dots"];
 
     this.initialize();
-    this.onSlideCallbacks = [];
   }
 
   // Private/Helper methods
 
-  function get_real_width(elem) {
-    elem = x$(elem);
-    var total = 0;
-    var styles = ["width", "padding-left", "padding-right", "margin-left", "margin-right", "border-left-width", "border-right-width"];
-
-    x$().iterate(
-      styles,
-      function(style) {
-        total += parseInt(elem.getStyle(style));
-      }
-    );
-
-    return total;
+  function sign(num) {
+    return num < 0 ? -1 : 1;
   }
 
-  function sign(v) 
-  { 
-    return (v >= 0) ? 1 : -1;
+  function zeroCeil(num) {
+    return num <= 0 ? Math.floor(num) : Math.ceil(num);
   }
 
-  function zero_ceil(num) {
-    return (num <= 0) ? Math.floor(num) : Math.ceil(num);
+  function zeroFloor(num) {
+    return num >= 0 ? Math.floor(num) : Math.ceil(num);
   }
 
-  function zero_floor(num)
-  {
-    return (num >= 0) ? Math.floor(num) : Math.ceil(num);
-  }
-
-  function stifle(e)
-  {
+  function stifle(e) {
     e.preventDefault();
     e.stopPropagation();
   }
 
-  function translate(obj, x) {
-    obj.style.webkitTransform = "translate3d(" + x + "px, 0px, 0px)";
+  function getTranslateX(obj) {
+    var style = getComputedStyle(obj);
+    var transform = style["webkitTransform"] || style["MozTransform"] || style["oTransform"] || style["transform"];
+    if (transform != "none") {
+      if (window.WebKitCSSMatrix)
+        return new WebKitCSSMatrix(transform).m41;
+      else
+        return parseInt(transform.split(",")[4]);
+    }
+    else {
+      Ur.error("no transform found");
+      return 0;
+    }
   }
 
   //// Public Methods ////
@@ -1784,473 +1808,719 @@ Ur.WindowLoaders['carousel'] = (function(){
     initialize: function() {
       // TODO:
       // add an internal event handler to handle all events on the container:
-      // x$(this.container).on("event",this.handleEvent);
+      // x$(this.container).on("event", this.handleEvent);
 
-      var touch_enabled = x$(this.container).attr("data-ur-touch")[0];
-      touch_enabled = (touch_enabled === undefined) ? true : (touch_enabled == "enabled" ? true : false);
-      x$(this.container).attr("data-ur-touch", touch_enabled ? "enabled" : "disabled");      
+      this.flag = {click: false, increment: false, loop: false, lock: null, timeoutId: null, touched: false};
+      this.options = {
+        autoscroll: true,
+        autoscrollDelay: 5000,
+        autoscrollForward: true,
+        center: true,
+        cloneLength: 1,
+        fill: 0,
+        infinite: true,
+        transform3d: true,
+        touch: true,
+        verticalScroll: true
+      };
 
-      if (touch_enabled) {
-        if(xui.touch) {
-          this.touch = true;
-          x$(this.items).on("touchstart",(function(obj){return function(e){obj.start_swipe(e)};})(this));
-          x$(this.items).on("touchmove",(function(obj){return function(e){obj.continue_swipe(e)};})(this));
-          x$(this.items).on("touchend",(function(obj){return function(e){obj.finish_swipe(e)};})(this));
-        } else {
-          this.touch = false;
-          x$(this.items).on("mousedown",(function(obj){return function(e){obj.start_swipe(e)};})(this));
-          x$(this.items).on("mousemove",(function(obj){return function(e){obj.continue_swipe(e)};})(this));
-          x$(this.items).on("mouseup",(function(obj){return function(e){obj.finish_swipe(e)};})(this));
+      this.readAttributes();
+
+      this.preCoords = {x: 0, y: 0};
+
+      this.itemIndex = 0;
+      this.magazineCount = 1;
+
+      if (this.options.infinite) {
+        var items = x$(this.items).find("[data-ur-carousel-component='item']");
+        this.realItemCount = items.length;
+        this.itemIndex = this.options.cloneLength;
+        this.clones = []; // probaby useless
+        for (var i = 0; i < this.options.cloneLength; i++) {
+          var clone = items[i].cloneNode(true);
+          this.clones.push(clone);
+          x$(clone).attr("data-ur-clone", i).attr("data-ur-state", "inactive");
+          items[items.length - 1].parentNode.appendChild(clone);
+        }
+
+        for (var i = items.length - this.options.cloneLength; i < items.length; i++) {
+          var clone = items[i].cloneNode(true);
+          this.clones.push(clone);
+          x$(clone).attr("data-ur-clone", i).attr("data-ur-state", "inactive");
+          items[0].parentNode.insertBefore(clone, items[0]);
         }
       }
 
-      x$(this.button["prev"]).on("click", (function(obj){return function(){(obj.item_index == 0) ? obj.jump_to_index(obj.last_index) : obj.move_to(obj.magazine_count)};})(this));
-      x$(this.button["next"]).on("click", (function(obj){return function(){(obj.item_index == obj.last_index) ? obj.jump_to_index(0) : obj.move_to(-obj.magazine_count)};})(this));
+      this.adjustSpacing();
 
-      this.item_index = 0;
-      this.magazine_count = 1;
-      this.adjust_spacing();
-      this.update_index(0);
-      
+      if (!this.options.infinite)
+        this.realItemCount = this.itemCount;
+
+      this.insertDots();
+
+      this.updateIndex(this.options.infinite ? this.options.cloneLength : 0);
+
+      this.initSwipeHandlers(this.items);
+
+      x$(this.button["prev"]).click(function(obj){return function(){obj.moveTo(obj.magazineCount);}}(this));
+      x$(this.button["next"]).click(function(obj){return function(){obj.moveTo(-obj.magazineCount);}}(this));
+
       // Expose this function globally: (this will work on webkit / FF)
-      this.jump_to_index = (function(obj) { return function(idx) { obj.__proto__.move_to_index.call(obj, idx); };})(this);
+      this.jumpToIndex = (function(obj) { return function(idx) { obj.__proto__.moveToIndex.call(obj, idx); };})(this);
 
-      window.setInterval(function(obj){return function(){obj.resize();}}(this),1000);
+      x$(window).orientationchange(function(obj){return function(){obj.resize();}}(this));
+      // orientationchange isn't supported on some androids
+      x$(window).on("resize", function(obj) { return function() {
+        obj.resize();
+        setTimeout(function(){obj.resize()}, 100);
+      }}(this));
+      //window.setInterval(function(obj){return function(){obj.resize();}}(this),1000);
 
-      this.flag = {touched: false, intervalId: null};
-
+      this.autoscrollStart();
     },
 
-    get_transform: function(obj) {
-      var transform = window.getComputedStyle(obj).webkitTransform;
-      if (transform != "none") {
-        transform = new WebKitCSSMatrix(transform);
-        return transform.m41;
-      } else {
-        console.log("no webkit transform");
-        return 0;
+    readAttributes: function() {
+      var $container = x$(this.container);
+
+      // translate3d is disabled on Android by default because it often causes problems
+      // however, on some pages translate3d will work fine so the data-ur-android3d
+      // attribute can be set to "enabled" to use translate3d since it can be smoother
+      // on some Android devices
+
+      var oldAndroid = /Android [12]/.test(navigator.userAgent);
+      if (oldAndroid && $container.attr("data-ur-android3d")[0] != "enabled")
+        this.options.transform3d = false;
+
+      this.options.verticalScroll = $container.attr("data-ur-vertical-scroll")[0] != "disabled";
+      $container.attr("data-ur-vertical-scroll", this.options.verticalScroll ? "enabled" : "disabled");
+
+      this.options.touch = $container.attr("data-ur-touch")[0] != "disabled";
+      $container.attr("data-ur-touch", this.options.touch ? "enabled" : "disabled");
+
+      this.options.infinite = $container.attr("data-ur-infinite")[0] != "disabled";
+      $container.attr("data-ur-infinite", this.options.infinite ? "enabled" : "disabled");
+
+      this.options.center = $container.attr("data-ur-center")[0] == "enabled";
+      $container.attr("data-ur-center", this.options.center ? "enabled" : "disabled");
+
+      var fill = parseInt($container.attr("data-ur-fill"));
+      if (fill > 0)
+        this.options.fill = fill;
+      $container.attr("data-ur-fill", this.options.fill);
+
+      var cloneLength = parseInt($container.attr("data-ur-clones"));
+      if (isNaN(cloneLength) || cloneLength < fill)
+        cloneLength = fill;
+      if (cloneLength > 0)
+        this.options.cloneLength = cloneLength;
+      $container.attr("data-ur-clones", this.options.cloneLength);
+
+      this.options.autoscroll = $container.attr("data-ur-autoscroll")[0] == "enabled";
+      $container.attr("data-ur-autoscroll", this.options.autoscroll ? "enabled" : "disabled");
+
+      var autoscrollDelay = parseInt($container.attr("data-ur-autoscroll-delay"));
+      if (autoscrollDelay >= 0)
+        this.options.autoscrollDelay = autoscrollDelay;
+      $container.attr("data-ur-autoscroll-delay", this.options.autoscrollDelay);
+
+      this.options.autoscrollForward = $container.attr("data-ur-autoscroll-dir")[0] != "prev";
+      $container.attr("data-ur-autoscroll-dir", this.options.autoscrollForward ? "next" : "prev");
+    },
+
+    initSwipeHandlers: function(target) {
+      if (this.options.touch) {
+        var hasTouch = document.ontouchstart !== undefined;
+        var start = hasTouch ? "touchstart" : "mousedown";
+        var move = hasTouch ? "touchmove" : "mousemove";
+        var end = hasTouch ? "touchend" : "mouseup";
+
+        var self = this;
+        x$(target).on(start, function(e) {self.startSwipe(e);});
+        x$(target).on(move, function(e) {self.continueSwipe(e);});
+        x$(target).on(end, function(e) {self.finishSwipe(e);});
+        x$(target).click(function(e) {if (!self.flag.click) stifle(e);});
       }
     },
 
-    resize: function(){
-      // When I have multi-item carousels, I'll just need to need to make a calculate_snap_width method
-      if (this.snap_width != this.container.offsetWidth) {
-        this.adjust_spacing();
+    insertDots: function() {
+      if (this.dots) {
+        var existing = x$(this.dots).find("[data-ur-carousel-component='dot']");
+        for (var i = existing.length; i < this.realItemCount; i++) {
+          var new_dot = document.createElement("div");
+          x$(new_dot).attr("data-ur-carousel-component", "dot");
+          if (i == 0)
+            x$(new_dot).attr("data-ur-state", "active");
+          this.dots.appendChild(new_dot);
+        }
       }
     },
-      
-    adjust_spacing: function() {
+
+    resize: function() {
+      var offsetWidth = this.container.offsetWidth;
+      if (this.snapWidth != offsetWidth && offsetWidth != 0)
+        this.adjustSpacing();
+    },
+
+    adjustSpacing: function() {
       // Will need to be called if the container's size changes --> orientation change
-      var visible_width = this.container.offsetWidth;
+      var visibleWidth = this.container.offsetWidth;
 
-      if (this.old_width !== undefined && this.old_width == visible_width) {
-        return
-      }
-      this.old_width = visible_width;
+      if (this.oldWidth !== undefined && this.oldWidth == visibleWidth)
+        return;
+      var oldSnapWidth = this.snapWidth;
+      this.oldWidth = visibleWidth;
 
-      var cumulative_offset = 0;
+      var cumulativeOffset = 0;
       var items = x$(this.items).find("[data-ur-carousel-component='item']");
-      this.item_count = items.length;
+      this.itemCount = items.length;
 
       // Adjust the container to be the necessary width.
-      // I have to do this because the alternative is assuming the container expands to its full width (display:table-row) which is non-standard if the container isn't a <tr>
-      var total_width = 0;
-      x$().iterate(
-        items,
-        function(item) {
-          total_width += get_real_width(item);
+      var totalWidth = 0;
+
+      var itemWidth = Math.round(visibleWidth / this.options.fill);
+      var lastItemWidth = visibleWidth - (this.options.fill - 1) * itemWidth;
+
+      for (var i = 0; i < items.length; i++) {
+        if (this.options.fill > 0) {
+          var last_pos = (i - this.options.cloneLength) % this.options.fill == this.options.fill - 1;
+          items[i].style.width = (last_pos ? lastItemWidth : itemWidth) + "px";
+          totalWidth += (last_pos ? lastItemWidth : itemWidth);
         }
-      );
-
-      this.items.style.width = total_width + "px";
-
-      // For the multi-pane case --> I'll set the snap_width to the width of a single element
-      this.snap_width = visible_width;
-
-      if(this.multi) {
-        var item_width = get_real_width(items[0]); // I'm making an assumption here that all items have the same width
-        var magazine_count = Math.floor(visible_width / item_width);
-
-        magazine_count = (magazine_count > this.item_count) ? this.item_count : magazine_count;
-        this.magazine_count = magazine_count;
-
-        var space = (visible_width - magazine_count*item_width);
-        this.snap_width = space / (magazine_count - 1) + item_width;
-        this.last_index = this.item_count - this.magazine_count;
-      } else { 
-        this.last_index = this.item_count - 1;
+        else
+          totalWidth += items[i].offsetWidth;
       }
 
-      this.item_index = (this.last_index < this.item_index) ? this.last_index : this.item_index;
-      cumulative_offset -= this.snap_width*this.item_index; // initial offset
-      translate(this.items, cumulative_offset);
-      var cumulative_item_offset = 0;
+      this.items.style.width = totalWidth + "px";
 
-      if (this.multi) {
-        x$().iterate(
-          items,
-          function(item, i) {
-            var offset = cumulative_item_offset;
-            if ( i != 0 ) {
-              offset += space/(magazine_count - 1);
-            }
-            translate(item, offset);
-            cumulative_item_offset = offset;
-          }
-        );
-        this.update_index(this.item_index);
-      } else {
-        // Single Pane
-        x$().iterate(
-          items,
-          function(item, i) {
-            var offset = cumulative_item_offset;
-            if ( i != 0 ) {
-              offset += visible_width - items[i-1].offsetWidth;
-            }
-            translate(item, offset);
-            cumulative_item_offset = offset;
-          }
-        );
+      this.snapWidth = visibleWidth;
+
+      this.lastIndex = this.itemCount - 1;
+
+      this.itemIndex = (this.lastIndex < this.itemIndex) ? this.lastIndex : this.itemIndex;
+
+      cumulativeOffset -= items[this.itemIndex].offsetLeft; // initial offset
+      if (this.options.center) {
+        var centerOffset = parseInt((this.snapWidth - items[0].offsetWidth)/2);
+        cumulativeOffset += centerOffset; // CHECK
       }
+      if (oldSnapWidth)
+        this.destinationOffset = cumulativeOffset;
+
+      this.translate(cumulativeOffset);
     },
 
-    autoScroll: function (direction, miliSec) {
-      var imageArray = this.item_index;
+    autoscrollStart: function() {
+      if (!this.options.autoscroll)
+        return;
+
       var self = this;
-      var autoID = "";
-
-      window.clearInterval(this.flag.intervalId);
-
-      if (direction == "next" || direction == "prev"){}else{
-        console.log("swipe_toggle: impropper autoScroll direction setting");
-        direction = "next";
-      }
-
-      this.flag.intervalId = autoID = window.setInterval(function (){
-
-        var position = self.item_index;
-
-        if(self.flag.touched == true || (position == self.last_index && direction == "next") || (position == 0 && direction == "prev")){
-          window.clearInterval(self.flag.intervalId);
-        }else if (direction == "next") {
-          self.move_to(-self.magazine_count);
-        }else if (direction == "prev") {
-          self.move_to(self.magazine_count);
+      self.flag.timeoutId = setTimeout(function() {
+        if (self.container.offsetWidth != 0) {
+          if (!self.options.infinite && self.itemIndex == self.lastIndex && self.options.autoscrollForward)
+            self.jumpToIndex(0);
+          else if (!self.options.infinite && self.itemIndex == 0 && !self.options.autoscrollForward)
+            self.jumpToIndex(self.lastIndex);
+          else
+            self.moveTo(self.options.autoscrollForward ? -self.magazineCount : self.magazineCount);
         }
-
-
-      }, miliSec);
+        else
+          self.autoscrollStart();
+      }, self.options.autoscrollDelay);
     },
 
-    get_event_coordinates: function(e) {
-      if(this.touch) {
-        if(e.touches.length == 1)
-        {
-          return {x: e.touches[0].clientX, y: e.touches[0].clientY};
-        }
-      } else {
-        return {x: e.clientX, y: e.clientY};
-      }
+    autoscrollStop: function() {
+      clearTimeout(this.flag.timeoutId);
+    },
+
+    getEventCoords: function(event) {
+      if (event.touches && event.touches.length > 0)
+        return {x: event.touches[0].clientX, y: event.touches[0].clientY};
+      else if (event.clientX != undefined)
+        return {x: event.clientX, y: event.clientY};
       return null;
     },
 
-    update_buttons: function() {
-      if(this.item_index == 0) {
-        x$(this.button["prev"]).attr("data-ur-state","disabled")
-        x$(this.button["next"]).attr("data-ur-state","enabled")
-      } else if (this.item_index == this.last_index) {
-        x$(this.button["next"]).attr("data-ur-state","disabled")
-        x$(this.button["prev"]).attr("data-ur-state","enabled")
-      } else {
-        x$(this.button["next"]).attr("data-ur-state","enabled")
-        x$(this.button["prev"]).attr("data-ur-state","enabled")
-      }
+    updateButtons: function() {
+      x$(this.button["prev"]).attr("data-ur-state", this.itemIndex == 0 ? "disabled" : "enabled")
+      x$(this.button["next"]).attr("data-ur-state", this.itemIndex == this.lastIndex ? "disabled" : "enabled")
     },
 
-    get_new_index: function(direction) {
-      var new_idx = this.item_index - direction;
-
-      if(new_idx > this.last_index) {
-        new_idx = this.last_index;
-      } else if (new_idx < 0) {
-        new_idx = 0;
-      }
-
-      return new_idx;
-    },
-
-    update_index: function(new_index) {
-      if (new_index === undefined) { 
-        return
-      }
-
-      this.item_index = new_index;
-      if (this.item_index < 0) {
-        this.item_index = 0;
-      } else if(this.item_index > this.last_index) {
-        this.item_index = this.last_index - 1;
+    getNewIndex: function(direction) {
+      var newIndex = this.itemIndex - direction;
+      
+      if (!this.options.infinite) {
+        if (this.options.fill > 1 && newIndex > this.lastIndex - this.options.fill + 1)
+          newIndex = this.lastIndex - this.options.fill + 1;
+        else if (newIndex > this.lastIndex)
+          newIndex = this.lastIndex;
+        else if (newIndex < 0)
+          newIndex = 0;
       }
       
-      if(this.count !== undefined) {
-        if(this.multi) {
-          this.count.innerHTML = this.item_index + 1 + " to " + (this.item_index + this.magazine_count) +" of " + this.item_count;
-        } else {
-          this.count.innerHTML = this.item_index + 1 + " of " + this.item_count;
-        }
-      }
-      
-      // TODO: Update to work w multipane
-      var active_item = x$(this.items).find("*[data-ur-carousel-component='item'][data-ur-state='active']");
-      active_item.attr("data-ur-state","inactive");
-      var new_active_item = x$(this.items).find("*[data-ur-carousel-component='item']")[this.item_index];
-      x$(new_active_item).attr("data-ur-state","active");
-
-      this.update_buttons();
+      return newIndex;
     },
 
-    start_swipe: function(e)
-    {
-      this.flag.touched = true;
-
-      this.touch_in_progress = true; // For non-touch environments
-      var coords = this.get_event_coordinates(e);
-
-      if(coords !== null)
-      {
-        var x_transform = this.get_transform(this.items);
-
-        if(this.starting_offset === undefined || this.starting_offset === null) {
-          this.starting_offset = x_transform;
-          this.start_pos = coords;
-        } else {
-          // Fast swipe
-          this.starting_offset = this.destination_offset; //Factor incomplete previous swipe
-          this.start_pos = coords;
-        }
-      }
-      this.click = true;
-    },
-    
-    continue_swipe: function(e)
-    {
-      if (!this.vertical_scroll) {
-        stifle(e);
-      }
-
-      if(!this.touch_in_progress) // For non-touch environments
-        return
-
-      var coords = this.get_event_coordinates(e);
-      if(coords !== null)
-      {
-        this.end_pos = coords;
-        var dist = this.swipe_dist() + this.starting_offset;
-        translate(this.items, dist);
-      }
-      this.click = false;    
-    },
-    
-    finish_swipe: function(e)
-    {      
-      if(!this.click) {
-        stifle(e);
-      } else {
+    updateIndex: function(newIndex) {
+      if (newIndex === undefined)
         return;
-      }
 
-      this.touch_in_progress = false; // For non-touch environments
+      this.itemIndex = newIndex;
+      if (this.itemIndex < 0)
+        this.itemIndex = 0;
+      else if (this.itemIndex > this.lastIndex)
+        this.itemIndex = this.lastIndex - 1;
+
+      var realIndex = this.itemIndex;
+      if (this.options.infinite)
+        realIndex = (this.realItemCount + this.itemIndex - this.options.cloneLength) % this.realItemCount;
+      if (this.count !== undefined)
+        this.count.innerHTML = realIndex + 1 + " of " + this.realItemCount;
+
+      x$(this.items).find("[data-ur-carousel-component='item'][data-ur-state='active']").attr("data-ur-state", "inactive");
+      x$(x$(this.items).find("[data-ur-carousel-component='item']")[this.itemIndex]).attr("data-ur-state", "active");
+
+      if (this.dots)
+        x$(this.dots).find("[data-ur-carousel-component='dot']").attr("data-ur-state", "inactive")[realIndex].setAttribute("data-ur-state", "active");
+
+      this.updateButtons();
+
+      x$(this.container).fire("slidestart", {index: realIndex});
+    },
+
+    startSwipe: function(e) {
+      if (!this.options.verticalScroll)
+        stifle(e);
+      this.autoscrollStop();
+
+      this.flag.touched = true; // For non-touch environments
+      this.flag.lock = null;
+      this.flag.loop = false;
+      this.flag.click = true;
+      var coords = this.getEventCoords(e);
+      this.preCoords.x = coords.x;
+      this.preCoords.y = coords.y;
+
+      if (coords !== null) {
+        var translateX = getTranslateX(this.items);
+
+        if (this.startingOffset == null)
+          this.startingOffset = translateX;
+        else
+          // Fast swipe
+          this.startingOffset = this.destinationOffset; //Factor incomplete previous swipe
+        
+        this.startPos = this.endPos = coords;
+      }
+    },
+
+    continueSwipe: function(e) {
+      if (!this.flag.touched) // For non-touch environments
+        return;
+
+      this.flag.click = false;
+
+      var coords = this.getEventCoords(e);
+
+      if (document.ontouchstart !== undefined && this.options.verticalScroll) {
+        var slope = Math.abs((this.preCoords.y - coords.y)/(this.preCoords.x - coords.x));
+        if (this.flag.lock) {
+          if (this.flag.lock == "y")
+            return;
+        }
+        else if (slope > 1.2) {
+          this.flag.lock = "y";
+          return;
+        }
+        else if (slope <= 1.2)
+          this.flag.lock = "x";
+        else
+          return;
+      }
+      stifle(e);
+
+      if (coords !== null) {
+        this.endPos = coords;
+        var dist = this.swipeDist() + this.startingOffset;
+
+        if (this.options.infinite) {
+          var items = x$(this.items).find("[data-ur-carousel-component='item']");
+          var endLimit = items[this.lastIndex].offsetLeft + items[this.lastIndex].offsetWidth - this.container.offsetWidth;
+
+          if (dist > 0) { // at the beginning of carousel
+            var srcNode = items[this.realItemCount];
+            var offset = srcNode.offsetLeft - items[0].offsetLeft;
+            this.startingOffset -= offset;
+            dist -= offset;
+            this.flag.loop = !this.flag.loop;
+          }
+          else if (dist < -endLimit) {  // at the end of carousel
+            var srcNode = items[this.lastIndex - this.realItemCount];
+            var offset = srcNode.offsetLeft - items[this.lastIndex].offsetLeft;
+            this.startingOffset -= offset;
+            dist -= offset;
+            this.flag.loop = !this.flag.loop;
+          }
+        }
+
+        this.translate(dist);
+      }
+    },
+
+    finishSwipe: function(e) {
+      if (!this.flag.click || this.flag.lock)
+        stifle(e);
+      else if (e.target.tagName == "AREA")
+        location.href = e.target.href;
+      else
+        x$(e.target).click();
       
-      if(!this.touch || e.touches.length == 0)
-      {    
-        this.move_helper(this.get_displacement_index());
-      }
+      this.flag.touched = false; // For non-touch environments
+      
+      this.moveHelper(this.getDisplacementIndex());
     },
-    get_displacement_index: function() {
-      var swipe_distance = this.swipe_dist();
-      var displacement_index = 0;
-
-      if (this.multi) {
-        // Sigmoid FTW:
-        var range = this.magazine_count;
-        var range_offset = range/2.0;
-        displacement_index = zero_ceil( 1/(1 + Math.pow(Math.E,-1.0*swipe_distance)) * range - range_offset);
-      } else {
-        displacement_index = zero_ceil(swipe_distance/this.snap_width);
-      }
-
-      return displacement_index;
+    getDisplacementIndex: function() {
+      var swipeDistance = this.swipeDist();
+      var displacementIndex = zeroCeil(swipeDistance/x$(this.items).find("[data-ur-carousel-component='item']")[0].offsetWidth);
+      return displacementIndex;
     },
-    snap_to: function(displacement) {
-      this.destination_offset = displacement + this.starting_offset;        
-      var max_offset = -1*(this.last_index)*this.snap_width;
+    snapTo: function(displacement) {
+      this.destinationOffset = displacement + this.startingOffset;
+      var maxOffset = -1*this.lastIndex*this.snapWidth;
+      var minOffset = parseInt((this.snapWidth - x$(this.items).find("[data-ur-carousel-component='item']")[0].offsetWidth)/2);
 
-      if ( this.destination_offset < max_offset || this.destination_offset > 0 ) {
-        if (Math.abs(this.destination_offset - max_offset) < 1) {
+      if (this.options.infinite)
+        maxOffset = -this.items.offsetWidth;
+      if (this.destinationOffset < maxOffset || this.destinationOffset > minOffset) {
+        if (Math.abs(this.destinationOffset - maxOffset) < 1) {
           // Hacky -- but there are rounding errors
           // I see this when I'm in multi-mode and using the buttons
           // This only seems to happen on the desktop browser -- ideally its removed at compile time
-          this.destination_offset = max_offset;
+          this.destinationOffset = maxOffset;
         } else {
-          this.destination_offset = this.starting_offset;
+          this.destinationOffset = minOffset;
         }
       }
-      
-      this.momentum();  
+
+      this.momentum();
     },
 
-    move_to: function(direction) {
-      if (this.increment_flag) {
-        // The animation isnt done yet
-        return
-      }
-      this.starting_offset = this.get_transform(this.items);
-      var new_idx = this.item_index - direction;
-      this.move_helper(direction);
-    },
-
-    move_helper: function(direction){
-      var new_idx = this.get_new_index(direction);
-
-      var new_item = x$(this.items).find("*[data-ur-carousel-component='item']")[new_idx];
-      var current_item = x$(this.items).find("*[data-ur-carousel-component='item']")[this.item_index];
-
-      var offset = this.get_transform(current_item) - this.get_transform(new_item);
-      var displacement = current_item.offsetLeft - new_item.offsetLeft + offset;
-
-      this.snap_to(displacement);
-      this.update_index(new_idx);
-    },
-
-    move_to_index: function(index) {
-      var direction = this.item_index - index;
-      this.move_to(direction);
-    },
-
-    momentum: function()
-    {
-      if (this.touch_in_progress)
-      {
+    moveTo: function(direction) {
+      // The animation isnt done yet
+      if (this.flag.increment)
         return;
-      }     
 
-      this.increment_flag = false;	
+      this.startingOffset = getTranslateX(this.items);
+      this.moveHelper(direction);
+    },
 
-      var x_transform = this.get_transform(this.items);
-      var distance = this.destination_offset - x_transform;
-      var increment = distance - zero_floor(distance / 1.1);
+    moveHelper: function(direction) {
+      this.autoscrollStop();
+
+      var newIndex = this.getNewIndex(direction);
+
+      var items = x$(this.items).find("[data-ur-carousel-component='item']");
+
+      if (this.options.infinite) {
+        var oldTransform = getTranslateX(this.items);
+        var altTransform = oldTransform;
+
+        if (newIndex < this.options.cloneLength) { // at the beginning of carousel
+          var offset = items[this.options.cloneLength].offsetLeft - items[this.itemCount - this.options.cloneLength].offsetLeft;
+          if (!this.flag.loop) {
+            altTransform += offset;
+            this.translate(altTransform);
+            this.startingOffset += offset;
+          }
+          newIndex += this.realItemCount;
+          this.itemIndex = newIndex + direction;
+        }
+        else if (newIndex > this.lastIndex - this.options.cloneLength) { // at the end of carousel
+          var offset = items[this.itemCount - this.options.cloneLength].offsetLeft - items[this.options.cloneLength].offsetLeft;
+          if (!this.flag.loop) {
+            altTransform += offset;
+            this.translate(altTransform);
+            this.startingOffset += offset;
+          }
+          newIndex -= this.realItemCount;
+          this.itemIndex = newIndex + direction;
+        }
+      }
+      var newItem = items[newIndex];
+      var currentItem = items[this.itemIndex];
+      var displacement = currentItem.offsetLeft - newItem.offsetLeft; // CHECK
+      var self = this;
+      
+      setTimeout(function() {
+        self.snapTo(displacement);
+        self.updateIndex(newIndex);
+      }, 6);
+    },
+
+    moveToIndex: function(index) {
+      var direction = this.itemIndex - index;
+      this.moveTo(direction);
+    },
+
+    momentum: function() {
+      if (this.flag.touched)
+        return;
+
+      this.flag.increment = false;
+
+      var translateX = getTranslateX(this.items);
+      var distance = this.destinationOffset - translateX;
+      var increment = distance - zeroFloor(distance / (this.options.transform3d ? 1.1 : 1.2));
 
       // Hacky -- this is for the desktop browser only -- to fix rounding errors
       // Ideally, this is removed at compile time
-      if(Math.abs(increment) < 0.01) {
+      if(Math.abs(increment) < 0.01)
         increment = 0;
-      } 
 
-      translate(this.items, increment + x_transform);
+      var newTransform = increment + translateX;
 
-      if(increment != 0)
-      {
-	this.increment_flag = true;
+      this.translate(newTransform);
+
+      if (increment != 0)
+        this.flag.increment = true;
+
+      if (this.flag.increment)
+        setTimeout(function(obj){return function(){obj.momentum()}}(this), 16);
+      else {
+        this.startingOffset = null;
+        this.autoscrollStart();
+
+        var itemIndex = this.itemIndex;
+        x$(this.container).fire("slideend", {index: itemIndex});
       }
+    },
 
-      if(this.increment_flag)
-      {
-        setTimeout(function(obj){return function(){obj.momentum()}}(this),16);		    
-      } else {
-        this.starting_offset = null;
-        x$().iterate(
-          this.onSlideCallbacks,
-          function(callback) {
-            callback();
-          }
-        );
-      }
-    },    
-
-    swipe_dist: function()
-    {
-      if (this.end_pos === undefined)
+    swipeDist: function() {
+      if (this.endPos === undefined)
         return 0;
-      var sw_dist = this.end_pos['x'] - this.start_pos['x'];
-      return sw_dist;
+      return this.endPos.x - this.startPos.x;
+    },
+    
+    translate: function(x) {
+      var container = this.items;
+      var translatePrefix = this.options.transform3d ? "translate3d(" : "translate(";
+      var translateSuffix = this.options.transform3d ? ", 0px)" : ")";
+      ["webkitTransform", "MozTransform", "oTransform", "transform"].forEach(function(i) {
+        container.style[i] = translatePrefix + x + "px, 0px" + translateSuffix;
+      });
     }
   }
 
   // Private constructors
   var ComponentConstructors = {
-    "button": function(group, component, type) {
-      if (group["button"] === undefined) {
+    button: function(group, component, type) {
+      if (group["button"] === undefined)
         group["button"] = {};
-      }
-      
-      var type = x$(component).attr("data-ur-carousel-button-type")[0];
-      if(type === undefined) {
-        // Declaration error
-        console.log("Uranium declaration error: Malformed carousel button type on:" + component.outerHTML);
-      }
+
+      var type = component.getAttribute("data-ur-carousel-button-type");
+
+      // Declaration error
+      if (type === undefined)
+        Ur.error("malformed carousel button type on:" + component.outerHTML);
 
       group["button"][type] = component;
 
       // Maybe in the future I'll make it so any of the items can be the starting item
-      if (type == "prev") {
-        x$(component).attr("data-ur-state","disabled");
-      } else {
-        x$(component).attr("data-ur-state","enabled");
-      }
-
+      x$(component).attr("data-ur-state", type == "prev" ? "disabled" : "enabled");
     }
-  }
-
+  };
   function CarouselLoader(){}
-  
+
   CarouselLoader.prototype.initialize = function(fragment) {
-    var carousels = x$(fragment).find_elements('carousel', ComponentConstructors);
+    var carousels = x$(fragment).findElements("carousel", ComponentConstructors);
     Ur.Widgets["carousel"] = {};
     for (var name in carousels) {
       var carousel = carousels[name];
       Ur.Widgets["carousel"][name] = new Carousel(carousel);
-      x$(carousel["set"]).attr("data-ur-state","enabled");
+      x$(carousel["set"]).attr("data-ur-state", "enabled");
     }
   }
 
   return CarouselLoader;
 })();
 
+/* Flex Table *
+ * * * * * *
+ * The flex table widget will take a full-sized table and make it fit 
+ * on a variety of different viewport sizes.  
+ * 
+ */
+
+Ur.QuickLoaders['flex-table'] = (function(){
+  
+  // Add an enhanced class to the tables the we'll be modifying
+  function addEnhancedClass(tbl) {
+    x$(tbl).addClass("enhanced");
+  }
+  
+  function flexTable(aTable, table_index) {
+    // TODO :: Add the ability to pass in options
+    this.options = {
+      idprefix: 'col-',   // specify a prefix for the id/headers values
+      persist: "persist", // specify a class assigned to column headers (th) that should always be present; the script not create a checkbox for these columns
+      checkContainer: null // container element where the hide/show checkboxes will be inserted; if none specified, the script creates a menu
+    };
+    
+    var self = this, 
+        o = self.options,
+        table = aTable.table,
+        thead = aTable.head,
+        tbody = aTable.body,
+        hdrCols = x$(thead).find('th'),
+        bodyRows = x$(tbody).find('tr'), 
+        container = o.checkContainer ? x$(o.checkContainer) : x$('<div class="table-menu table-menu-hidden" ><ul /></div>');
+        
+    addEnhancedClass(table);
+    
+    hdrCols.each(function(elm, i){
+      var th = x$(this),
+          id = th.attr('id'),
+          classes = th.attr('class');
+      
+      // assign an id to each header, if none is in the markup
+      if (id.length === 0) {
+        id = ( o.idprefix ? o.idprefix : "col-" ) + i;
+        th.attr('id', id); 
+      }
+      
+      // assign matching "headers" attributes to the associated cells
+      // TEMP - needs to be edited to accommodate colspans
+      bodyRows.each(function(e, j){
+        var cells = x$(e).find("th, td");
+        cells.each(function(cell, k) {
+          if (cell.cellIndex == i) {
+            x$(cell).attr('headers', id);
+            if (classes.length !== 0) { x$(cell).addClass(classes[0]); };
+          }
+        });
+      });
+      
+      // create the show/hide toggles
+      if ( !th.hasClass(o.persist) ) {
+        var toggle = x$('<li><input type="checkbox" name="toggle-cols" id="toggle-col-' +
+                          i +  '-' + table_index +  '" value="' + id + '" /> <label for="toggle-col-' + i + '-' + table_index +  '">'
+                          + th.html() +'</label></li>');
+        container.find('ul').bottom(toggle);
+        var tgl = toggle.find("input");
+        
+        tgl.on("change", function() {
+          var input = x$(this),
+              val = input.attr('value'),
+              cols = x$("div[data-ur-id='" + table_index + "'] " + "#" + val[0] + ", " +
+                        "div[data-ur-id='" + table_index + "'] " + "[headers=" + val[0] + "]");
+          if (!this.checked) { 
+            cols.addClass('ur_ft_hide'); 
+            cols.removeClass("ur_ft_show"); }
+          else { 
+            cols.removeClass("ur_ft_hide"); 
+            cols.addClass('ur_ft_show'); }
+        });
+        tgl.on("updateCheck", function(){
+          if ( th.getStyle("display") == "table-cell" || th.getStyle("display") == "inline" ) {
+            x$(this).attr("checked", true);
+          }
+          else {
+            x$(this).attr("checked", false);
+          }
+        });
+        tgl.fire("updateCheck");
+      }
+      
+    }); // end hdrCols loop
+    
+    // Update the inputs' checked status
+    x$(window).on('orientationchange', function() {
+      container.find('input').fire('updateCheck');
+    });
+    x$(window).on('resize', function() {
+      container.find('input').fire('updateCheck');
+    });
+    
+    // Create a "Display" menu      
+    if (!o.checkContainer) {
+      var menuWrapper = x$('<div class="table-menu-wrapper"></div>'),
+          popupBG = x$('<div class = "table-background-element"></div>'),
+          menuBtn = x$('<a href="#" class="table-menu-btn" ><span class="table-menu-btn-icon"></span>Display</a>');
+      menuBtn.click(function(){
+        container.toggleClass("table-menu-hidden");
+        x$(this).toggleClass("menu-btn-show");
+        return false;
+      });
+      popupBG.click(function(){
+        container.toggleClass("table-menu-hidden");
+        menuBtn.toggleClass("menu-btn-show");
+        return false;
+      });
+      container.bottom(popupBG);
+      menuWrapper.bottom(menuBtn).bottom(container);
+      x$(table).before(menuWrapper);
+    };
+  }
+  
+  function TableLoader () {}
+  
+  TableLoader.prototype.initialize = function(fragment) {
+    var tables = x$(fragment).findElements('flex-table');
+    Ur.Widgets["flex-table"] = {};
+
+    for(var table in tables){
+      Ur.Widgets["flex-table"][name] = new flexTable(tables[table], table);
+    }
+  }
+  
+  return TableLoader;
+})();
+
 /* Font Resizer
    ------------
-   Font Resizer displays three components:
+   Font Resizer displays four components:
    (1) a button which, when pressed, increases the font size of some
        specified page elements
    (2) a button which, when pressed, decreases the font size of some
        specified page elements
    (3) a label which reports the current font size of the aforementioned
        page elements
+   (4) a button which, when pressed, resets the contents to the original
+       font size (optional component)
 */
 
 Ur.QuickLoaders["font-resizer"] = (function() {
-  
+
   var labelText = "Text Size: ";
-  var up = 1, down = -1;
+  var up = 1, down = -1, reset = 0;
+  var is_reset_enabled = "false";
 
   function FontResizer(components) {
     this.increase = components["increase"];
     this.decrease = components["decrease"];
     this.label = components["label"];
     this.content = components["content"];
+    if (components["reset"]) {
+      this.reset_size = components["reset"];
+      is_reset_enabled = true;
+    }
     this.initialize();
   }
 
-  FontResizer.prototype.initialize = function() {  
+  FontResizer.prototype.initialize = function() {
     var content = x$(this.content);
     this.min = parseInt(content.attr("data-ur-font-resizer-min")) || 100;
     this.max = parseInt(content.attr("data-ur-font-resizer-max")) || 200;
     this.delta = parseInt(content.attr("data-ur-font-resizer-delta")) || 20;
     this.size = parseInt(content.attr("data-ur-font-resizer-size")) || this.min;
+    this.original_size = this.size;
     this.invert = content.attr("data-ur-font-resizer-invert") == "Bam!" ? true : false;
 
     x$(this.increase).click(function (obj) { return function() { obj.change(up); }; }(this));
     x$(this.decrease).click(function (obj) { return function() { obj.change(down); }; }(this));
-    
+    if (is_reset_enabled) {
+      x$(this.reset_size).click(function (obj) { return function() { obj.change(reset); }; }(this));
+    }
+
     if (this.invert) {
       this.size = this.min;
       this.controlSize = this.max;
@@ -2258,7 +2528,7 @@ Ur.QuickLoaders["font-resizer"] = (function() {
       this.decrease.style["font-size"] = this.controlSize + "%";
       this.label.style["font-size"] = this.controlSize + "%";
     }
-    
+
     content[0].style["font-size"] = this.size + "%";
     x$(this.label).inner(labelText + this.size + "%");
 
@@ -2270,23 +2540,27 @@ Ur.QuickLoaders["font-resizer"] = (function() {
       this.size += direction * this.delta;
       this.content.style["font-size"] = this.size + "%";
       this.label.innerText = labelText + this.size + "%";
-      
+
       if (this.invert) {
         this.controlSize += -direction * this.delta;
         this.increase.style["font-size"] = this.controlSize + "%";
         this.decrease.style["font-size"] = this.controlSize + "%";
         this.label.style["font-size"] = this.controlSize + "%";
       }
+    } else if (direction == reset) {
+      this.size = this.original_size;
+      this.content.style["font-size"] = this.size + "%";
+      this.label.innerText = labelText + this.size + "%";
     }
   }
 
   function FontResizerLoader() {}
-  
+
   FontResizerLoader.prototype.initialize = function(fragment) {
-    var font_resizers = x$(fragment).find_elements('font-resizer');
+    var font_resizers = x$(fragment).findElements('font-resizer');
     for (var name in font_resizers) new FontResizer(font_resizers[name]);
   }
-  
+
   return FontResizerLoader;
 })();
 
@@ -2299,18 +2573,20 @@ Ur.QuickLoaders["font-resizer"] = (function() {
  *
  */
  
-Ur.QuickLoaders['geocode'] = (function(){
+Ur.QuickLoaders["geocode"] = (function() {
   
   function Geocode(data) {
     this.elements = data;
     this.callback = x$(this.elements.set).attr("data-ur-callback")[0];
+    this.errorCallback = x$(this.elements.set).attr("data-ur-error-callback")[0];
 
     UrGeocode = function(obj){return function(){obj.setup_callbacks();};}(this);
     var s = document.createElement('script');
     s.type = "text/javascript";
     s.src = "http://maps.googleapis.com/maps/api/js?sensor=true&callback=UrGeocode";
-    x$('head').html('bottom', s);
+    x$('body').html('bottom', s);  
   }
+
   
   var geocoder;
   var geocodeObj;
@@ -2422,18 +2698,21 @@ Ur.QuickLoaders['geocode'] = (function(){
       console.error("Ur geolocation error -- Error Getting Your Coordinates!");
       switch(error.code) 
       {
-      case error.TIMEOUT:
-        console.error ('Ur geolocation error -- Timeout');
-        break;
-      case error.POSITION_UNAVAILABLE:
-        console.error ('Ur geolocation error -- Position unavailable');
-        break;
-      case error.PERMISSION_DENIED:
-        console.error ('Ur geolocation error -- Permission denied');
-        break;
-      case error.UNKNOWN_ERROR:
-        console.error ('Ur geolocation error -- Unknown error');
-        break;
+        case error.TIMEOUT:
+          console.error ('Ur geolocation error -- Timeout');
+          break;
+        case error.POSITION_UNAVAILABLE:
+          console.error ('Ur geolocation error -- Position unavailable');
+          break;
+        case error.PERMISSION_DENIED:
+          console.error ('Ur geolocation error -- Permission denied');
+          break;
+        case error.UNKNOWN_ERROR:
+          console.error ('Ur geolocation error -- Unknown error');
+          break;
+      }
+      if(this.errorCallback !== undefined) {
+        eval(this.errorCallback);
       }
     },
 
@@ -2472,7 +2751,11 @@ Ur.QuickLoaders['geocode'] = (function(){
               obj.geoSuccess(position);
             };
           }(this), 
-          this.geoError, 
+          function(obj) {
+            return function(errors){
+              obj.geoError(errors);
+            };
+          }(this),
           this.geoDenied
         );  
       }
@@ -2483,7 +2766,7 @@ Ur.QuickLoaders['geocode'] = (function(){
   }
 
   GeocodeLoader.prototype.initialize = function(fragment) {
-    var my_geo = x$(fragment).find_elements('reverse-geocode');
+    var my_geo = x$(fragment).findElements('reverse-geocode');
     
     Ur.Widgets["geocode"] = {}
     
@@ -2496,6 +2779,77 @@ Ur.QuickLoaders['geocode'] = (function(){
 
   return GeocodeLoader;
 })();
+/* Input Clear *
+ * * * * * *
+ * The input clear widget will provide a small X when a user focuses on a text input
+ * that can be clicked to clear the field.
+ * 
+ * Customize the appearance of the X with CSS
+ * 
+ */
+ 
+Ur.QuickLoaders['input-clear'] = (function(){
+  
+  function inputClear (input) {
+    // XUIify the input we're working with
+    var that = x$(input.input);
+        
+    // Create the X div
+    var ex = x$('<div class="data-ur-input-clear-ex"></div>')
+    // Hide it (even though this should be in CSS)
+    ex.hide();
+    // Inject it
+    that.html('after', ex);
+
+    // Use these when testing on desktop
+    // ex.on('mousedown', function() {
+    //   // remove text in the box
+    //   that[0].value='';
+    // });
+    // ex.on('mouseup', function() {
+    //   that[0].focus();
+    // });
+    
+    // Touch Events
+    ex.on('touchstart', function() {
+      // remove text in the box
+      that[0].value='';
+    });
+    ex.on('touchend', function() {
+      // make sure the keyboard doesn't disappear
+      that[0].focus();
+    });
+    
+    that.on('focus', function() {
+      if (that[0].value != '') {
+        ex.show();
+      }
+    })
+    that.on('keydown', function() {
+      ex.show();
+    });
+    that.on('blur', function() {
+      // Delay the hide so that the button can be clicked
+      setTimeout(function() { ex.hide();}, 150);
+    });
+  }
+  
+  function InputClearLoader () {}
+  
+  InputClearLoader.prototype.initialize = function(fragment) {
+    var inputs = x$(fragment).findElements('input-clear');
+    e = inputs;
+    
+    Ur.Widgets["input-clear"] = {};
+    
+    for(var input in inputs){
+      Ur.Widgets["input-clear"][input] = new inputClear(inputs[input]);
+    }
+  }
+  
+  return InputClearLoader;
+})();
+
 
 
 /*
@@ -2611,7 +2965,7 @@ Ur.QuickLoaders['geocode'] = (function(){
     });
 
     for (var element in temp){
-      if (temp[element[1]] === undefined) {}else{
+      if (temp[element][1] === undefined) {}else{
         obj[temp[element][1]].push(temp[element]);
       }
     }
@@ -2943,7 +3297,7 @@ Ur.QuickLoaders['map'] = (function(){
   }
 
   MapLoader.prototype.initialize = function(fragment) {
-    var maps = x$(fragment).find_elements('map', ComponentConstructors);
+    var maps = x$(fragment).findElements('map', ComponentConstructors);
     Ur.Widgets["map"] = {};
 
     for(var name in maps) {
@@ -3042,7 +3396,7 @@ Ur.QuickLoaders['select-buttons'] = (function(){
   }
 
   SelectButtonsLoader.prototype.initialize = function(fragment) {
-    var select_buttons = x$(fragment).find_elements('select-buttons');
+    var select_buttons = x$(fragment).findElements('select-buttons');
     for (var name in select_buttons) {
       new SelectButtons(select_buttons[name]);
       x$(select_buttons[name]["set"]).attr("data-ur-state","enabled");
@@ -3121,7 +3475,7 @@ Ur.QuickLoaders['select-list'] = (function(){
 
 
   SelectListLoader.prototype.initialize = function(fragment) {
-    var select_lists = x$(fragment).find_elements('select-list');
+    var select_lists = x$(fragment).findElements('select-list');
     var self = this;
     for (var name in select_lists) {
       var select_list = select_lists[name];
@@ -3167,12 +3521,12 @@ Ur.QuickLoaders['SwipeToggle'] = (function () {
     var self = this;
     var touch = {};
 
-    this.preferences = { axis: "x", swipeUpdate: true, sensitivity: 10, loop: true,
+    var preferences = this.preferences = { dots: false, axis: "x", swipeUpdate: true, sensitivity: 10, loop: true,
                          touchbuffer: 20, tapActive: false,  touch: true, jump: 1, loop: true,
                          autoSpeed: 500 };
     
 
-    this.flags = {touched: false, autoID: null }
+    this.flags = {touched: false, autoID: null}
     var flags = this.flags;
 
                                     
@@ -3200,26 +3554,35 @@ Ur.QuickLoaders['SwipeToggle'] = (function () {
     }
 
     var setTouch = function () {
+
+      var pef_touch = self.preferences.touch;
+
       slider.addEventListener('touchstart', function (e){
-        touch.start(e, this);
-        e.stopPropagation();
-        e.preventDefault()
+        if (pef_touch == true){
+          touch.start(e, this);
+        }
       }, false);
 
       slider.addEventListener('touchmove', function (e){
-        touch.continu(e, this);
-        e.stopPropagation();
-        e.preventDefault()
+        if (pef_touch == true){
+          touch.move(e, this);
+        }
       }, false);
 
       slider.addEventListener('touchend', function (e){
-        touch.end(e, this);
-        e.stopPropagation();
+        if (pef_touch == true){
+          touch.end(e, this);
+        }
       }, false);
     }
 
     var swipeDirection = function (){
-      var buff = this.preferences.touchbuffer;
+
+      if (preferences) {
+        var buff = preferences.touchbuffer;
+      }else{
+        var buff = 0;
+      }
 
       if(startPos[axis] < endPos[axis] - buff){
         return 1;//right or top >>
@@ -3272,6 +3635,8 @@ Ur.QuickLoaders['SwipeToggle'] = (function () {
       return activeObj;
     }
 
+    var touch = {};
+
     touch.start = function (e) {
       flags.touched = true;
 
@@ -3283,14 +3648,14 @@ Ur.QuickLoaders['SwipeToggle'] = (function () {
 
     }
 
-    touch.continu = function (e) {
+    touch.move = function (e) {
 
       endPos = {
         x: e.touches[0].clientX,
         y: e.touches[0].clientY
       };
       if(self.preferences.swipeUpdate == true){
-        swipeUpdate();
+        swipeUpdate(e);
       }
 
       var swipeDist =  endPos[axis] - startPos[axis];
@@ -3310,14 +3675,18 @@ Ur.QuickLoaders['SwipeToggle'] = (function () {
       markerPos = {};
     }
 
-    var swipeUpdate = function () {
+    var swipeUpdate = function (e) {
       if(endPos[axis] + self.preferences.sensitivity < markerPos[axis]){
         self.next();
         markerPos = endPos;
+        e.stopPropagation();
+        e.preventDefault();
       }
       if(endPos[axis] - self.preferences.sensitivity > markerPos[axis]){
         self.prev();
         markerPos = endPos;
+        e.stopPropagation();
+        e.preventDefault();
       }
     }
 
@@ -3335,21 +3704,30 @@ Ur.QuickLoaders['SwipeToggle'] = (function () {
       }
     }
 
-    var activeIndex = function (){
-      var length = slider.childNodes.length;
-      for(i = 0; i < length; i++){
-        if(slider.children[i].getAttribute('data-ur-state') == 'active'){
-          break;
+    var activeIndex = function (Element){
+      if (Element === undefined) {
+        var obj = self.components.slider;
+      } else {
+        var obj = Element;
+      }
+
+      var length = obj.children.length;
+      var i = 0;
+
+      if (length > i) {
+        for(i ; i < length; i++){
+          if(obj.children[i].getAttribute('data-ur-state') == 'active'){
+            break;
+          }
         }
       }
+
       return i;
     }
 
     SwipeToggle.prototype.autoScroll = function (direction) {
       var imageArray = this.components.slider.children.length;
       var self = this;
-      console.log("object name: " + name);
-      console.log(self)
 
       var autoID = name;
 
@@ -3371,19 +3749,53 @@ Ur.QuickLoaders['SwipeToggle'] = (function () {
       }, this.preferences.autoSpeed);
     }
 
+    SwipeToggle.prototype.dots = function () {
+      // create dots for the carousel
+      
+      var index = activeIndex(this.components.slider);
+      var slider_name = this.components.name;
+      var slider = this.components.slider;
+      var imageLength = x$(slider)[0].children.length -1;
+      var dotsDiv = document.createElement('div');
+      var attributeName = "mw_swipe_toggle_dot"
+
+      dotsDiv.setAttribute("class", "mw_" + slider_name + "_dots mw_swipe_dots")
+
+      for(var i = 0; i < imageLength + 1; i++){
+        tempDivHolder = document.createElement("div");
+        tempDivHolder.id = 'mw_image_dot' + (i+1);
+        dotsDiv.appendChild(tempDivHolder);
+      }
+      if (dotsDiv.children[0] === undefined){} else {
+        dotsDiv.children[index].setAttribute(attributeName, "active");
+      }
+      x$(slider).after(dotsDiv);
+
+      slider.addEventListener('update', function (e){
+        // make new dot active
+        var eventSlider = e.slider;
+        var name = slider_name;
+        var dots_name = "mw_" + slider_name + "_dots";
+
+        var index = activeIndex(e.slider);
+
+        for (var i = 0; i < imageLength + 1; i++) {
+          dotsDiv.children[i].setAttribute(attributeName, "");
+        }
+        dotsDiv.children[index].setAttribute(attributeName, "active");
+      });
+    }
+
     SwipeToggle.prototype.autoPopulate = function (autoPopulateList, append) {
       var location = this.components.slider;
       if (autoPopulateList === undefined) {
-        console.log("no items listed")
+        console.warn("Swipe Toggle: no items listed")
       }else if (append == "top" || append == "bottom"){
         for (var items in autoPopulateList) {
           x$(location)[append](autoPopulateList[items]);
         }
         this.setActive(this.components.slider.children[0]);
       }
-    }
-    SwipeToggle.prototype.start = function () {
-    
     }
 
     if(components === undefined){}else{
@@ -3405,11 +3817,13 @@ Ur.QuickLoaders['SwipeToggle'] = (function () {
       var axis = this.preferences.axis;
       if (axis == "x" || axis == "Y") {
       }else{
-        console.log("incorrect axis set")
+        Ur.error("incorrect axis set")
       }
 
-      if (this.preferences.touch == true){
-        setTouch();
+      setTouch();
+
+      if (this.preferences.dots == true) {
+        this.dots()
       }
       loadEvent(this.components.slider);
     }
@@ -3479,19 +3893,19 @@ Ur.QuickLoaders['SwipeToggle'] = (function () {
   }
 
   var find = function(fragment){
-    var swipe_group = x$(fragment).find_elements('swipe-toggle');
+    var swipe_group = x$(fragment).findElements('swipe-toggle');
 
     for(var component_id in swipe_group) {
       var carousel_group = swipe_group[component_id];
       carousel_group.name = component_id;
       if (carousel_group["slider"] === undefined) {
-        console.log("Uranium Declaration Error: No slider found for toggler with id = " + component_id);
+        Ur.error("no slider found for toggler with id = " + component_id);
         continue;
       }else if (carousel_group["slider"].children[0] === undefined){
-        console.log("no children in slider: " + carousel_group )
+        Ur.warn("no children in slider: " + carousel_group )
       }else{
         carousel_group["slider"]["active"] = x$(carousel_group["slider"]).find("[data-ur-state='active']")[0];
-        console.log("Uranium Declaration Warning: No active element found for toggler with id = " + component_id);
+        Ur.warn("no active element found for toggler with id = " + component_id);
         if (carousel_group["slider"]["active"] === undefined) {
           console.log("no active element in slider: " + component_id)
           carousel_group["slider"]["active"] = carousel_group["slider"].children[0];
@@ -3526,19 +3940,7 @@ Ur.QuickLoaders['SwipeToggle'] = (function () {
   return new SwipeToggle;
 })
 
-// // // side show carousel :: a addition to the slide toggler
-// Ur.QuickLoaders['SideShow'] = (function(){
-//   function SideShow () {
-//   }
-//   SideShow.prototype = new Ur.QuickLoaders['SwipeToggle'];
-//   SideShow.prototype['bunnies'] = console.log('bunnies');
-//   
-//   SideShow.prototype.initialize = function () {
-//     console.log("initializing side show")
-//   }
-//   
-//   return new SideShow();
-// })
+
 
 /* Tabs *
  * * * * * *
@@ -3566,8 +3968,8 @@ Ur.QuickLoaders['tabs'] = (function(){
       }
 
       if(content === undefined) {
-        console.log("Ur error -- no matching tab content for tab button");
-        return
+        Ur.error("no matching tab content for tab button");
+        return;
       }
       
       var state = x$(button).attr("data-ur-state")[0];
@@ -3577,12 +3979,11 @@ Ur.QuickLoaders['tabs'] = (function(){
       
       var closeable = x$(this.elements["set"]).attr("data-ur-closeable")[0];
       closeable = (closeable !== undefined && closeable == "true") ? true : false;
-      console.log("closeable? " + closeable);
-
       var self = this;
       x$(button).on(
         "click",
         function(evt) {
+          var firstScrollTop = evt.target.offsetTop - document.body.scrollTop;
           var this_tab_id = x$(evt.currentTarget).attr("data-ur-tab-id")[0];
           
           for(var tab_id in self.elements["buttons"]) {
@@ -3593,21 +3994,23 @@ Ur.QuickLoaders['tabs'] = (function(){
               x$(button).attr("data-ur-state","disabled");
               x$(content).attr("data-ur-state","disabled");
             } else {
-	      var new_state = "enabled";
-	      if (closeable) {
-		var old_state = x$(button).attr("data-ur-state")[0];
-		old_state = (old_state === undefined) ? "disabled" : old_state;
-		new_state = (old_state == "enabled") ? "disabled" : "enabled";
-	      }
+        var new_state = "enabled";
+        if (closeable) {
+    var old_state = x$(button).attr("data-ur-state")[0];
+    old_state = (old_state === undefined) ? "disabled" : old_state;
+    new_state = (old_state == "enabled") ? "disabled" : "enabled";
+        }
               x$(button).attr("data-ur-state", new_state);
               x$(content).attr("data-ur-state", new_state);
             }
           }
+          var secondScrollTop =  evt.target.offsetTop - document.body.scrollTop;
+          if ( secondScrollTop <= 0 ) {
+            window.scrollBy(0, secondScrollTop - firstScrollTop);
+          }
         }
       ); 
-
     }
-
   }
   
   var ComponentConstructors = {
@@ -3618,8 +4021,8 @@ Ur.QuickLoaders['tabs'] = (function(){
       
       var tab_id = x$(component).attr("data-ur-tab-id")[0];
       if (tab_id === undefined) {
-        console.log("Uranium declaration error -- Tab defined without a tab-id");
-        return
+        Ur.error("tab defined without a tab-id");
+        return;
       }
       
       group["buttons"][tab_id] = component;
@@ -3631,8 +4034,8 @@ Ur.QuickLoaders['tabs'] = (function(){
       
       var tab_id = x$(component).attr("data-ur-tab-id")[0];
       if (tab_id === undefined) {
-        console.log("Uranium declaration error -- Tab defined without a tab-id");
-        return
+        Ur.error("tab defined without a tab-id");
+        return;
       }
       
       group["contents"][tab_id] = component;
@@ -3643,7 +4046,7 @@ Ur.QuickLoaders['tabs'] = (function(){
   }
 
   TabsLoader.prototype.initialize = function(fragment) {
-    var tabs = x$(fragment).find_elements('tabs', ComponentConstructors);
+    var tabs = x$(fragment).findElements('tabs', ComponentConstructors);
     Ur.Widgets["tabs"] = {};
 
     for(var name in tabs){
@@ -3656,13 +4059,13 @@ Ur.QuickLoaders['tabs'] = (function(){
 })();
 
 /* Toggler *
- * * * * * *
- * The toggler alternates the state of all the content elements bound to the
- * toggler button. 
- * 
- * If no initial state is provided, the default value 'disabled'
- * is set upon initialization.
- */
+* * * * * *
+* The toggler alternates the state of all the content elements bound to the
+* toggler button. 
+* 
+* If no initial state is provided, the default value 'disabled'
+* is set upon initialization.
+*/
 
 Ur.QuickLoaders['toggler'] = (function(){
   function ToggleContentComponent (group, content_component) {
@@ -3681,14 +4084,14 @@ Ur.QuickLoaders['toggler'] = (function(){
   }
 
   ToggleLoader.prototype.find = function(fragment){
-    var togglers = x$(fragment).find_elements('toggler', this.component_constructors);
+    var togglers = x$(fragment).findElements('toggler', this.component_constructors);
     var self=this;
-    
+
     for(var toggler_id in togglers) {
       var toggler = togglers[toggler_id];
 
       if (toggler["button"] === undefined) {
-        console.log("Uranium Declaration Error: No button found for toggler with id=" + toggler_id);
+        Ur.error("no button found for toggler with id=" + toggler_id);
         continue;
       }
 
@@ -3699,18 +4102,18 @@ Ur.QuickLoaders['toggler'] = (function(){
       } 
 
       if (toggler["content"] === undefined) {
-        console.log("Uranium Declaration Error: No content found for toggler with id=" + toggler_id);
+        Ur.error("no content found for toggler with id=" + toggler_id);
         continue;
       }
 
       // Make the content state match the button state
       x$().iterate(
-	toggler["content"],
-	function(content) {
-	  if (x$(content).attr("data-ur-state")[0] === undefined ) {
+        toggler["content"],
+        function(content) {
+          if (x$(content).attr("data-ur-state")[0] === undefined ) {
             x$(content).attr("data-ur-state", toggler_state)
-	  }
-	}
+          }
+        }
       );
 
     }
@@ -3741,16 +4144,16 @@ Ur.QuickLoaders['toggler'] = (function(){
 
   ToggleLoader.prototype.initialize = function(fragment) {
     var togglers = this.find(fragment);
-
     for(var name in togglers){
       var toggler = togglers[name];
+      // if (togglers)
       x$(toggler["button"]).click(this.construct_button_callback(toggler["content"], toggler["set"]));
       x$(toggler["set"]).attr("data-ur-state","enabled");
     }
   }
 
   return ToggleLoader;
-})();
+  })();
 
 /* Zoom Preview  *
  * * * * * * * * *
@@ -3961,7 +4364,7 @@ Ur.QuickLoaders['zoom-preview'] = (function(){
   }
 
   ZoomPreviewLoader.prototype.initialize = function(fragment) {
-    this.zoom_previews = x$(fragment).find_elements('zoom-preview', ComponentConstructors);
+    this.zoom_previews = x$(fragment).findElements('zoom-preview', ComponentConstructors);
     Ur.Widgets["zoom-preview"] = {};
     for (var name in this.zoom_previews) {
       Ur.Widgets["zoom-preview"][name] = new ZoomPreview(this.zoom_previews[name]);
@@ -4260,3 +4663,159 @@ function gsub(input, matcher, replace) {
 
 })();
 
+
+/*
+ * Moovweb Google Analytics Rewrite
+ *
+ * This is a simple rewrite of ga.js
+ * It will track page requests to Moovweb's GA account, regardless
+ * of whether or not said page already has GA on it tracking to
+ * a separate account.
+ *
+ * USAGE:
+ *
+ * 2 steps to use with Tritium:
+ *
+ * 1. Add this script file
+ *
+ * 2. (Optional) Configure by placing the 'mw_ga_config' element
+ *               anywhere on the page
+
+     insert("div") {
+       attribute("id", "mw_ga_config")
+       attribute("page_name", "home")
+     }
+
+ *  *
+ * The 'mw_ga_config' element can be used with these parameters:
+ *
+ *   page_name: The word that Moovweb uses to describe this page.
+ *              Setting this variable allows Moovweb to view data
+ *              for multiple customers at the same time, i.e.
+ *              seeing how many 'order complete' pages where viewed
+ *              across all customers.
+ */
+x$(document).on("DOMContentLoaded", function() {
+  function ra() {
+    return Math.round(Math.random() * 2147483647);
+  };
+
+  // Generate a time value in seconds to use when building the utma cookie.
+  function getUtmaTime() {
+    return Math.round( ( Number( new Date() ) / 1000 ) ).toString();
+  };
+
+  // Generate an integer hash value for a provided domain name to use when building the utma cookie.
+  // (replica of domain hash function from ga.js)
+  function getUtmaDomainHash( aFQDN ) {
+    var a=1,c=0,h,o;
+    if(aFQDN){
+      a=0;
+        for(h=aFQDN["length"]-1;h>=0;h--){
+          o=aFQDN.charCodeAt(h);
+          a=(a<<6&268435455)+o+(o<<14);
+          c=a&266338304;
+          a=c!=0?a^c>>21:a
+        }
+      }
+    return a.toString()
+  };
+
+  // Generate a random integer between 1147483647 and 2147483647 to use when building the utma cookie.
+  function getUtmaRandval() {
+    return (Math.round(Math.random() * 1147483647) + 1000000000).toString();
+  };
+
+  // UTMA: visit distinction cookie
+  // Generate the __utma cookie value on-the-fly to avoid the "single daily visitor" problem with GA.
+  //
+  // This should be expressed in the form: 
+  //
+  //     domainhash.randval.time.time.time.visits
+  //
+  // ... where randval is a random integer between 1147483647 and 2147483647.
+  function getUtma( aFQDN ) {
+    var domainhash = getUtmaDomainHash( aFQDN );
+    var randval    = getUtmaRandval();
+    var time       = getUtmaTime();
+    var visits     = "1";
+
+    return domainhash + "." + randval + "." + time + "." + time + "." + time + "." + visits;
+  };
+
+  // UTME: Custom variables
+  // Take a page name, determine its subordinate values, return an encoded utme value.
+  //
+  // Our page name convention is: 
+  //    customername_targetpagename
+  //
+  // The utme variable encoding convention is: 
+  //    8(key1*key2*...*keyn)9(val1*val2*...*valn)11(level1*level2*...*leveln)
+  //
+  function getUtme( page_name ) {
+    var customer    = page_name.slice( 0, page_name.indexOf('_') );
+    var target_page = page_name.slice( page_name.indexOf('_')+1 ); 
+  
+    // custom variable names
+    var eightblock  = "8(page_name*customer*target_page)";
+    // respective customer variable values
+    var nineblock  = "9(" + page_name + "*" + customer + "*" + target_page + ")";
+    // all registered as session-level (visit) variables (=2)
+    var elevenblock = "11(2*2*2)";
+
+    return eightblock + nineblock + elevenblock;
+  };
+
+  var account_string = "UA-26975743-1";
+  var protocol_host = (("https:" == document.location.protocol) ?  "https://ssl." : "http://www.");
+  var pixel_host = protocol_host + "google-analytics.com/__utm.gif?";
+
+  var p = {};
+  var wn = window.navigator;
+  var ws = window.screen;
+  p['utm_id'] = ra();
+  p['utmac'] = account_string;
+  p['utmcs'] = document.characterSet || document.charset || "-";
+  p['utmdt'] = escape(document.title);
+  p['utmhid'] = ra();
+  p['utmhn'] = escape(document.location.hostname);
+  p['utmje'] = (wn && wn.javaEnabled()) ? "1" : "0";
+  p['utmn'] = ra();
+  p['utmp'] = encodeURIComponent(window.location.pathname + window.location.search);
+  p['utmr'] = (document.referrer && document.referrer != "") ? document.referrer : "-";
+  p['utmsc'] = ws ? ws.colorDepth + "-bit" : "-";
+  p['utmsr'] = ws ? ws.width + "x" + ws.height : "-";
+  p['utmul'] = (wn && (wn.language || wn.browserLanguage) || "-").toLowerCase();
+  p['utmwv'] = "4.4sj";
+
+  // this utma cookie will ensure that each pageview is considered to be a unique user session
+  var utma = getUtma ( p['utmhn'] );
+  p['utmcc'] = "__utma%3D" + utma + "%3B";
+
+  // inject the page name information into custom variables (utme) bucket
+  var config = document.getElementById("mw_ga_config");
+  if (config) {
+    var pn = config.getAttribute("page_name");
+    if (pn && pn != "") { 
+      var page_name = encodeURIComponent( pn );
+      p['utme'] = getUtme( page_name );
+
+      // also put the page_name information in the document title bucket
+      p['utmdt'] = "MW_ANALYTICS_" + page_name;
+    }
+  }
+
+  var path = "";
+  for (var i in p) {
+    path += i + "=" + p[i] + "&";
+  }
+  if (path.length > 0) {
+    path = path.slice(0, path.length - 1);
+  }
+
+  var img = new Image(1, 1);
+  img.src = pixel_host + path;
+});
+
+
+// Delete me when ready

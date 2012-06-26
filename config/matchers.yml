@@ -3,44 +3,41 @@ matchers:
     default:
       regex: .*
       vars: &default
-        device_stylesheet: main.css
-        stylesheet_asset_location: "/stylesheets/.css/"
-        image_asset_location: "/images/"
-        js_asset_location: "/javascript/"
+        device_stylesheet: main
 
     webkit: 
       regex: WebKit
       vars: &webkit
         <<: *default
-        device_stylesheet: devices/webkit.css
+        device_stylesheet: devices/webkit
 
     iphone: 
       regex: iPhone
       vars: &iphone
         <<: *default
-        device_stylesheet: devices/iphone.css
+        device_stylesheet: devices/iphone
 
     ipad:
       regex: iPad
       vars:
         <<: *webkit
-        device_stylesheet: devices/ipad.css
+        device_stylesheet: devices/ipad
 
     webos:
       regex: webOS
       vars:
         <<: *webkit
-        device_stylesheet: devices/webos.css
+        device_stylesheet: devices/webos
         
     android:
       regex: Android
       vars:
         <<: *webkit
-        device_stylesheet: devices/android.css
+        device_stylesheet: devices/android
 
     blackberry:
       regex: Blackberry
       vars:
         <<: *default
-        device_stylesheet: devices/blackberry.css
+        device_stylesheet: devices/blackberry
 

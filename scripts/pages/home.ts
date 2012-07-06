@@ -30,6 +30,12 @@ $("/html/body") {
     # Turning the list of items into an accordion using Uranium (see http://uraniumjs.com)
     $(".//div[@id='res']/h4") {
       add_class("_category")
+      # add span for button icon
+      $("./a"){
+        insert_bottom("span"){
+          attribute("class", "_toggler_subcategory")
+        }
+      }
     }
 
     # Adding attributes for Uranium widget 
@@ -39,6 +45,12 @@ $("/html/body") {
         attributes(class: "_category", 
                    data-ur-toggler-component: "button")
         wrap_text_children('div')
+        # add span for button icon
+        $("./div"){
+          insert("span"){
+            attribute("class", "_toggler_btn_icon")
+          }
+        }
 
         # Making the links to the over-arching categories items in the list
         $txt = fetch("./a/text()")
@@ -53,6 +65,12 @@ $("/html/body") {
         attribute("data-ur-toggler-component", "content")
         $("./li") {
           attribute("class", "_subcategory")
+          # add span for button icon
+          $("./a"){
+            insert_bottom("span"){
+              attribute("class", "_toggler_subcategory")
+            }
+          }
         }
       }
     }
@@ -66,6 +84,12 @@ $("/html/body") {
         attributes(class: "_category", 
                    data-ur-toggler-component: "button")
         wrap_text_children("div")
+        # add span for button icon
+        $("./div[1]"){
+          insert("span"){
+            attribute("class", "_toggler_btn_icon")
+          }
+        }
       }
       $(".//ul") {
         attribute("data-ur-toggler-component", "content")

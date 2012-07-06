@@ -13,22 +13,36 @@ body._home {
     // when the accordion is opened
     &[data-ur-toggler-component="button"] {
       > div {
+        position: relative;
+        width: 100%;
+        height: 100;
         @include bar_inner_base;
-        @extend .icons-blackPlus;
+        ._toggler_btn_icon{
+          @include toggler_btn_icon;
+          @extend .icons-blackPlus;
+        }
       }
       &[data-ur-state="enabled"] > div {
         @include bar_inner_base;
-        @extend .icons-blackMinus;
+        ._toggler_btn_icon{
+          @extend .icons-blackMinus;
+        }
       }
     }
   }
   // Styling the subcategories that appear
   ._subcategory {
     > a, > div {
+      position: relative;
+      width: 100%;
+      height: 100;
       border-bottom: #fff;
       border-top: 1px solid #ddd; 
       @include bar_inner_base;
-      @extend .icons-blackArrowRight;
+      ._toggler_subcategory{
+        @include toggler_btn_icon;
+        @extend .icons-blackArrowRight;
+      }
     }
   }
 

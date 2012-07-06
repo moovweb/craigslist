@@ -8,3 +8,12 @@
   text-transform: capitalize;
   padding: 10px;
 }
+@mixin toggler_btn_icon{
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  right: 20px;
+  top: 0px;
+  height: 32px;
+  width: 30px;
+}

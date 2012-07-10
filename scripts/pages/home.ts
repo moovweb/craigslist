@@ -44,17 +44,22 @@ $("/html/body") {
       $(".//h4") {
         attributes(class: "_category", 
                    data-ur-toggler-component: "button")
-        wrap_text_children('div')
-        # add span for button icon
-        $("./div"){
-          insert("span"){
+
+        # Wrapping any "naked" text in a div - mainly for the "Personals" tab
+        wrap_text_children('div') {
+          insert("span") {
             attribute("class", "_toggler_btn_icon")
           }
         }
 
-        # Making the links to the over-arching categories items in the list
+        # Making the links to the over-arching categories new items in the list
         $txt = fetch("./a/text()")
-        insert_top("div", $txt)
+        insert_top("div", $txt) {
+          # Adding a span to incorporate the button for the non-Personals categories
+          insert("span") {
+            attribute("class", "_toggler_btn_icon")
+          }
+        }
         $("./a") {
           wrap("li") {
             move_to("../../div[@class='cats']/ul[1]", "top")
@@ -73,6 +78,10 @@ $("/html/body") {
           }
         }
       }
+    }
+    # Removing the extra div above the Personals category
+    $(".//div[@id='ppp']/h4/div[1]") {
+      remove()
     }
   }
 

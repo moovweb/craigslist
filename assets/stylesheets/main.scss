@@ -31,10 +31,10 @@ $icons-spacing: 10px;
 
 
 // Lib file contains all the global mixins and classes
- @import "_lib.scss";
+ @import "globals/_lib.scss";
 
 // Base file contains all the global styles
- @import "_base.scss";
+ @import "globals/_base.scss";
 
 // File for global Uranium stylings
 @import "globals/_uranium.scss";

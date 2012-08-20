@@ -1,0 +1,19 @@
+// Stylesheets containing sprite-sheet info will be deposited into the 'globals' folder.
+// Include them below as needed; e.g.:
+// @import "globals/_icons.scss";
+
+// Base file contains all the global styles
+@import "globals/_base.scss";
+
+
+// File for global Uranium stylings
+@import "globals/_uranium.scss";
+
+
+
+// Header & Footer
+@import "sections/_header.scss";
+@import "sections/_footer.scss";
+
+// Pages
+@import "pages/_home.scss";

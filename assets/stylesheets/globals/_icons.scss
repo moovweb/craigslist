@@ -1,43 +1,191 @@
-/*  #######################################
-    ########### SPRITED ICONS #############
-    #######################################  */
+$icons-url: url("../../../images/icons.png");
 
-// Set the spacing to be 10px apart (remove for no spacing)
-$icons-spacing: 10px;
+$icons-width: 36px;
+$icons-height: 329px;
 
-// Change the location of an icon in your sprite
-// Format is $foldername-iconname-position (example below)
-// $icons-plus-position: 100%;
+$icons-account-x: 0px;
+$icons-account-y: 0px;
+$icons-account-width: 36px;
+$icons-account-height: 35px;
 
-// https://gist.github.com/gists/2879137
-// this is for Compass 0.12 (require)
-// this is for at least Manhattan v.3.4.136
+$icons-blackArrowRight-x: 0px;
+$icons-blackArrowRight-y: -35px;
+$icons-blackArrowRight-width: 36px;
+$icons-blackArrowRight-height: 36px;
 
-// @import "icons/*.png";
-// @include all-icons-sprites;
- 
-// @import "retina";
-// if all the images in your icons/ folder are retina size:
-// @include retina-sprites(-sprites);
- 
-// if only some of the images are retina size and they have a filename convention ex. x2-a.png, x2-b.png, x2-c.png
-// @include retina-sprites(-sprites, sprite-names(sprite-map("icons/x2-*.png")));
- 
-// otherwise you can manually list each retina image
-// @include retina-sprites(-sprites, a b c);
- 
-// Example equivalent of making background-position-x: 100%;
-// .icons-x2-accordion-arrow {
-//   @include retina-background-position(-sprites, x2-accordion-arrow, 100%);
-// }
+$icons-blackMinus-x: 0px;
+$icons-blackMinus-y: -71px;
+$icons-blackMinus-width: 36px;
+$icons-blackMinus-height: 36px;
 
-// Define all heights and widths of sprite icons below
-// Sprite class is the name of the <sprite folder>-<icon name>
-// ie. sprite/foo.png will result in .sprite-foo
+$icons-blackPlus-x: 0px;
+$icons-blackPlus-y: -107px;
+$icons-blackPlus-width: 36px;
+$icons-blackPlus-height: 36px;
 
-// Example
-// .icons-plus, .icons-minus {
-//   width: 19px;
-//   height: 19px;
-//   display: inline-block;
-// }
+$icons-blue-arrow-right-x: 0px;
+$icons-blue-arrow-right-y: -143px;
+$icons-blue-arrow-right-width: 36px;
+$icons-blue-arrow-right-height: 36px;
+
+$icons-calendar-x: 0px;
+$icons-calendar-y: -179px;
+$icons-calendar-width: 36px;
+$icons-calendar-height: 35px;
+
+$icons-info-x: 0px;
+$icons-info-y: -214px;
+$icons-info-width: 36px;
+$icons-info-height: 35px;
+
+$icons-search-x: 0px;
+$icons-search-y: -249px;
+$icons-search-width: 36px;
+$icons-search-height: 35px;
+
+$icons-white-arrow-right-x: 0px;
+$icons-white-arrow-right-y: -284px;
+$icons-white-arrow-right-width: 10px;
+$icons-white-arrow-right-height: 15px;
+
+$icons-white-minus-x: 0px;
+$icons-white-minus-y: -299px;
+$icons-white-minus-width: 12px;
+$icons-white-minus-height: 15px;
+
+$icons-white-plus-x: 0px;
+$icons-white-plus-y: -314px;
+$icons-white-plus-width: 12px;
+$icons-white-plus-height: 15px;
+
+@mixin icons-account() {
+  background: url("../../images/icons.png") no-repeat 0px 0px;
+  width: 36px;
+  height: 35px;
+}
+
+@mixin icons-blackArrowRight() {
+  background: url("../../images/icons.png") no-repeat 0px -35px;
+  width: 36px;
+  height: 36px;
+}
+
+@mixin icons-blackMinus() {
+  background: url("../../images/icons.png") no-repeat 0px -71px;
+  width: 36px;
+  height: 36px;
+}
+
+@mixin icons-blackPlus() {
+  background: url("../../images/icons.png") no-repeat 0px -107px;
+  width: 36px;
+  height: 36px;
+}
+
+@mixin icons-blue-arrow-right() {
+  background: url("../../images/icons.png") no-repeat 0px -143px;
+  width: 36px;
+  height: 36px;
+}
+
+@mixin icons-calendar() {
+  background: url("../../images/icons.png") no-repeat 0px -179px;
+  width: 36px;
+  height: 35px;
+}
+
+@mixin icons-info() {
+  background: url("../../images/icons.png") no-repeat 0px -214px;
+  width: 36px;
+  height: 35px;
+}
+
+@mixin icons-search() {
+  background: url("../../images/icons.png") no-repeat 0px -249px;
+  width: 36px;
+  height: 35px;
+}
+
+@mixin icons-white-arrow-right() {
+  background: url("../../images/icons.png") no-repeat 0px -284px;
+  width: 10px;
+  height: 15px;
+}
+
+@mixin icons-white-minus() {
+  background: url("../../images/icons.png") no-repeat 0px -299px;
+  width: 12px;
+  height: 15px;
+}
+
+@mixin icons-white-plus() {
+  background: url("../../images/icons.png") no-repeat 0px -314px;
+  width: 12px;
+  height: 15px;
+}
+
+.icons-account {
+  background: url("../../images/icons.png") no-repeat 0px 0px;
+  width: 36px;
+  height: 35px;
+}
+
+.icons-blackArrowRight {
+  background: url("../../images/icons.png") no-repeat 0px -35px;
+  width: 36px;
+  height: 36px;
+}
+
+.icons-blackMinus {
+  background: url("../../images/icons.png") no-repeat 0px -71px;
+  width: 36px;
+  height: 36px;
+}
+
+.icons-blackPlus {
+  background: url("../../images/icons.png") no-repeat 0px -107px;
+  width: 36px;
+  height: 36px;
+}
+
+.icons-blue-arrow-right {
+  background: url("../../images/icons.png") no-repeat 0px -143px;
+  width: 36px;
+  height: 36px;
+}
+
+.icons-calendar {
+  background: url("../../images/icons.png") no-repeat 0px -179px;
+  width: 36px;
+  height: 35px;
+}
+
+.icons-info {
+  background: url("../../images/icons.png") no-repeat 0px -214px;
+  width: 36px;
+  height: 35px;
+}
+
+.icons-search {
+  background: url("../../images/icons.png") no-repeat 0px -249px;
+  width: 36px;
+  height: 35px;
+}
+
+.icons-white-arrow-right {
+  background: url("../../images/icons.png") no-repeat 0px -284px;
+  width: 10px;
+  height: 15px;
+}
+
+.icons-white-minus {
+  background: url("../../images/icons.png") no-repeat 0px -299px;
+  width: 12px;
+  height: 15px;
+}
+
+.icons-white-plus {
+  background: url("../../images/icons.png") no-repeat 0px -314px;
+  width: 12px;
+  height: 15px;
+}

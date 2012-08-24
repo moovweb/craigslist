@@ -130,7 +130,7 @@
 # Add in our Assets
 @func XMLNode.add_assets() {
   $("./head") {
-    insert("link", rel: "stylesheet", type: "text/css", href: sass("main"))
+    insert("link", rel: "stylesheet", type: "text/css", href: sass($device_stylesheet))
     insert("script", data-keep: "true", type: "text/javascript", src: asset("javascript/main.js"))
     insert("link", rel: "shortcut icon", href: asset("images/favicon.ico"))
     # The images below are placeholders, get real ones from the client

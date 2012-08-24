@@ -1,4 +1,4 @@
-$icons-url: url("../../../images/icons.png");
+$icons-url: url("http://localhost:3003/images/icons.png");
 
 $icons-width: 36px;
 $icons-height: 329px;
@@ -59,133 +59,133 @@ $icons-white-plus-width: 12px;
 $icons-white-plus-height: 15px;
 
 @mixin icons-account() {
-  background: url("../../images/icons.png") no-repeat 0px 0px;
+  background: url("http://localhost:3003/images/icons.png") no-repeat 0px 0px;
   width: 36px;
   height: 35px;
 }
 
 @mixin icons-blackArrowRight() {
-  background: url("../../images/icons.png") no-repeat 0px -35px;
+  background: url("http://localhost:3003/images/icons.png") no-repeat 0px -35px;
   width: 36px;
   height: 36px;
 }
 
 @mixin icons-blackMinus() {
-  background: url("../../images/icons.png") no-repeat 0px -71px;
+  background: url("http://localhost:3003/images/icons.png") no-repeat 0px -71px;
   width: 36px;
   height: 36px;
 }
 
 @mixin icons-blackPlus() {
-  background: url("../../images/icons.png") no-repeat 0px -107px;
+  background: url("http://localhost:3003/images/icons.png") no-repeat 0px -107px;
   width: 36px;
   height: 36px;
 }
 
 @mixin icons-blue-arrow-right() {
-  background: url("../../images/icons.png") no-repeat 0px -143px;
+  background: url("http://localhost:3003/images/icons.png") no-repeat 0px -143px;
   width: 36px;
   height: 36px;
 }
 
 @mixin icons-calendar() {
-  background: url("../../images/icons.png") no-repeat 0px -179px;
+  background: url("http://localhost:3003/images/icons.png") no-repeat 0px -179px;
   width: 36px;
   height: 35px;
 }
 
 @mixin icons-info() {
-  background: url("../../images/icons.png") no-repeat 0px -214px;
+  background: url("http://localhost:3003/images/icons.png") no-repeat 0px -214px;
   width: 36px;
   height: 35px;
 }
 
 @mixin icons-search() {
-  background: url("../../images/icons.png") no-repeat 0px -249px;
+  background: url("http://localhost:3003/images/icons.png") no-repeat 0px -249px;
   width: 36px;
   height: 35px;
 }
 
 @mixin icons-white-arrow-right() {
-  background: url("../../images/icons.png") no-repeat 0px -284px;
+  background: url("http://localhost:3003/images/icons.png") no-repeat 0px -284px;
   width: 10px;
   height: 15px;
 }
 
 @mixin icons-white-minus() {
-  background: url("../../images/icons.png") no-repeat 0px -299px;
+  background: url("http://localhost:3003/images/icons.png") no-repeat 0px -299px;
   width: 12px;
   height: 15px;
 }
 
 @mixin icons-white-plus() {
-  background: url("../../images/icons.png") no-repeat 0px -314px;
+  background: url("http://localhost:3003/images/icons.png") no-repeat 0px -314px;
   width: 12px;
   height: 15px;
 }
 
 .icons-account {
-  background: url("../../images/icons.png") no-repeat 0px 0px;
+  background: url("http://localhost:3003/images/icons.png") no-repeat 0px 0px;
   width: 36px;
   height: 35px;
 }
 
 .icons-blackArrowRight {
-  background: url("../../images/icons.png") no-repeat 0px -35px;
+  background: url("http://localhost:3003/images/icons.png") no-repeat 0px -35px;
   width: 36px;
   height: 36px;
 }
 
 .icons-blackMinus {
-  background: url("../../images/icons.png") no-repeat 0px -71px;
+  background: url("http://localhost:3003/images/icons.png") no-repeat 0px -71px;
   width: 36px;
   height: 36px;
 }
 
 .icons-blackPlus {
-  background: url("../../images/icons.png") no-repeat 0px -107px;
+  background: url("http://localhost:3003/images/icons.png") no-repeat 0px -107px;
   width: 36px;
   height: 36px;
 }
 
 .icons-blue-arrow-right {
-  background: url("../../images/icons.png") no-repeat 0px -143px;
+  background: url("http://localhost:3003/images/icons.png") no-repeat 0px -143px;
   width: 36px;
   height: 36px;
 }
 
 .icons-calendar {
-  background: url("../../images/icons.png") no-repeat 0px -179px;
+  background: url("http://localhost:3003/images/icons.png") no-repeat 0px -179px;
   width: 36px;
   height: 35px;
 }
 
 .icons-info {
-  background: url("../../images/icons.png") no-repeat 0px -214px;
+  background: url("http://localhost:3003/images/icons.png") no-repeat 0px -214px;
   width: 36px;
   height: 35px;
 }
 
 .icons-search {
-  background: url("../../images/icons.png") no-repeat 0px -249px;
+  background: url("http://localhost:3003/images/icons.png") no-repeat 0px -249px;
   width: 36px;
   height: 35px;
 }
 
 .icons-white-arrow-right {
-  background: url("../../images/icons.png") no-repeat 0px -284px;
+  background: url("http://localhost:3003/images/icons.png") no-repeat 0px -284px;
   width: 10px;
   height: 15px;
 }
 
 .icons-white-minus {
-  background: url("../../images/icons.png") no-repeat 0px -299px;
+  background: url("http://localhost:3003/images/icons.png") no-repeat 0px -299px;
   width: 12px;
   height: 15px;
 }
 
 .icons-white-plus {
-  background: url("../../images/icons.png") no-repeat 0px -314px;
+  background: url("http://localhost:3003/images/icons.png") no-repeat 0px -314px;
   width: 12px;
   height: 15px;
 }

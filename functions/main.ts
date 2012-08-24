@@ -70,9 +70,6 @@
     yield()
   }
 }
-
-
-
 # Remove Styles Functions
 @func XMLNode.remove_external_styles() {
   remove(".//link[@rel='stylesheet']")

@@ -81,7 +81,7 @@ $$("body") {
   $$("#rightbar") {
     $$("> ul > li") {
       attribute("data-ur-set", "toggler")
-      $$("h5") {
+      $$("> h5") {
         attributes(class: "_category", 
                    data-ur-toggler-component: "button")
         wrap_text_children("div")

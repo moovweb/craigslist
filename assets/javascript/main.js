@@ -1,4 +1,155 @@
 
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *  WARNING: Moovweb auto-generated file. Any changes you make here will *
+ *  be overwritten.                                                      *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */ 
+
+(function(){
+
+var mapProxyToOrigin = {"http://mlocal.accounts.craigslist.org":"http://accounts.craigslist.org","http://mlocal.atlanta.craigslist.org":"http://atlanta.craigslist.org","http://mlocal.auckland.craigslist.org":"http://auckland.craigslist.org","http://mlocal.austin.craigslist.org":"http://austin.craigslist.org","http://mlocal.bellingham.craigslist.org":"http://bellingham.craigslist.org","http://mlocal.bend.craigslist.org":"http://bend.craigslist.org","http://mlocal.blog.craigslist.org":"http://blog.craigslist.org","http://mlocal.boston.craigslist.org":"http://boston.craigslist.org","http://mlocal.caribbean.craigslist.org":"http://caribbean.craigslist.org","http://mlocal.chicago.craigslist.org":"http://chicago.craigslist.org","http://mlocal.corvallis.craigslist.org":"http://corvallis.craigslist.org","http://mlocal.craigslist.org":"http://craigslist.org","http://mlocal.dallas.craigslist.org":"http://dallas.craigslist.org","http://mlocal.denver.craigslist.org":"http://denver.craigslist.org","http://mlocal.detroit.craigslist.org":"http://detroit.craigslist.org","http://mlocal.eastoregon.craigslist.org":"http://eastoregon.craigslist.org","http://mlocal.eugene.craigslist.org":"http://eugene.craigslist.org","http://mlocal.geo.craigslist.org":"http://geo.craigslist.org","http://mlocal.houston.craigslist.org":"http://houston.craigslist.org","http://mlocal.kpr.craigslist.org":"http://kpr.craigslist.org","http://mlocal.lasvegas.craigslist.org":"http://lasvegas.craigslist.org","http://mlocal.lewiston.craigslist.org":"http://lewiston.craigslist.org","http://mlocal.losangeles.craigslist.org":"http://losangeles.craigslist.org","http://mlocal.medford.craigslist.org":"http://medford.craigslist.org","http://mlocal.miami.craigslist.org":"http://miami.craigslist.org","http://mlocal.micronesia.craigslist.org":"http://micronesia.craigslist.org","http://mlocal.minneapolis.craigslist.org":"http://minneapolis.craigslist.org","http://mlocal.moscow.craigslist.org":"http://moscow.craigslist.org","http://mlocal.moseslake.craigslist.org":"http://moseslake.craigslist.org","http://mlocal.newyork.craigslist.org":"http://newyork.craigslist.org","http://mlocal.olympic.craigslist.org":"http://olympic.craigslist.org","http://mlocal.orangecounty.craigslist.org":"http://orangecounty.craigslist.org","http://mlocal.oregoncoast.craigslist.org":"http://oregoncoast.craigslist.org","http://mlocal.philadelphia.craigslist.org":"http://philadelphia.craigslist.org","http://mlocal.phoenix.craigslist.org":"http://phoenix.craigslist.org","http://mlocal.portland.craigslist.org":"http://portland.craigslist.org","http://mlocal.post.craigslist.org":"http://post.craigslist.org","http://mlocal.pullman.craigslist.org":"http://pullman.craigslist.org","http://mlocal.raleigh.craigslist.org":"http://raleigh.craigslist.org","http://mlocal.rio.craigslist.org":"http://rio.craigslist.org","http://mlocal.roseburg.craigslist.org":"http://roseburg.craigslist.org","http://mlocal.sacramento.craigslist.org":"http://sacramento.craigslist.org","http://mlocal.salem.craigslist.org":"http://salem.craigslist.org","http://mlocal.sandiego.craigslist.org":"http://sandiego.craigslist.org","http://mlocal.seattle.craigslist.org":"http://seattle.craigslist.org","http://mlocal.sfbay.craigslist.org":"http://sfbay.craigslist.org","http://mlocal.skagit.craigslist.org":"http://skagit.craigslist.org","http://mlocal.spokane.craigslist.org":"http://spokane.craigslist.org","http://mlocal.telaviv.craigslist.org":"http://telaviv.craigslist.org","http://mlocal.washingtondc.craigslist.org":"http://washingtondc.craigslist.org","http://mlocal.wenatchee.craigslist.org":"http://wenatchee.craigslist.org","http://mlocal.yakima.craigslist.org":"http://yakima.craigslist.org","https://mlocal.accounts.craigslist.org":"https://accounts.craigslist.org","https://mlocal.atlanta.craigslist.org":"https://atlanta.craigslist.org","https://mlocal.auckland.craigslist.org":"https://auckland.craigslist.org","https://mlocal.austin.craigslist.org":"https://austin.craigslist.org","https://mlocal.bellingham.craigslist.org":"https://bellingham.craigslist.org","https://mlocal.bend.craigslist.org":"https://bend.craigslist.org","https://mlocal.blog.craigslist.org":"https://blog.craigslist.org","https://mlocal.boston.craigslist.org":"https://boston.craigslist.org","https://mlocal.caribbean.craigslist.org":"https://caribbean.craigslist.org","https://mlocal.chicago.craigslist.org":"https://chicago.craigslist.org","https://mlocal.corvallis.craigslist.org":"https://corvallis.craigslist.org","https://mlocal.craigslist.org":"https://craigslist.org","https://mlocal.dallas.craigslist.org":"https://dallas.craigslist.org","https://mlocal.denver.craigslist.org":"https://denver.craigslist.org","https://mlocal.detroit.craigslist.org":"https://detroit.craigslist.org","https://mlocal.eastoregon.craigslist.org":"https://eastoregon.craigslist.org","https://mlocal.eugene.craigslist.org":"https://eugene.craigslist.org","https://mlocal.geo.craigslist.org":"https://geo.craigslist.org","https://mlocal.houston.craigslist.org":"https://houston.craigslist.org","https://mlocal.kpr.craigslist.org":"https://kpr.craigslist.org","https://mlocal.lasvegas.craigslist.org":"https://lasvegas.craigslist.org","https://mlocal.lewiston.craigslist.org":"https://lewiston.craigslist.org","https://mlocal.losangeles.craigslist.org":"https://losangeles.craigslist.org","https://mlocal.medford.craigslist.org":"https://medford.craigslist.org","https://mlocal.miami.craigslist.org":"https://miami.craigslist.org","https://mlocal.micronesia.craigslist.org":"https://micronesia.craigslist.org","https://mlocal.minneapolis.craigslist.org":"https://minneapolis.craigslist.org","https://mlocal.moscow.craigslist.org":"https://moscow.craigslist.org","https://mlocal.moseslake.craigslist.org":"https://moseslake.craigslist.org","https://mlocal.newyork.craigslist.org":"https://newyork.craigslist.org","https://mlocal.olympic.craigslist.org":"https://olympic.craigslist.org","https://mlocal.orangecounty.craigslist.org":"https://orangecounty.craigslist.org","https://mlocal.oregoncoast.craigslist.org":"https://oregoncoast.craigslist.org","https://mlocal.philadelphia.craigslist.org":"https://philadelphia.craigslist.org","https://mlocal.phoenix.craigslist.org":"https://phoenix.craigslist.org","https://mlocal.portland.craigslist.org":"https://portland.craigslist.org","https://mlocal.post.craigslist.org":"https://post.craigslist.org","https://mlocal.pullman.craigslist.org":"https://pullman.craigslist.org","https://mlocal.raleigh.craigslist.org":"https://raleigh.craigslist.org","https://mlocal.rio.craigslist.org":"https://rio.craigslist.org","https://mlocal.roseburg.craigslist.org":"https://roseburg.craigslist.org","https://mlocal.sacramento.craigslist.org":"https://sacramento.craigslist.org","https://mlocal.salem.craigslist.org":"https://salem.craigslist.org","https://mlocal.sandiego.craigslist.org":"https://sandiego.craigslist.org","https://mlocal.seattle.craigslist.org":"https://seattle.craigslist.org","https://mlocal.sfbay.craigslist.org":"https://sfbay.craigslist.org","https://mlocal.skagit.craigslist.org":"https://skagit.craigslist.org","https://mlocal.spokane.craigslist.org":"https://spokane.craigslist.org","https://mlocal.telaviv.craigslist.org":"https://telaviv.craigslist.org","https://mlocal.washingtondc.craigslist.org":"https://washingtondc.craigslist.org","https://mlocal.wenatchee.craigslist.org":"https://wenatchee.craigslist.org","https://mlocal.yakima.craigslist.org":"https://yakima.craigslist.org"};
+var mapOriginToProxy = {"http://accounts.craigslist.org":"http://mlocal.accounts.craigslist.org","http://atlanta.craigslist.org":"http://mlocal.atlanta.craigslist.org","http://auckland.craigslist.org":"http://mlocal.auckland.craigslist.org","http://austin.craigslist.org":"http://mlocal.austin.craigslist.org","http://bellingham.craigslist.org":"http://mlocal.bellingham.craigslist.org","http://bend.craigslist.org":"http://mlocal.bend.craigslist.org","http://blog.craigslist.org":"http://mlocal.blog.craigslist.org","http://boston.craigslist.org":"http://mlocal.boston.craigslist.org","http://caribbean.craigslist.org":"http://mlocal.caribbean.craigslist.org","http://chicago.craigslist.org":"http://mlocal.chicago.craigslist.org","http://corvallis.craigslist.org":"http://mlocal.corvallis.craigslist.org","http://craigslist.org":"http://mlocal.craigslist.org","http://dallas.craigslist.org":"http://mlocal.dallas.craigslist.org","http://denver.craigslist.org":"http://mlocal.denver.craigslist.org","http://detroit.craigslist.org":"http://mlocal.detroit.craigslist.org","http://eastoregon.craigslist.org":"http://mlocal.eastoregon.craigslist.org","http://eugene.craigslist.org":"http://mlocal.eugene.craigslist.org","http://geo.craigslist.org":"http://mlocal.geo.craigslist.org","http://houston.craigslist.org":"http://mlocal.houston.craigslist.org","http://kpr.craigslist.org":"http://mlocal.kpr.craigslist.org","http://lasvegas.craigslist.org":"http://mlocal.lasvegas.craigslist.org","http://lewiston.craigslist.org":"http://mlocal.lewiston.craigslist.org","http://losangeles.craigslist.org":"http://mlocal.losangeles.craigslist.org","http://medford.craigslist.org":"http://mlocal.medford.craigslist.org","http://miami.craigslist.org":"http://mlocal.miami.craigslist.org","http://micronesia.craigslist.org":"http://mlocal.micronesia.craigslist.org","http://minneapolis.craigslist.org":"http://mlocal.minneapolis.craigslist.org","http://moscow.craigslist.org":"http://mlocal.moscow.craigslist.org","http://moseslake.craigslist.org":"http://mlocal.moseslake.craigslist.org","http://newyork.craigslist.org":"http://mlocal.newyork.craigslist.org","http://olympic.craigslist.org":"http://mlocal.olympic.craigslist.org","http://orangecounty.craigslist.org":"http://mlocal.orangecounty.craigslist.org","http://oregoncoast.craigslist.org":"http://mlocal.oregoncoast.craigslist.org","http://philadelphia.craigslist.org":"http://mlocal.philadelphia.craigslist.org","http://phoenix.craigslist.org":"http://mlocal.phoenix.craigslist.org","http://portland.craigslist.org":"http://mlocal.portland.craigslist.org","http://post.craigslist.org":"http://mlocal.post.craigslist.org","http://pullman.craigslist.org":"http://mlocal.pullman.craigslist.org","http://raleigh.craigslist.org":"http://mlocal.raleigh.craigslist.org","http://rio.craigslist.org":"http://mlocal.rio.craigslist.org","http://roseburg.craigslist.org":"http://mlocal.roseburg.craigslist.org","http://sacramento.craigslist.org":"http://mlocal.sacramento.craigslist.org","http://salem.craigslist.org":"http://mlocal.salem.craigslist.org","http://sandiego.craigslist.org":"http://mlocal.sandiego.craigslist.org","http://seattle.craigslist.org":"http://mlocal.seattle.craigslist.org","http://sfbay.craigslist.org":"http://mlocal.sfbay.craigslist.org","http://skagit.craigslist.org":"http://mlocal.skagit.craigslist.org","http://spokane.craigslist.org":"http://mlocal.spokane.craigslist.org","http://telaviv.craigslist.org":"http://mlocal.telaviv.craigslist.org","http://washingtondc.craigslist.org":"http://mlocal.washingtondc.craigslist.org","http://wenatchee.craigslist.org":"http://mlocal.wenatchee.craigslist.org","http://yakima.craigslist.org":"http://mlocal.yakima.craigslist.org","https://accounts.craigslist.org":"https://mlocal.accounts.craigslist.org","https://atlanta.craigslist.org":"https://mlocal.atlanta.craigslist.org","https://auckland.craigslist.org":"https://mlocal.auckland.craigslist.org","https://austin.craigslist.org":"https://mlocal.austin.craigslist.org","https://bellingham.craigslist.org":"https://mlocal.bellingham.craigslist.org","https://bend.craigslist.org":"https://mlocal.bend.craigslist.org","https://blog.craigslist.org":"https://mlocal.blog.craigslist.org","https://boston.craigslist.org":"https://mlocal.boston.craigslist.org","https://caribbean.craigslist.org":"https://mlocal.caribbean.craigslist.org","https://chicago.craigslist.org":"https://mlocal.chicago.craigslist.org","https://corvallis.craigslist.org":"https://mlocal.corvallis.craigslist.org","https://craigslist.org":"https://mlocal.craigslist.org","https://dallas.craigslist.org":"https://mlocal.dallas.craigslist.org","https://denver.craigslist.org":"https://mlocal.denver.craigslist.org","https://detroit.craigslist.org":"https://mlocal.detroit.craigslist.org","https://eastoregon.craigslist.org":"https://mlocal.eastoregon.craigslist.org","https://eugene.craigslist.org":"https://mlocal.eugene.craigslist.org","https://geo.craigslist.org":"https://mlocal.geo.craigslist.org","https://houston.craigslist.org":"https://mlocal.houston.craigslist.org","https://kpr.craigslist.org":"https://mlocal.kpr.craigslist.org","https://lasvegas.craigslist.org":"https://mlocal.lasvegas.craigslist.org","https://lewiston.craigslist.org":"https://mlocal.lewiston.craigslist.org","https://losangeles.craigslist.org":"https://mlocal.losangeles.craigslist.org","https://medford.craigslist.org":"https://mlocal.medford.craigslist.org","https://miami.craigslist.org":"https://mlocal.miami.craigslist.org","https://micronesia.craigslist.org":"https://mlocal.micronesia.craigslist.org","https://minneapolis.craigslist.org":"https://mlocal.minneapolis.craigslist.org","https://moscow.craigslist.org":"https://mlocal.moscow.craigslist.org","https://moseslake.craigslist.org":"https://mlocal.moseslake.craigslist.org","https://newyork.craigslist.org":"https://mlocal.newyork.craigslist.org","https://olympic.craigslist.org":"https://mlocal.olympic.craigslist.org","https://orangecounty.craigslist.org":"https://mlocal.orangecounty.craigslist.org","https://oregoncoast.craigslist.org":"https://mlocal.oregoncoast.craigslist.org","https://philadelphia.craigslist.org":"https://mlocal.philadelphia.craigslist.org","https://phoenix.craigslist.org":"https://mlocal.phoenix.craigslist.org","https://portland.craigslist.org":"https://mlocal.portland.craigslist.org","https://post.craigslist.org":"https://mlocal.post.craigslist.org","https://pullman.craigslist.org":"https://mlocal.pullman.craigslist.org","https://raleigh.craigslist.org":"https://mlocal.raleigh.craigslist.org","https://rio.craigslist.org":"https://mlocal.rio.craigslist.org","https://roseburg.craigslist.org":"https://mlocal.roseburg.craigslist.org","https://sacramento.craigslist.org":"https://mlocal.sacramento.craigslist.org","https://salem.craigslist.org":"https://mlocal.salem.craigslist.org","https://sandiego.craigslist.org":"https://mlocal.sandiego.craigslist.org","https://seattle.craigslist.org":"https://mlocal.seattle.craigslist.org","https://sfbay.craigslist.org":"https://mlocal.sfbay.craigslist.org","https://skagit.craigslist.org":"https://mlocal.skagit.craigslist.org","https://spokane.craigslist.org":"https://mlocal.spokane.craigslist.org","https://telaviv.craigslist.org":"https://mlocal.telaviv.craigslist.org","https://washingtondc.craigslist.org":"https://mlocal.washingtondc.craigslist.org","https://wenatchee.craigslist.org":"https://mlocal.wenatchee.craigslist.org","https://yakima.craigslist.org":"https://mlocal.yakima.craigslist.org"};	
+	
+if (typeof(mw) == "undefined") {
+	window.mw = {};
+}
+
+if(typeof(mw.catch_all_domain) == "undefined") {
+	mw.catch_all_domain = ".moovapp.com";	
+} else {
+  if (mw.catch_all_domain[0] != ".") {
+  	console.log("Bad catch all domain");
+  }
+}
+
+
+function detect_catch_all(url) {
+	var found_index = url.host.indexOf(mw.catch_all_domain);
+	var length = url.host.length;
+
+	if (found_index != -1 && (found_index + mw.catch_all_domain.length) == length) {
+		return true;
+	}
+	return false;
+}
+
+function strip_catch_all(url) {
+	var found_index = url.host.indexOf(mw.catch_all_domain);
+	var length = url.host.length;
+
+	url.host = url.host.slice(0, found_index);
+	return url;
+}
+
+function add_catch_all(url) {
+	url.host = url.host + mw.catch_all_domain;
+	return url;	
+}
+
+function getParsedURL(url) {
+	var elem = document.createElement("a")
+	elem.href = url;
+	return elem;
+}
+
+function getSchemeAndHostname(url) {
+	var result = {};
+	result.scheme = url.protocol;
+	result.host = url.host;
+	return result;
+}
+
+function getKey(url) {
+	var components = getSchemeAndHostname(url);
+	return components.scheme + "//" + components.host;
+}
+
+function fetch(url, map) {
+	var key = getKey(url);
+	var result = map[key];
+	
+	if (result === undefined) {
+		if (typeof(mw) != 'undefined' && mw.debug == true) {
+			console.log("Warning. No rule to modify host (" + key + ").")
+		}
+		return url;
+	}
+	
+	return result + url.pathname + url.search;
+}
+
+function detect(rawURL) {
+  var properties = {
+    "secure": false,
+    "schema_relative": false,
+    "relative": false
+  };  
+  properties.raw = rawURL;
+  
+  if (rawURL.indexOf("https://") != -1) {
+    properties.secure = true;
+  } else if(rawURL.indexOf("http://") == -1) {
+    if (rawURL.indexOf("//") == 0) {
+      properties.schema_relative = true;
+    } else {
+      properties.relative = true;
+    }
+  }
+  
+  return properties;
+}
+
+function denormalize(url, properties) {
+  url = getParsedURL(url);
+  if (properties.relative) {    
+    return url.pathname;
+  } else {
+    if (properties.secure) {
+      return url.href.replace("http://","https://");
+    } 
+    if (properties.schema_relative) {
+      return url.href.replace(/^https*:/, "");
+    }
+    
+  }
+  return url.href;
+}
+
+mw.proxyURLToOrigin = function(rawURL){	
+
+	var properties = detect(rawURL);
+	var url = getParsedURL(rawURL);
+	var catch_all = detect_catch_all(url);
+
+  if (catch_all) {    
+	  url = strip_catch_all(url);
+  }
+	
+	url = fetch(url, mapProxyToOrigin);
+	url = denormalize(url, properties);
+
+	return url;
+}
+
+mw.originURLToProxy = function(rawURL){
+
+	var properties = detect(rawURL);
+	var url = getParsedURL(rawURL);
+	var catch_all = detect_catch_all(url);
+
+  if (catch_all) {    
+	  url = add_catch_all(url);
+  }
+
+  url = fetch(url, mapOriginToProxy);
+	url = denormalize(url, properties);
+	
+	return url;
+}
+
+}());
+
+
 (function () {
 /**
   Basics
@@ -1753,6 +1904,8 @@ xui.extend(mixins);
 Ur.WindowLoaders["carousel"] = (function() {
 
   function Carousel(components) {
+    var self = this;
+    
     this.container = components["view_container"];
     this.items = components["scroll_container"];
     if (this.items.length == 0) {
@@ -1764,15 +1917,522 @@ Ur.WindowLoaders["carousel"] = (function() {
     this.button = components["button"] === undefined ? {} : components["button"];
     this.count = components["count"];
     this.dots = components["dots"];
+    
+    var $container = x$(this.container);
+    var preCoords = {x: 0, y: 0};
+    var startPos = {x: 0, y: 0}, endPos = {x: 0, y: 0};
+    
+    var oldWidth = 0, snapWidth = 0;
+    
+    var startingOffset = null;
+    
+    var translatePrefix = "translate3d(", translateSuffix = ", 0px)";
+    
+    function initialize() {
+      // TODO:
+      // add an internal event handler to handle all events on the container:
+      // x$(self.container).on("event", self.handleEvent);
 
-    this.initialize();
+      self.flag = {
+        click: false,
+        increment: false,
+        loop: false,
+        lock: null,
+        timeoutId: null,
+        touched: false
+      };
+      self.options = {
+        autoscroll: true,
+        autoscrollDelay: 5000,
+        autoscrollForward: true,
+        center: true,
+        cloneLength: 1,
+        fill: 0,
+        infinite: true,
+        transform3d: true,
+        touch: true,
+        verticalScroll: true
+      };
+
+      readAttributes();
+
+      self.itemIndex = 0;
+
+      if (self.options.infinite) {
+        var items = x$(self.items).find("[data-ur-carousel-component='item']");
+        self.realItemCount = items.length;
+        self.itemIndex = self.options.cloneLength;
+        for (var i = 0; i < self.options.cloneLength; i++) {
+          var clone = items[i].cloneNode(true);
+          x$(clone).attr("data-ur-clone", i).attr("data-ur-state", "inactive");
+          items[items.length - 1].parentNode.appendChild(clone);
+        }
+
+        for (var i = items.length - self.options.cloneLength; i < items.length; i++) {
+          var clone = items[i].cloneNode(true);
+          x$(clone).attr("data-ur-clone", i).attr("data-ur-state", "inactive");
+          items[0].parentNode.insertBefore(clone, items[0]);
+        }
+      }
+      
+      if (!self.options.transform3d) {
+        translatePrefix = "translate(";
+        translateSuffix = ")";
+      }
+
+      adjustSpacing();
+
+      if (!self.options.infinite)
+        self.realItemCount = self.itemCount;
+
+      insertDots();
+
+      updateIndex(self.options.infinite ? self.options.cloneLength : 0);
+
+      if (self.options.touch) {
+        var hasTouch = "ontouchstart" in window;
+        var start = hasTouch ? "touchstart" : "mousedown";
+        var move = hasTouch ? "touchmove" : "mousemove";
+        var end = hasTouch ? "touchend" : "mouseup";
+
+        x$(self.items).on(start, startSwipe);
+        x$(self.items).on(move, continueSwipe);
+        x$(self.items).on(end, finishSwipe);
+        x$(self.items).click(function(e) {if (!self.flag.click) stifle(e);});
+      }
+
+      x$(self.button["prev"]).click(function(){self.moveTo(1);});
+      x$(self.button["next"]).click(function(){self.moveTo(-1);});
+
+      x$(window).orientationchange(resize);
+      // orientationchange isn't supported on some androids
+      x$(window).on("resize", function() {
+        resize();
+        setTimeout(resize, 100);
+      });
+
+      self.autoscrollStart();
+    }
+
+    function readAttributes() {
+      
+      // translate3d is disabled on Android by default because it often causes problems
+      // however, on some pages translate3d will work fine so the data-ur-android3d
+      // attribute can be set to "enabled" to use translate3d since it can be smoother
+      // on some Android devices
+
+      var oldAndroid = /Android [12]/.test(navigator.userAgent);
+      if (oldAndroid && $container.attr("data-ur-android3d")[0] != "enabled")
+        self.options.transform3d = false;
+
+      self.options.verticalScroll = $container.attr("data-ur-vertical-scroll")[0] != "disabled";
+      $container.attr("data-ur-vertical-scroll", self.options.verticalScroll ? "enabled" : "disabled");
+
+      self.options.touch = $container.attr("data-ur-touch")[0] != "disabled";
+      $container.attr("data-ur-touch", self.options.touch ? "enabled" : "disabled");
+
+      self.options.infinite = $container.attr("data-ur-infinite")[0] != "disabled";
+      if ($container.find("[data-ur-carousel-component='item']").length == 1)
+        self.options.infinite = false;
+      $container.attr("data-ur-infinite", self.options.infinite ? "enabled" : "disabled");
+
+      self.options.center = $container.attr("data-ur-center")[0] == "enabled";
+      $container.attr("data-ur-center", self.options.center ? "enabled" : "disabled");
+
+      var fill = parseInt($container.attr("data-ur-fill"));
+      if (fill > 0)
+        self.options.fill = fill;
+      $container.attr("data-ur-fill", self.options.fill);
+
+      var cloneLength = parseInt($container.attr("data-ur-clones"));
+      if (!self.options.infinite)
+        cloneLength = 0;
+      else if (isNaN(cloneLength) || cloneLength < self.options.fill)
+        cloneLength = Math.max(1, self.options.fill);
+      self.options.cloneLength = cloneLength;
+      $container.attr("data-ur-clones", self.options.cloneLength);
+
+      self.options.autoscroll = $container.attr("data-ur-autoscroll")[0] == "enabled";
+      $container.attr("data-ur-autoscroll", self.options.autoscroll ? "enabled" : "disabled");
+
+      var autoscrollDelay = parseInt($container.attr("data-ur-autoscroll-delay"));
+      if (autoscrollDelay >= 0)
+        self.options.autoscrollDelay = autoscrollDelay;
+      $container.attr("data-ur-autoscroll-delay", self.options.autoscrollDelay);
+
+      self.options.autoscrollForward = $container.attr("data-ur-autoscroll-dir")[0] != "prev";
+      $container.attr("data-ur-autoscroll-dir", self.options.autoscrollForward ? "next" : "prev");
+    }
+
+    function insertDots() {
+      if (self.dots) {
+        var existing = x$(self.dots).find("[data-ur-carousel-component='dot']");
+        for (var i = existing.length; i < self.realItemCount; i++) {
+          var new_dot = document.createElement("div");
+          x$(new_dot).attr("data-ur-carousel-component", "dot");
+          if (i == 0)
+            x$(new_dot).attr("data-ur-state", "active");
+          self.dots.appendChild(new_dot);
+        }
+      }
+    }
+
+    function resize() {
+      var offsetWidth = self.container.offsetWidth;
+      if (snapWidth != offsetWidth && offsetWidth != 0)
+        adjustSpacing();
+    }
+
+    function adjustSpacing() {
+      // Will need to be called if the container's size changes --> orientation change
+      var visibleWidth = self.container.offsetWidth;
+
+      if (oldWidth !== undefined && oldWidth == visibleWidth)
+        return;
+
+      var oldSnapWidth = snapWidth;
+      oldWidth = visibleWidth;
+
+      var cumulativeOffset = 0;
+      var items = x$(self.items).find("[data-ur-carousel-component='item']");
+      self.itemCount = items.length;
+
+      // Adjust the container to be the necessary width.
+      var totalWidth = 0;
+
+      var divisions = [];
+      var remainder = visibleWidth;
+      if (self.options.fill > 0) {
+        for (var i = self.options.fill; i > 0; i--) {
+          var length = Math.round(remainder/i);
+          divisions.push(length);
+          remainder -= length;
+        }
+      }
+
+      for (var i = 0; i < items.length; i++) {
+        if (self.options.fill > 0) {
+          var length = divisions[i % self.options.fill];
+          items[i].style.width = length + "px";
+          totalWidth += length;
+        }
+        else
+          totalWidth += items[i].offsetWidth;
+      }
+
+      self.items.style.width = totalWidth + "px";
+
+      snapWidth = visibleWidth;
+
+      self.lastIndex = self.itemCount - 1;
+
+      self.itemIndex = (self.lastIndex < self.itemIndex) ? self.lastIndex : self.itemIndex;
+
+      cumulativeOffset -= items[self.itemIndex].offsetLeft; // initial offset
+      if (self.options.center) {
+        var centerOffset = parseInt((snapWidth - items[self.itemIndex].offsetWidth)/2);
+        cumulativeOffset += centerOffset; // CHECK
+      }
+      if (oldSnapWidth)
+        self.destinationOffset = cumulativeOffset;
+
+      translate(cumulativeOffset);
+    }
+
+    this.autoscrollStart = function() {
+      if (!self.options.autoscroll)
+        return;
+
+      self.flag.timeoutId = setTimeout(function() {
+        if (self.container.offsetWidth != 0) {
+          if (!self.options.infinite && self.itemIndex == self.lastIndex && self.options.autoscrollForward)
+            self.jumpToIndex(0);
+          else if (!self.options.infinite && self.itemIndex == 0 && !self.options.autoscrollForward)
+            self.jumpToIndex(self.lastIndex);
+          else
+            self.moveTo(self.options.autoscrollForward ? -1 : 1);
+        }
+        else
+          self.autoscrollStart();
+      }, self.options.autoscrollDelay);
+    };
+
+    this.autoscrollStop = function() {
+      clearTimeout(self.flag.timeoutId);
+    };
+
+    function getEventCoords(event) {
+      if (event.touches && event.touches.length > 0)
+        return {x: event.touches[0].clientX, y: event.touches[0].clientY};
+      else if (event.clientX != undefined)
+        return {x: event.clientX, y: event.clientY};
+      return null;
+    }
+
+    function updateButtons() {
+      x$(self.button["prev"]).attr("data-ur-state", self.itemIndex == 0 ? "disabled" : "enabled")
+      x$(self.button["next"]).attr("data-ur-state", self.itemIndex == self.lastIndex ? "disabled" : "enabled")
+    }
+
+    function getNewIndex(direction) {
+      var newIndex = self.itemIndex - direction;
+      if (!self.options.infinite) {
+        if (self.options.fill > 1 && newIndex > self.lastIndex - self.options.fill + 1)
+          newIndex = self.lastIndex - self.options.fill + 1;
+        else if (newIndex > self.lastIndex)
+          newIndex = self.lastIndex;
+        else if (newIndex < 0)
+          newIndex = 0;
+      }
+      
+      return newIndex;
+    }
+
+    function updateIndex(newIndex) {
+      if (newIndex === undefined)
+        return;
+
+      self.itemIndex = newIndex;
+      if (self.itemIndex < 0)
+        self.itemIndex = 0;
+      else if (self.itemIndex > self.lastIndex)
+        self.itemIndex = self.lastIndex - 1;
+
+      var realIndex = self.itemIndex;
+      if (self.options.infinite)
+        realIndex = (self.realItemCount + self.itemIndex - self.options.cloneLength) % self.realItemCount;
+      if (self.count !== undefined)
+        self.count.innerHTML = realIndex + 1 + " of " + self.realItemCount;
+
+      x$(self.items).find("[data-ur-carousel-component='item'][data-ur-state='active']").attr("data-ur-state", "inactive");
+      x$(x$(self.items).find("[data-ur-carousel-component='item']")[self.itemIndex]).attr("data-ur-state", "active");
+
+      if (self.dots)
+        x$(self.dots).find("[data-ur-carousel-component='dot']").attr("data-ur-state", "inactive")[realIndex].setAttribute("data-ur-state", "active");
+
+      updateButtons();
+
+      $container.fire("slidestart", {index: realIndex});
+    }
+
+    function startSwipe(e) {
+      if (!self.options.verticalScroll)
+        stifle(e);
+      self.autoscrollStop();
+
+      self.flag.touched = true; // For non-touch environments
+      self.flag.lock = null;
+      self.flag.loop = false;
+      self.flag.click = true;
+      var coords = getEventCoords(e);
+      preCoords.x = coords.x;
+      preCoords.y = coords.y;
+
+      if (coords !== null) {
+        var translateX = getTranslateX(self.items);
+
+        if (startingOffset == null)
+          startingOffset = translateX;
+        else
+          // Fast swipe
+          startingOffset = self.destinationOffset; //Factor incomplete previous swipe
+        
+        startPos = endPos = coords;
+      }
+    }
+
+    function continueSwipe(e) {
+      if (!self.flag.touched) // For non-touch environments
+        return;
+
+      self.flag.click = false;
+
+      var coords = getEventCoords(e);
+
+      if (document.ontouchstart !== undefined && self.options.verticalScroll) {
+        var slope = Math.abs((preCoords.y - coords.y)/(preCoords.x - coords.x));
+        if (self.flag.lock) {
+          if (self.flag.lock == "y")
+            return;
+        }
+        else if (slope > 1.2) {
+          self.flag.lock = "y";
+          return;
+        }
+        else if (slope <= 1.2)
+          self.flag.lock = "x";
+        else
+          return;
+      }
+      stifle(e);
+
+      if (coords !== null) {
+        endPos = coords;
+        var dist = swipeDist() + startingOffset;
+
+        if (self.options.infinite) {
+          var items = x$(self.items).find("[data-ur-carousel-component='item']");
+          var endLimit = items[self.lastIndex].offsetLeft + items[self.lastIndex].offsetWidth - self.container.offsetWidth;
+
+          if (dist > 0) { // at the beginning of carousel
+            var srcNode = items[self.realItemCount];
+            var offset = srcNode.offsetLeft - items[0].offsetLeft;
+            startingOffset -= offset;
+            dist -= offset;
+            self.flag.loop = !self.flag.loop;
+          }
+          else if (dist < -endLimit) {  // at the end of carousel
+            var srcNode = items[self.lastIndex - self.realItemCount];
+            var offset = srcNode.offsetLeft - items[self.lastIndex].offsetLeft;
+            startingOffset -= offset;
+            dist -= offset;
+            self.flag.loop = !self.flag.loop;
+          }
+        }
+
+        translate(dist);
+      }
+    }
+
+    function finishSwipe(e) {
+      if (!self.flag.click || self.flag.lock)
+        stifle(e);
+      else if (e.target.tagName == "AREA")
+        location.href = e.target.href;
+      
+      self.flag.touched = false; // For non-touch environments
+      
+      moveHelper(getDisplacementIndex());
+    }
+    
+    function getDisplacementIndex() {
+      var swipeDistance = swipeDist();
+      var displacementIndex = zeroCeil(swipeDistance/x$(self.items).find("[data-ur-carousel-component='item']")[0].offsetWidth);
+      return displacementIndex;
+    }
+    
+    function snapTo(displacement) {
+      self.destinationOffset = displacement + startingOffset;
+      var maxOffset = -1*self.lastIndex*snapWidth;
+      var minOffset = parseInt((snapWidth - x$(self.items).find("[data-ur-carousel-component='item']")[0].offsetWidth)/2);
+
+      if (self.options.infinite)
+        maxOffset = -self.items.offsetWidth;
+      if (self.destinationOffset < maxOffset || self.destinationOffset > minOffset) {
+        if (Math.abs(self.destinationOffset - maxOffset) < 1) {
+          // Hacky -- but there are rounding errors
+          // I see this when I'm in multi-mode and using the buttons
+          // This only seems to happen on the desktop browser -- ideally its removed at compile time
+          self.destinationOffset = maxOffset;
+        } else
+          self.destinationOffset = minOffset;
+      }
+
+      momentum();
+    }
+
+    this.moveTo = function(direction) {
+      // The animation isnt done yet
+      if (self.flag.increment)
+        return;
+
+      startingOffset = getTranslateX(self.items);
+      moveHelper(direction);
+    };
+
+    function moveHelper(direction) {
+      self.autoscrollStop();
+
+      var newIndex = getNewIndex(direction);
+      
+      var items = x$(self.items).find("[data-ur-carousel-component='item']");
+
+      if (self.options.infinite) {
+        var oldTransform = getTranslateX(self.items);
+        var altTransform = oldTransform;
+
+        if (newIndex < self.options.cloneLength) { // at the beginning of carousel
+          var offset = items[self.options.cloneLength].offsetLeft - items[self.itemCount - self.options.cloneLength].offsetLeft;
+          if (!self.flag.loop) {
+            altTransform += offset;
+            translate(altTransform);
+            startingOffset += offset;
+          }
+          newIndex += self.realItemCount;
+          self.itemIndex = newIndex + direction;
+        }
+        else if (newIndex > self.lastIndex - self.options.cloneLength) { // at the end of carousel
+          var offset = items[self.itemCount - self.options.cloneLength].offsetLeft - items[self.options.cloneLength].offsetLeft;
+          if (!self.flag.loop) {
+            altTransform += offset;
+            translate(altTransform);
+            startingOffset += offset;
+          }
+          newIndex -= self.realItemCount;
+          self.itemIndex = newIndex + direction;
+        }
+      }
+      var newItem = items[newIndex];
+      var currentItem = items[self.itemIndex];
+      var displacement = currentItem.offsetLeft - newItem.offsetLeft; // CHECK
+      if (self.options.center)
+        displacement += (currentItem.offsetWidth - newItem.offsetWidth) / 2;
+      setTimeout(function() {
+        snapTo(displacement);
+        updateIndex(newIndex);
+      }, 0);
+    }
+
+    this.jumpToIndex = function(index) {
+      self.moveTo(self.itemIndex - index);
+    };
+
+    function momentum() {
+      if (self.flag.touched)
+        return;
+
+      self.flag.increment = false;
+
+      var translateX = getTranslateX(self.items);
+      var distance = self.destinationOffset - translateX;
+      var increment = distance - zeroFloor(distance / (self.options.transform3d ? 1.1 : 1.2));
+
+      // Hacky -- this is for the desktop browser only -- to fix rounding errors
+      // Ideally, this is removed at compile time
+      if(Math.abs(increment) < 0.01)
+        increment = 0;
+
+      var newTransform = increment + translateX;
+
+      translate(newTransform);
+
+      if (increment != 0)
+        self.flag.increment = true;
+
+      if (self.flag.increment)
+        setTimeout(momentum, 16);
+      else {
+        startingOffset = null;
+        self.autoscrollStart();
+
+        var itemIndex = self.itemIndex;
+        x$(self.container).fire("slideend", {index: itemIndex});
+      }
+    }
+
+    function swipeDist() {
+      return endPos === undefined ? 0 : endPos.x - startPos.x;
+    }
+    
+    function translate(x) {
+      var items = self.items;
+      items.style.webkitTransform = items.style.msTransform = items.style.OTransform = items.style.MozTransform = items.style.transform = translatePrefix + x + "px, 0px" + translateSuffix;
+    }
+    
+    initialize();
   }
 
   // Private/Helper methods
-
-  function sign(num) {
-    return num < 0 ? -1 : 1;
-  }
 
   function zeroCeil(num) {
     return num <= 0 ? Math.floor(num) : Math.ceil(num);
@@ -1789,7 +2449,7 @@ Ur.WindowLoaders["carousel"] = (function() {
 
   function getTranslateX(obj) {
     var style = getComputedStyle(obj);
-    var transform = style["webkitTransform"] || style["MozTransform"] || style["oTransform"] || style["transform"];
+    var transform = style["webkitTransform"] || style["msTransform"] || style["OTransform"] || style["MozTransform"] || style["transform"];
     if (transform != "none") {
       if (window.WebKitCSSMatrix)
         return new WebKitCSSMatrix(transform).m41;
@@ -1799,514 +2459,6 @@ Ur.WindowLoaders["carousel"] = (function() {
     else {
       Ur.error("no transform found");
       return 0;
-    }
-  }
-
-  //// Public Methods ////
-
-  Carousel.prototype = {
-    initialize: function() {
-      // TODO:
-      // add an internal event handler to handle all events on the container:
-      // x$(this.container).on("event", this.handleEvent);
-
-      this.flag = {click: false, increment: false, loop: false, lock: null, timeoutId: null, touched: false};
-      this.options = {
-        autoscroll: true,
-        autoscrollDelay: 5000,
-        autoscrollForward: true,
-        center: true,
-        cloneLength: 1,
-        fill: 0,
-        infinite: true,
-        transform3d: true,
-        touch: true,
-        verticalScroll: true
-      };
-
-      this.readAttributes();
-
-      this.preCoords = {x: 0, y: 0};
-
-      this.itemIndex = 0;
-      this.magazineCount = 1;
-
-      if (this.options.infinite) {
-        var items = x$(this.items).find("[data-ur-carousel-component='item']");
-        this.realItemCount = items.length;
-        this.itemIndex = this.options.cloneLength;
-        this.clones = []; // probaby useless
-        for (var i = 0; i < this.options.cloneLength; i++) {
-          var clone = items[i].cloneNode(true);
-          this.clones.push(clone);
-          x$(clone).attr("data-ur-clone", i).attr("data-ur-state", "inactive");
-          items[items.length - 1].parentNode.appendChild(clone);
-        }
-
-        for (var i = items.length - this.options.cloneLength; i < items.length; i++) {
-          var clone = items[i].cloneNode(true);
-          this.clones.push(clone);
-          x$(clone).attr("data-ur-clone", i).attr("data-ur-state", "inactive");
-          items[0].parentNode.insertBefore(clone, items[0]);
-        }
-      }
-
-      this.adjustSpacing();
-
-      if (!this.options.infinite)
-        this.realItemCount = this.itemCount;
-
-      this.insertDots();
-
-      this.updateIndex(this.options.infinite ? this.options.cloneLength : 0);
-
-      this.initSwipeHandlers(this.items);
-
-      x$(this.button["prev"]).click(function(obj){return function(){obj.moveTo(obj.magazineCount);}}(this));
-      x$(this.button["next"]).click(function(obj){return function(){obj.moveTo(-obj.magazineCount);}}(this));
-
-      // Expose this function globally: (this will work on webkit / FF)
-      this.jumpToIndex = (function(obj) { return function(idx) { obj.__proto__.moveToIndex.call(obj, idx); };})(this);
-
-      x$(window).orientationchange(function(obj){return function(){obj.resize();}}(this));
-      // orientationchange isn't supported on some androids
-      x$(window).on("resize", function(obj) { return function() {
-        obj.resize();
-        setTimeout(function(){obj.resize()}, 100);
-      }}(this));
-      //window.setInterval(function(obj){return function(){obj.resize();}}(this),1000);
-
-      this.autoscrollStart();
-    },
-
-    readAttributes: function() {
-      var $container = x$(this.container);
-
-      // translate3d is disabled on Android by default because it often causes problems
-      // however, on some pages translate3d will work fine so the data-ur-android3d
-      // attribute can be set to "enabled" to use translate3d since it can be smoother
-      // on some Android devices
-
-      var oldAndroid = /Android [12]/.test(navigator.userAgent);
-      if (oldAndroid && $container.attr("data-ur-android3d")[0] != "enabled")
-        this.options.transform3d = false;
-
-      this.options.verticalScroll = $container.attr("data-ur-vertical-scroll")[0] != "disabled";
-      $container.attr("data-ur-vertical-scroll", this.options.verticalScroll ? "enabled" : "disabled");
-
-      this.options.touch = $container.attr("data-ur-touch")[0] != "disabled";
-      $container.attr("data-ur-touch", this.options.touch ? "enabled" : "disabled");
-
-      this.options.infinite = $container.attr("data-ur-infinite")[0] != "disabled";
-      $container.attr("data-ur-infinite", this.options.infinite ? "enabled" : "disabled");
-
-      this.options.center = $container.attr("data-ur-center")[0] == "enabled";
-      $container.attr("data-ur-center", this.options.center ? "enabled" : "disabled");
-
-      var fill = parseInt($container.attr("data-ur-fill"));
-      if (fill > 0)
-        this.options.fill = fill;
-      $container.attr("data-ur-fill", this.options.fill);
-
-      var cloneLength = parseInt($container.attr("data-ur-clones"));
-      if (isNaN(cloneLength) || cloneLength < fill)
-        cloneLength = fill;
-      if (cloneLength > 0)
-        this.options.cloneLength = cloneLength;
-      $container.attr("data-ur-clones", this.options.cloneLength);
-
-      this.options.autoscroll = $container.attr("data-ur-autoscroll")[0] == "enabled";
-      $container.attr("data-ur-autoscroll", this.options.autoscroll ? "enabled" : "disabled");
-
-      var autoscrollDelay = parseInt($container.attr("data-ur-autoscroll-delay"));
-      if (autoscrollDelay >= 0)
-        this.options.autoscrollDelay = autoscrollDelay;
-      $container.attr("data-ur-autoscroll-delay", this.options.autoscrollDelay);
-
-      this.options.autoscrollForward = $container.attr("data-ur-autoscroll-dir")[0] != "prev";
-      $container.attr("data-ur-autoscroll-dir", this.options.autoscrollForward ? "next" : "prev");
-    },
-
-    initSwipeHandlers: function(target) {
-      if (this.options.touch) {
-        var hasTouch = document.ontouchstart !== undefined;
-        var start = hasTouch ? "touchstart" : "mousedown";
-        var move = hasTouch ? "touchmove" : "mousemove";
-        var end = hasTouch ? "touchend" : "mouseup";
-
-        var self = this;
-        x$(target).on(start, function(e) {self.startSwipe(e);});
-        x$(target).on(move, function(e) {self.continueSwipe(e);});
-        x$(target).on(end, function(e) {self.finishSwipe(e);});
-        x$(target).click(function(e) {if (!self.flag.click) stifle(e);});
-      }
-    },
-
-    insertDots: function() {
-      if (this.dots) {
-        var existing = x$(this.dots).find("[data-ur-carousel-component='dot']");
-        for (var i = existing.length; i < this.realItemCount; i++) {
-          var new_dot = document.createElement("div");
-          x$(new_dot).attr("data-ur-carousel-component", "dot");
-          if (i == 0)
-            x$(new_dot).attr("data-ur-state", "active");
-          this.dots.appendChild(new_dot);
-        }
-      }
-    },
-
-    resize: function() {
-      var offsetWidth = this.container.offsetWidth;
-      if (this.snapWidth != offsetWidth && offsetWidth != 0)
-        this.adjustSpacing();
-    },
-
-    adjustSpacing: function() {
-      // Will need to be called if the container's size changes --> orientation change
-      var visibleWidth = this.container.offsetWidth;
-
-      if (this.oldWidth !== undefined && this.oldWidth == visibleWidth)
-        return;
-      var oldSnapWidth = this.snapWidth;
-      this.oldWidth = visibleWidth;
-
-      var cumulativeOffset = 0;
-      var items = x$(this.items).find("[data-ur-carousel-component='item']");
-      this.itemCount = items.length;
-
-      // Adjust the container to be the necessary width.
-      var totalWidth = 0;
-
-      var itemWidth = Math.round(visibleWidth / this.options.fill);
-      var lastItemWidth = visibleWidth - (this.options.fill - 1) * itemWidth;
-
-      for (var i = 0; i < items.length; i++) {
-        if (this.options.fill > 0) {
-          var last_pos = (i - this.options.cloneLength) % this.options.fill == this.options.fill - 1;
-          items[i].style.width = (last_pos ? lastItemWidth : itemWidth) + "px";
-          totalWidth += (last_pos ? lastItemWidth : itemWidth);
-        }
-        else
-          totalWidth += items[i].offsetWidth;
-      }
-
-      this.items.style.width = totalWidth + "px";
-
-      this.snapWidth = visibleWidth;
-
-      this.lastIndex = this.itemCount - 1;
-
-      this.itemIndex = (this.lastIndex < this.itemIndex) ? this.lastIndex : this.itemIndex;
-
-      cumulativeOffset -= items[this.itemIndex].offsetLeft; // initial offset
-      if (this.options.center) {
-        var centerOffset = parseInt((this.snapWidth - items[0].offsetWidth)/2);
-        cumulativeOffset += centerOffset; // CHECK
-      }
-      if (oldSnapWidth)
-        this.destinationOffset = cumulativeOffset;
-
-      this.translate(cumulativeOffset);
-    },
-
-    autoscrollStart: function() {
-      if (!this.options.autoscroll)
-        return;
-
-      var self = this;
-      self.flag.timeoutId = setTimeout(function() {
-        if (self.container.offsetWidth != 0) {
-          if (!self.options.infinite && self.itemIndex == self.lastIndex && self.options.autoscrollForward)
-            self.jumpToIndex(0);
-          else if (!self.options.infinite && self.itemIndex == 0 && !self.options.autoscrollForward)
-            self.jumpToIndex(self.lastIndex);
-          else
-            self.moveTo(self.options.autoscrollForward ? -self.magazineCount : self.magazineCount);
-        }
-        else
-          self.autoscrollStart();
-      }, self.options.autoscrollDelay);
-    },
-
-    autoscrollStop: function() {
-      clearTimeout(this.flag.timeoutId);
-    },
-
-    getEventCoords: function(event) {
-      if (event.touches && event.touches.length > 0)
-        return {x: event.touches[0].clientX, y: event.touches[0].clientY};
-      else if (event.clientX != undefined)
-        return {x: event.clientX, y: event.clientY};
-      return null;
-    },
-
-    updateButtons: function() {
-      x$(this.button["prev"]).attr("data-ur-state", this.itemIndex == 0 ? "disabled" : "enabled")
-      x$(this.button["next"]).attr("data-ur-state", this.itemIndex == this.lastIndex ? "disabled" : "enabled")
-    },
-
-    getNewIndex: function(direction) {
-      var newIndex = this.itemIndex - direction;
-      
-      if (!this.options.infinite) {
-        if (this.options.fill > 1 && newIndex > this.lastIndex - this.options.fill + 1)
-          newIndex = this.lastIndex - this.options.fill + 1;
-        else if (newIndex > this.lastIndex)
-          newIndex = this.lastIndex;
-        else if (newIndex < 0)
-          newIndex = 0;
-      }
-      
-      return newIndex;
-    },
-
-    updateIndex: function(newIndex) {
-      if (newIndex === undefined)
-        return;
-
-      this.itemIndex = newIndex;
-      if (this.itemIndex < 0)
-        this.itemIndex = 0;
-      else if (this.itemIndex > this.lastIndex)
-        this.itemIndex = this.lastIndex - 1;
-
-      var realIndex = this.itemIndex;
-      if (this.options.infinite)
-        realIndex = (this.realItemCount + this.itemIndex - this.options.cloneLength) % this.realItemCount;
-      if (this.count !== undefined)
-        this.count.innerHTML = realIndex + 1 + " of " + this.realItemCount;
-
-      x$(this.items).find("[data-ur-carousel-component='item'][data-ur-state='active']").attr("data-ur-state", "inactive");
-      x$(x$(this.items).find("[data-ur-carousel-component='item']")[this.itemIndex]).attr("data-ur-state", "active");
-
-      if (this.dots)
-        x$(this.dots).find("[data-ur-carousel-component='dot']").attr("data-ur-state", "inactive")[realIndex].setAttribute("data-ur-state", "active");
-
-      this.updateButtons();
-
-      x$(this.container).fire("slidestart", {index: realIndex});
-    },
-
-    startSwipe: function(e) {
-      if (!this.options.verticalScroll)
-        stifle(e);
-      this.autoscrollStop();
-
-      this.flag.touched = true; // For non-touch environments
-      this.flag.lock = null;
-      this.flag.loop = false;
-      this.flag.click = true;
-      var coords = this.getEventCoords(e);
-      this.preCoords.x = coords.x;
-      this.preCoords.y = coords.y;
-
-      if (coords !== null) {
-        var translateX = getTranslateX(this.items);
-
-        if (this.startingOffset == null)
-          this.startingOffset = translateX;
-        else
-          // Fast swipe
-          this.startingOffset = this.destinationOffset; //Factor incomplete previous swipe
-        
-        this.startPos = this.endPos = coords;
-      }
-    },
-
-    continueSwipe: function(e) {
-      if (!this.flag.touched) // For non-touch environments
-        return;
-
-      this.flag.click = false;
-
-      var coords = this.getEventCoords(e);
-
-      if (document.ontouchstart !== undefined && this.options.verticalScroll) {
-        var slope = Math.abs((this.preCoords.y - coords.y)/(this.preCoords.x - coords.x));
-        if (this.flag.lock) {
-          if (this.flag.lock == "y")
-            return;
-        }
-        else if (slope > 1.2) {
-          this.flag.lock = "y";
-          return;
-        }
-        else if (slope <= 1.2)
-          this.flag.lock = "x";
-        else
-          return;
-      }
-      stifle(e);
-
-      if (coords !== null) {
-        this.endPos = coords;
-        var dist = this.swipeDist() + this.startingOffset;
-
-        if (this.options.infinite) {
-          var items = x$(this.items).find("[data-ur-carousel-component='item']");
-          var endLimit = items[this.lastIndex].offsetLeft + items[this.lastIndex].offsetWidth - this.container.offsetWidth;
-
-          if (dist > 0) { // at the beginning of carousel
-            var srcNode = items[this.realItemCount];
-            var offset = srcNode.offsetLeft - items[0].offsetLeft;
-            this.startingOffset -= offset;
-            dist -= offset;
-            this.flag.loop = !this.flag.loop;
-          }
-          else if (dist < -endLimit) {  // at the end of carousel
-            var srcNode = items[this.lastIndex - this.realItemCount];
-            var offset = srcNode.offsetLeft - items[this.lastIndex].offsetLeft;
-            this.startingOffset -= offset;
-            dist -= offset;
-            this.flag.loop = !this.flag.loop;
-          }
-        }
-
-        this.translate(dist);
-      }
-    },
-
-    finishSwipe: function(e) {
-      if (!this.flag.click || this.flag.lock)
-        stifle(e);
-      else if (e.target.tagName == "AREA")
-        location.href = e.target.href;
-      else
-        x$(e.target).click();
-      
-      this.flag.touched = false; // For non-touch environments
-      
-      this.moveHelper(this.getDisplacementIndex());
-    },
-    getDisplacementIndex: function() {
-      var swipeDistance = this.swipeDist();
-      var displacementIndex = zeroCeil(swipeDistance/x$(this.items).find("[data-ur-carousel-component='item']")[0].offsetWidth);
-      return displacementIndex;
-    },
-    snapTo: function(displacement) {
-      this.destinationOffset = displacement + this.startingOffset;
-      var maxOffset = -1*this.lastIndex*this.snapWidth;
-      var minOffset = parseInt((this.snapWidth - x$(this.items).find("[data-ur-carousel-component='item']")[0].offsetWidth)/2);
-
-      if (this.options.infinite)
-        maxOffset = -this.items.offsetWidth;
-      if (this.destinationOffset < maxOffset || this.destinationOffset > minOffset) {
-        if (Math.abs(this.destinationOffset - maxOffset) < 1) {
-          // Hacky -- but there are rounding errors
-          // I see this when I'm in multi-mode and using the buttons
-          // This only seems to happen on the desktop browser -- ideally its removed at compile time
-          this.destinationOffset = maxOffset;
-        } else {
-          this.destinationOffset = minOffset;
-        }
-      }
-
-      this.momentum();
-    },
-
-    moveTo: function(direction) {
-      // The animation isnt done yet
-      if (this.flag.increment)
-        return;
-
-      this.startingOffset = getTranslateX(this.items);
-      this.moveHelper(direction);
-    },
-
-    moveHelper: function(direction) {
-      this.autoscrollStop();
-
-      var newIndex = this.getNewIndex(direction);
-
-      var items = x$(this.items).find("[data-ur-carousel-component='item']");
-
-      if (this.options.infinite) {
-        var oldTransform = getTranslateX(this.items);
-        var altTransform = oldTransform;
-
-        if (newIndex < this.options.cloneLength) { // at the beginning of carousel
-          var offset = items[this.options.cloneLength].offsetLeft - items[this.itemCount - this.options.cloneLength].offsetLeft;
-          if (!this.flag.loop) {
-            altTransform += offset;
-            this.translate(altTransform);
-            this.startingOffset += offset;
-          }
-          newIndex += this.realItemCount;
-          this.itemIndex = newIndex + direction;
-        }
-        else if (newIndex > this.lastIndex - this.options.cloneLength) { // at the end of carousel
-          var offset = items[this.itemCount - this.options.cloneLength].offsetLeft - items[this.options.cloneLength].offsetLeft;
-          if (!this.flag.loop) {
-            altTransform += offset;
-            this.translate(altTransform);
-            this.startingOffset += offset;
-          }
-          newIndex -= this.realItemCount;
-          this.itemIndex = newIndex + direction;
-        }
-      }
-      var newItem = items[newIndex];
-      var currentItem = items[this.itemIndex];
-      var displacement = currentItem.offsetLeft - newItem.offsetLeft; // CHECK
-      var self = this;
-      
-      setTimeout(function() {
-        self.snapTo(displacement);
-        self.updateIndex(newIndex);
-      }, 6);
-    },
-
-    moveToIndex: function(index) {
-      var direction = this.itemIndex - index;
-      this.moveTo(direction);
-    },
-
-    momentum: function() {
-      if (this.flag.touched)
-        return;
-
-      this.flag.increment = false;
-
-      var translateX = getTranslateX(this.items);
-      var distance = this.destinationOffset - translateX;
-      var increment = distance - zeroFloor(distance / (this.options.transform3d ? 1.1 : 1.2));
-
-      // Hacky -- this is for the desktop browser only -- to fix rounding errors
-      // Ideally, this is removed at compile time
-      if(Math.abs(increment) < 0.01)
-        increment = 0;
-
-      var newTransform = increment + translateX;
-
-      this.translate(newTransform);
-
-      if (increment != 0)
-        this.flag.increment = true;
-
-      if (this.flag.increment)
-        setTimeout(function(obj){return function(){obj.momentum()}}(this), 16);
-      else {
-        this.startingOffset = null;
-        this.autoscrollStart();
-
-        var itemIndex = this.itemIndex;
-        x$(this.container).fire("slideend", {index: itemIndex});
-      }
-    },
-
-    swipeDist: function() {
-      if (this.endPos === undefined)
-        return 0;
-      return this.endPos.x - this.startPos.x;
-    },
-    
-    translate: function(x) {
-      var container = this.items;
-      var translatePrefix = this.options.transform3d ? "translate3d(" : "translate(";
-      var translateSuffix = this.options.transform3d ? ", 0px)" : ")";
-      ["webkitTransform", "MozTransform", "oTransform", "transform"].forEach(function(i) {
-        container.style[i] = translatePrefix + x + "px, 0px" + translateSuffix;
-      });
     }
   }
 
@@ -3983,7 +4135,7 @@ Ur.QuickLoaders['tabs'] = (function(){
       x$(button).on(
         "click",
         function(evt) {
-          var firstScrollTop = evt.target.offsetTop - document.body.scrollTop;
+          var firstScrollTop = x$(evt.target).offset().top - window.pageYOffset;
           var this_tab_id = x$(evt.currentTarget).attr("data-ur-tab-id")[0];
           
           for(var tab_id in self.elements["buttons"]) {
@@ -3993,18 +4145,19 @@ Ur.QuickLoaders['tabs'] = (function(){
             if (tab_id !== this_tab_id) {
               x$(button).attr("data-ur-state","disabled");
               x$(content).attr("data-ur-state","disabled");
-            } else {
-        var new_state = "enabled";
-        if (closeable) {
-    var old_state = x$(button).attr("data-ur-state")[0];
-    old_state = (old_state === undefined) ? "disabled" : old_state;
-    new_state = (old_state == "enabled") ? "disabled" : "enabled";
-        }
+            }
+            else {
+              var new_state = "enabled";
+              if (closeable) {
+                var old_state = x$(button).attr("data-ur-state")[0];
+                old_state = (old_state === undefined) ? "disabled" : old_state;
+                new_state = (old_state == "enabled") ? "disabled" : "enabled";
+              }
               x$(button).attr("data-ur-state", new_state);
               x$(content).attr("data-ur-state", new_state);
             }
           }
-          var secondScrollTop =  evt.target.offsetTop - document.body.scrollTop;
+          var secondScrollTop = x$(evt.target).offset().top - window.pageYOffset;
           if ( secondScrollTop <= 0 ) {
             window.scrollBy(0, secondScrollTop - firstScrollTop);
           }
@@ -4154,6 +4307,332 @@ Ur.QuickLoaders['toggler'] = (function(){
 
   return ToggleLoader;
   })();
+
+/* Zoom  *
+ * * * * * * *
+ * This is a zoom widget that zooms images to larger images
+ * within the same container and allows for basic panning
+ *
+ */
+
+Ur.WindowLoaders["zoom"] = (function() {
+
+  function Zoom(components) {
+    var self = this;
+    
+    this.container = components["view_container"];
+    this.img = components["img"];
+    this.prescale = false;
+    this.width = this.height = 0;
+    this.bigWidth = this.bigHeight = 0;
+    this.canvasWidth = this.canvasHeight = 0;
+    this.ratio = 1;
+    this.state = "disabled";
+
+    // Optionally:
+    this.button = components["button"];
+    this.idler = components["loading"];
+
+    var $img = x$(this.img);
+    var $idler = x$(this.idler);
+    var $btn = x$(this.button);
+
+    var boundX, boundY;
+    var relX, relY;
+    var offsetX = 0, offsetY = 0;
+    var touchX = 0, touchY = 0;
+    var mouseDown = false; // only used on non-touch browsers
+    var mouseDrag = true;
+
+    function initialize() {
+      self.canvasWidth = self.canvasWidth || self.container.offsetWidth;
+      self.canvasHeight = self.canvasHeight || self.container.offsetHeight;
+      self.width = self.width || parseInt($img.attr("width")) || parseInt($img.getStyle("width")) || self.img.width;
+      self.height = self.height || parseInt($img.attr("height")) || parseInt($img.getStyle("height")) || self.img.height;
+
+      self.bigWidth = parseInt($img.attr("data-ur-width")) || self.img.naturalWidth;
+      self.bigHeight = parseInt($img.attr("data-ur-height")) || self.img.naturalHeight;
+      if ($img.attr("data-ur-width")[0] && $img.attr("data-ur-height")[0])
+        self.prescale = true;
+
+      self.ratio = self.bigWidth/self.width;
+
+      boundX = (self.canvasWidth - self.bigWidth)/2;    // horizontal translation to view middle of image
+      boundY = (self.canvasHeight - self.bigHeight)/2;  // vertical translation to view middle of image
+    }
+
+    function panStart(event) {
+      if (event.target != self.img)
+        return;
+      mouseDrag = false;
+      touchX = event.pageX;
+      touchY = event.pageY;
+      mouseDown = true;
+      if (event.touches) {
+        touchX = event.touches[0].pageX;
+        touchY = event.touches[0].pageY;
+      }
+
+      var style = self.img.style;
+      if (window.WebKitCSSMatrix) {
+        var matrix = new WebKitCSSMatrix(style.webkitTransform);
+        offsetX = matrix.m41;
+        offsetY = matrix.m42;
+      }
+      else {
+        var transform = style.MozTransform || style.OTransform || style.transform || "translate(0, 0)";
+        transform = transform.replace(/.*?\(|\)/, "").split(",");
+
+        offsetX = parseInt(transform[0]);
+        offsetY = parseInt(transform[1]);
+      }
+
+      stifle(event);
+    }
+
+    function panMove(event) {
+      if (!mouseDown || event.target != self.img) // NOTE: mouseDown should always be true on touch-enabled devices
+        return;
+
+      stifle(event);
+      var x = event.pageX;
+      var y = event.pageY;
+      if (event.touches) {
+        x = event.touches[0].pageX;
+        y = event.touches[0].pageY;
+      }
+      var dx = x - touchX;
+      var dy = y - touchY;
+      if (Math.abs(dx) > 5 || Math.abs(dy) > 5)
+        mouseDrag = true;
+      var new_offsetX = bound(offsetX + dx, [-boundX, boundX]);
+      var new_offsetY = bound(offsetY + dy, [-boundY, boundY]);
+      transform(new_offsetX, new_offsetY, self.ratio);
+    }
+
+    function panEnd(event) {
+      if (!mouseDrag)
+        self.zoomOut();
+      stifle(event);
+      mouseDown = false;
+      mouseDrag = true;
+    }
+
+    function transitionEnd() {
+      if (self.state == "enabled-in") {
+        $img.css({ webkitTransitionDelay: "", MozTransitionDelay: "", OTransitionDelay: "", transitionDelay: "" });
+        
+        if (loaded_imgs.indexOf(self.img.getAttribute("data-ur-src")) == -1) {
+          self.img.src = $img.attr("data-ur-src")[0];
+
+          setTimeout(function() {
+            if (loaded_imgs.indexOf(self.img.getAttribute("data-ur-src")) == -1)
+              $idler.attr("data-ur-state", "enabled");
+          }, 16);
+        }
+        self.state = "enabled";
+        self.container.setAttribute("data-ur-state", self.state);
+
+        var touch = "ontouchstart" in window;
+        var $container = x$(self.container);
+        $container.on(touch ? "touchstart" : "mousedown", panStart);
+        $container.on(touch ? "touchmove" : "mousemove", panMove);
+        $container.on(touch ? "touchend" : "mouseup", panEnd);
+      }
+      else if (self.state == "enabled-out") {
+        self.state = "disabled";
+        self.container.setAttribute("data-ur-state", self.state);
+        
+        var touch = "ontouchstart" in window;
+        var $container = x$(self.container);
+        $container.un(touch ? "touchstart" : "mousedown", panStart);
+        $container.un(touch ? "touchmove" : "mousemove", panMove);
+        $container.un(touch ? "touchend" : "mouseup", panEnd);
+      }
+    }
+
+    function zoomHelper(x, y) {
+      $btn.attr("data-ur-state", "enabled");
+      self.state = "enabled-in";
+      self.container.setAttribute("data-ur-state", self.state);
+      
+      x = x ? x : 0;
+      y = y ? y : 0;
+      transform(x, y, self.ratio);
+    }
+
+    function transform(x, y, scale) {
+      var t = "";
+      if (x != undefined)
+        t = translatePrefix + x + "px, " + y + "px" + translateSuffix;
+      if (scale != undefined) {
+        if (noScale3d)
+          t += " scale(" + scale + ")";
+        else
+          t += " scale3d(" + scale + ", " + scale + ", 1)";
+      }
+      return $img.css({ webkitTransform: t, MozTransform: t, OTransform: t, transform: t });
+    }
+
+    // attempts to zoom in centering in on the area that was touched
+    this.zoomIn = function(event) {
+      if (self.state != "disabled")
+        return;
+
+      if (!self.width) {
+        initialize();
+        self.img.style.width = self.width + "px";
+        self.img.style.height = self.height + "px";
+      }
+
+      var x = event.pageX, y = event.pageY;
+      if (event.touches) {
+        x = event.touches[0].pageX;
+        y = event.touches[0].pageY;
+      }
+
+      // find touch location relative to image
+      relX = event.offsetX;
+      relY = event.offsetY;
+      if (relX == undefined || relY == undefined) {
+        var offset = self.img.getBoundingClientRect();
+        relX = x - offset.left;
+        relY = y - offset.top;
+      }
+
+      if (!self.prescale) {
+        self.state = "enabled-in";
+        self.img.src = $img.attr("data-ur-src")[0];
+        setTimeout(function() {
+          if (!self.prescale)
+            $idler.attr("data-ur-state", "enabled");
+        }, 0);
+      }
+      else {
+        var translateX = bound(self.bigWidth/2 - self.ratio * relX, [-boundX, boundX]);
+        var translateY = bound(self.bigHeight/2 - self.ratio * relY, [-boundY, boundY]);
+        zoomHelper(translateX, translateY);
+      }
+    };
+
+    this.zoomOut = function() {
+      if (self.state != "enabled")
+        return;
+      $btn.attr("data-ur-state", "disabled");
+      self.state = "enabled-out";
+      self.container.setAttribute("data-ur-state", self.state);
+      transform(0, 0, 1);
+    };
+
+    if (self.container.getAttribute("data-ur-touch") != "disabled")
+      x$(self.container).click(self.zoomIn);
+
+    $img.load(function() {
+      if ($img.attr("src")[0] == $img.attr("data-ur-src")[0])
+        loaded_imgs.push($img.attr("src")[0]);
+      $idler.attr("data-ur-state", "disabled");
+      if (!self.prescale && self.state == "enabled-in") {
+        self.prescale = true;
+        initialize();
+        var translateX = bound(self.bigWidth/2 - self.ratio * relX, [-boundX, boundX]);
+        var translateY = bound(self.bigHeight/2 - self.ratio * relY, [-boundY, boundY]);
+
+        var delay = "0.3s";
+        $img.css({ webkitTransitionDelay: delay, MozTransitionDelay: delay, OTransitionDelay: delay, transitionDelay: delay });
+
+        zoomHelper(translateX, translateY);
+      }
+    });
+
+    // zooms in to the center of the image
+    this.zoom = function() {
+      if (self.state == "disabled") {
+        if (!self.width) {
+          initialize();
+          self.img.style.width = self.width + "px";
+          self.img.style.height = self.height + "px";
+        }
+
+        if (self.prescale)
+          zoomHelper(0, 0);
+        else {
+          self.state = "enabled-in";
+          self.img.src = $img.attr("data-ur-src")[0];
+          setTimeout(function() {
+            // if prescale ?
+            if (loaded_imgs.indexOf(self.img.getAttribute("data-ur-src")) == -1)
+              $idler.attr("data-ur-state", "enabled");
+          }, 0);
+        }
+      }
+      else
+        self.zoomOut();
+    };
+
+    // zoom in/out button, zooms in to the center of the image
+    x$(self.button).click(self.zoom);
+
+    x$.fn.iterate(["webkitTransitionEnd", "transitionend", "oTransitionEnd"], function(eventName) {
+      $img.on(eventName, transitionEnd);
+    });
+
+    this.reset = function() {
+      self.prescale = false;
+      self.width = self.height = 0;
+      $img.css({width: "", height: ""});
+      transform();
+      self.state = "enabled-out";
+      transitionEnd();
+      $idler.attr("data-ur-state", "disabled");
+      $btn.attr("data-ur-state", "disabled");
+    };
+  }
+  
+  // Private shared variables
+  
+  var loaded_imgs = []; // sometimes the load event doesn't fire when the image src has been previously loaded
+  
+  var no3d = /Android [12]|Opera/.test(navigator.userAgent);
+
+  var noTranslate3d = no3d;
+  var noScale3d = no3d;
+
+  var translatePrefix = noTranslate3d ? "translate(" : "translate3d(";
+  var translateSuffix = noTranslate3d ? ")" : ", 0)";
+
+  var scalePrefix = noScale3d ? " scale(" : " scale3d(";
+  var scaleSuffix = noScale3d ? ")" : ", 1)";
+
+
+  // Private shared methods
+
+  function bound(num, range) {
+    return Math.max(Math.min(range[0], num), range[1]);
+  }
+
+  function stifle(e) {
+    e.preventDefault();
+    e.stopPropagation();
+  }
+
+  // Private constructors
+  var ComponentConstructors = {
+    
+  };
+
+  function ZoomLoader(){}
+
+  ZoomLoader.prototype.initialize = function(fragment) {
+    var zooms = x$(fragment).findElements("zoom", ComponentConstructors);
+    Ur.Widgets["zoom"] = {};
+    for (var name in zooms) {
+      var zoom = zooms[name];
+      Ur.Widgets["zoom"][name] = new Zoom(zoom);
+    }
+  }
+
+  return ZoomLoader;
+})();
 
 /* Zoom Preview  *
  * * * * * * * * *
@@ -4457,13 +4936,18 @@ x$(document).on("DOMContentLoaded", function() {
     cookie_hours = parseInt(cookie_hours_attribute);
   }
   var cookie_seconds = cookie_hours * 1000 * 60 * 60;
-  var rewriters = JSON.parse(me.getAttribute("rewriter_json"));
 
-  // replace ruby-style capture groups (\1) with js-style ($1)
-  for (var i=0;i<rewriters.length;i++) {
-    rewriters[i]["replacement"] = rewriters[i]["replacement"].replace(/\\/g, "$");
+  var rewriters;
+  var rewriter_json = me.getAttribute("rewriter_json");
+
+  if (rewriter_json !== null) {
+    var rewriters = JSON.parse(rewriter_json);
+    // replace ruby-style capture groups (\1) with js-style ($1)
+    for (var i=0;i<rewriters.length;i++) {
+      rewriters[i]["replacement"] = rewriters[i]["replacement"].replace(/\\/g, "$");
+    }
   }
-
+  
   var set_desktop_cookie = function() {
     var expires = new Date(new Date().getTime() + cookie_seconds);
     var cookie = "mw_mobile_site=false; ";
@@ -4486,11 +4970,15 @@ x$(document).on("DOMContentLoaded", function() {
   
   var get_desktop_location = function() {
     var location = window.location.hostname;
-    for (var j=0;j<rewriters.length;j++) {
-      var matcher = new RegExp(rewriters[j]['matcher']);
-      var replacement = rewriters[j]['replacement'];
-      replacement = replacement.replace(/\$secure/, secure);
-      location = location.replace(matcher, replacement);
+    if (rewriters != null) {
+      for (var j=0;j<rewriters.length;j++) {
+        var matcher = new RegExp(rewriters[j]['matcher']);
+        var replacement = rewriters[j]['replacement'];
+        replacement = replacement.replace(/\$secure/, secure);
+        location = location.replace(matcher, replacement);
+      }
+    } else {
+			return mw.proxyURLToOrigin(window.location.href);	
     }
     return window.location.protocol + "//" + location + window.location.pathname + window.location.search;
   };
@@ -4507,7 +4995,6 @@ x$(document).on("DOMContentLoaded", function() {
     window.location = desktop_location;
   }
 });
-
 
 /* Ruby style gsub / Sean Jezewski
  * * * * * * * * * 
@@ -4628,20 +5115,89 @@ function gsub(input, matcher, replace) {
     var replace = null;
 
     function get_config(config_element) {
-        
-        matcher = new RegExp(config_element.getAttribute("rewrite_link_matcher"), "g");
+        var raw_matcher = config_element.getAttribute("rewrite_link_matcher");
+				if (raw_matcher !== null) {
+        	matcher = new RegExp(raw_matcher, "g");
+				}
+
         replace = config_element.getAttribute("rewrite_link_replacement");
     }
+
+		function normalize_host(host) {
+			if (host[host.length-1] == "/") {
+				host = host.slice(0,host.length-1);
+			}
+			return host;
+		}	
+
+		function split_schema_and_host(schema_and_host) {
+			parts = schema_and_host.split("//");
+			schema = parts[0];
+			host = parts[1];
+			return {
+				"schema" : schema + "//",
+				"host" : normalize_host(host)
+			}
+		}
+			
+		// Splits into schema / host / path			
+		function url_components(url) {
+			length = url.length;
+			var previous = "";
+			var found_slash = false;
+			
+			for(var i=0; i < length; i++) {
+				if (url[i] == "/") {
+					if (previous != "/" && found_slash) {
+						path = url.slice(i+1, length);
+						parts = split_schema_and_host(url.slice(0, i+1));
+
+						return {
+							"schema" : parts.schema,
+							"host" : parts.host,							
+							"path" : path							
+						}
+					} else {
+						found_slash = false;
+					}
+					
+					found_slash = true;					
+				}
+				previous = url[i];
+			}
+			
+			// Never found the start of path ... the whole thing is the 'host' part
+			parts = split_schema_and_host(url);
+			
+			return {
+				"schema" : parts.schema,
+				"host" : parts.host,							
+				"path" : ""							
+			}			
+			
+		}
+
 
     function passthrough_url(url) {
       var temp_url = url;
       var config_element = document.getElementById('mw_link_passthrough_config');  
+			var use_host_map = false;
+
+
       if (config_element !== null) {
         if (!matcher && !replace) {
           get_config(config_element);
         }
-        temp_url = gsub(url, matcher, replace);
-      }
+
+				if (!matcher && !replace) {
+					use_host_map = true;
+				} else {
+        	temp_url = gsub(url, matcher, replace);
+				}
+      } else {
+				return mw.originURLToProxy(url);
+			}
+			
       return temp_url;
     }
 
@@ -4662,160 +5218,6 @@ function gsub(input, matcher, replace) {
     }
 
 })();
-
-
-/*
- * Moovweb Google Analytics Rewrite
- *
- * This is a simple rewrite of ga.js
- * It will track page requests to Moovweb's GA account, regardless
- * of whether or not said page already has GA on it tracking to
- * a separate account.
- *
- * USAGE:
- *
- * 2 steps to use with Tritium:
- *
- * 1. Add this script file
- *
- * 2. (Optional) Configure by placing the 'mw_ga_config' element
- *               anywhere on the page
-
-     insert("div") {
-       attribute("id", "mw_ga_config")
-       attribute("page_name", "home")
-     }
-
- *  *
- * The 'mw_ga_config' element can be used with these parameters:
- *
- *   page_name: The word that Moovweb uses to describe this page.
- *              Setting this variable allows Moovweb to view data
- *              for multiple customers at the same time, i.e.
- *              seeing how many 'order complete' pages where viewed
- *              across all customers.
- */
-x$(document).on("DOMContentLoaded", function() {
-  function ra() {
-    return Math.round(Math.random() * 2147483647);
-  };
-
-  // Generate a time value in seconds to use when building the utma cookie.
-  function getUtmaTime() {
-    return Math.round( ( Number( new Date() ) / 1000 ) ).toString();
-  };
-
-  // Generate an integer hash value for a provided domain name to use when building the utma cookie.
-  // (replica of domain hash function from ga.js)
-  function getUtmaDomainHash( aFQDN ) {
-    var a=1,c=0,h,o;
-    if(aFQDN){
-      a=0;
-        for(h=aFQDN["length"]-1;h>=0;h--){
-          o=aFQDN.charCodeAt(h);
-          a=(a<<6&268435455)+o+(o<<14);
-          c=a&266338304;
-          a=c!=0?a^c>>21:a
-        }
-      }
-    return a.toString()
-  };
-
-  // Generate a random integer between 1147483647 and 2147483647 to use when building the utma cookie.
-  function getUtmaRandval() {
-    return (Math.round(Math.random() * 1147483647) + 1000000000).toString();
-  };
-
-  // UTMA: visit distinction cookie
-  // Generate the __utma cookie value on-the-fly to avoid the "single daily visitor" problem with GA.
-  //
-  // This should be expressed in the form: 
-  //
-  //     domainhash.randval.time.time.time.visits
-  //
-  // ... where randval is a random integer between 1147483647 and 2147483647.
-  function getUtma( aFQDN ) {
-    var domainhash = getUtmaDomainHash( aFQDN );
-    var randval    = getUtmaRandval();
-    var time       = getUtmaTime();
-    var visits     = "1";
-
-    return domainhash + "." + randval + "." + time + "." + time + "." + time + "." + visits;
-  };
-
-  // UTME: Custom variables
-  // Take a page name, determine its subordinate values, return an encoded utme value.
-  //
-  // Our page name convention is: 
-  //    customername_targetpagename
-  //
-  // The utme variable encoding convention is: 
-  //    8(key1*key2*...*keyn)9(val1*val2*...*valn)11(level1*level2*...*leveln)
-  //
-  function getUtme( page_name ) {
-    var customer    = page_name.slice( 0, page_name.indexOf('_') );
-    var target_page = page_name.slice( page_name.indexOf('_')+1 ); 
-  
-    // custom variable names
-    var eightblock  = "8(page_name*customer*target_page)";
-    // respective customer variable values
-    var nineblock  = "9(" + page_name + "*" + customer + "*" + target_page + ")";
-    // all registered as session-level (visit) variables (=2)
-    var elevenblock = "11(2*2*2)";
-
-    return eightblock + nineblock + elevenblock;
-  };
-
-  var account_string = "UA-26975743-1";
-  var protocol_host = (("https:" == document.location.protocol) ?  "https://ssl." : "http://www.");
-  var pixel_host = protocol_host + "google-analytics.com/__utm.gif?";
-
-  var p = {};
-  var wn = window.navigator;
-  var ws = window.screen;
-  p['utm_id'] = ra();
-  p['utmac'] = account_string;
-  p['utmcs'] = document.characterSet || document.charset || "-";
-  p['utmdt'] = escape(document.title);
-  p['utmhid'] = ra();
-  p['utmhn'] = escape(document.location.hostname);
-  p['utmje'] = (wn && wn.javaEnabled()) ? "1" : "0";
-  p['utmn'] = ra();
-  p['utmp'] = encodeURIComponent(window.location.pathname + window.location.search);
-  p['utmr'] = (document.referrer && document.referrer != "") ? document.referrer : "-";
-  p['utmsc'] = ws ? ws.colorDepth + "-bit" : "-";
-  p['utmsr'] = ws ? ws.width + "x" + ws.height : "-";
-  p['utmul'] = (wn && (wn.language || wn.browserLanguage) || "-").toLowerCase();
-  p['utmwv'] = "4.4sj";
-
-  // this utma cookie will ensure that each pageview is considered to be a unique user session
-  var utma = getUtma ( p['utmhn'] );
-  p['utmcc'] = "__utma%3D" + utma + "%3B";
-
-  // inject the page name information into custom variables (utme) bucket
-  var config = document.getElementById("mw_ga_config");
-  if (config) {
-    var pn = config.getAttribute("page_name");
-    if (pn && pn != "") { 
-      var page_name = encodeURIComponent( pn );
-      p['utme'] = getUtme( page_name );
-
-      // also put the page_name information in the document title bucket
-      p['utmdt'] = "MW_ANALYTICS_" + page_name;
-    }
-  }
-
-  var path = "";
-  for (var i in p) {
-    path += i + "=" + p[i] + "&";
-  }
-  if (path.length > 0) {
-    path = path.slice(0, path.length - 1);
-  }
-
-  var img = new Image(1, 1);
-  img.src = pixel_host + path;
-});
 
 
 // Delete me when ready

@@ -15,7 +15,7 @@ if (typeof(mw) == "undefined") {
 }
 
 if(typeof(mw.catch_all_domain) == "undefined") {
-	mw.catch_all_domain = ".moovapp.com";	
+	mw.catch_all_domain = ".moovapp.com";
 } else {
   if (mw.catch_all_domain[0] != ".") {
   	console.log("Bad catch all domain");

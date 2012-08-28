@@ -21,9 +21,7 @@ $$("body") {
       add_class("_category")
       # add span for button icon
       $$("a") {
-        insert_bottom("span"){
-          attribute("class", "_icon_subcategory")
-        }
+        insert_bottom("span", class: "_icon_subcategory")
       }
     }
     
@@ -47,9 +45,7 @@ $$("body") {
         $txt = fetch("./a/text()")
         insert_top("div", $txt) {
           # Adding a span to incorporate the button for the non-Personals categories
-          insert("span") {
-            attribute("class", "_icon_category")
-          }
+          insert("span", class: "_icon_category")
         }
         $$("a") {
           wrap("li") {
@@ -63,9 +59,7 @@ $$("body") {
           attribute("class", "_subcategory")
           # add span for button icon
           $$("> a"){
-            insert_bottom("span"){
-              attribute("class", "_icon_subcategory")
-            }
+            insert_bottom("span", class: "_icon_subcategory")
           }
         }
       }
@@ -87,9 +81,7 @@ $$("body") {
         wrap_text_children("div")
         # add span for button icon
         $("./div[1]"){
-          insert("span"){
-            attribute("class", "_icon_category")
-          }
+          insert("span", class: "_icon_category")
         }
       }
       $$("ul") {
@@ -97,9 +89,7 @@ $$("body") {
         $$("> li") {
           attribute("class", "_subcategory")
           $$("> a") {
-            insert_bottom("span") {
-              attribute("class", "_toggler_subcategory")
-            }
+            insert_bottom("span", class: "_toggler_subcategory")
           }
         }
       }
@@ -134,7 +124,7 @@ $$("body") {
                  data-ur-state: "disabled")
       $$("> li > a") {
         attribute("class", "_header_bar")
-        insert("span")
+        insert("span", class: "_icon_subcategory")
       }
     }
     $$("form#search") {

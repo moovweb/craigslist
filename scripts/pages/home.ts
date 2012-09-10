@@ -105,13 +105,13 @@ $$("body") {
     # Adding the logo icons for all the tabs 
     $$("#logo") {
       insert("div", class: "_icons_bar") {
-        insert("div", class: "icons-account", 
+        insert("div", class: "sprites-account", 
                       data-ur-tab-id: "account", 
                       data-ur-tabs-component: "button")
-        insert("div", class: "icons-search", 
+        insert("div", class: "sprites-search", 
                       data-ur-tab-id: "search", 
                       data-ur-tabs-component: "button")
-        insert("div", class: "icons-info", 
+        insert("div", class: "sprites-info", 
                       data-ur-tab-id: "info", 
                       data-ur-tabs-component: "button")
       }
@@ -140,6 +140,7 @@ $$("body") {
       move_here("../p[@id='sflinks']")
       $$("a") {
         attribute("class", "_header_bar")
+        insert("span", class: "_icon_subcategory")
       }
     }
   }

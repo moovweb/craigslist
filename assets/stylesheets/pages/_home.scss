@@ -7,9 +7,11 @@ body._home {
     background: -webkit-gradient(linear, left top, left bottom, from(#eff8fc), to(#d5e3ef));  
     // If the item is a link, there should be a right arrow
     > a {
+      position: relative;
       @include bar_inner_base;
       > span {
-        @extend .icons-blackArrowRight;
+        @include toggler_btn_icon;
+        @extend .sprites-blackArrowRight;
       }
     }
     // If the item is an accordion, there should be a plus that turns into a minus
@@ -22,14 +24,14 @@ body._home {
         @include bar_inner_base;
         ._icon_category{
           @include toggler_btn_icon;
-          @extend .icons-blackPlus;
+          @extend .sprites-blackPlus;
         }
       }
       &[data-ur-state="enabled"] > div {
         @include bar_inner_base;
         ._icon_category {
           @include toggler_btn_icon;
-          @extend .icons-blackMinus;
+          @extend .sprites-blackMinus;
         }
       }
     }
@@ -45,7 +47,7 @@ body._home {
       @include bar_inner_base;
       ._icon_subcategory {
         @include toggler_btn_icon;
-        @extend .icons-blackArrowRight;
+        @extend .sprites-blackArrowRight;
       }
     }
   }
@@ -90,8 +92,10 @@ body._home {
     background-color: #fff;
     color: #555;
     text-align: left;
+    position: relative;
     > span {
-      @extend .icons-blackArrowRight;
+      @include toggler_btn_icon;
+      @extend .sprites-blackArrowRight;
     }
   }
 

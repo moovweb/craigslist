@@ -89,7 +89,7 @@ $$("body") {
         $$("> li") {
           attribute("class", "_subcategory")
           $$("> a") {
-            insert_bottom("span", class: "_toggler_subcategory")
+            insert_bottom("span", class: "_icon_subcategory")
           }
         }
       }

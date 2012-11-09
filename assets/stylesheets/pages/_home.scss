@@ -3,11 +3,12 @@ body._home {
   ._category {
     border-bottom: #fff;
     border-top: 1px solid #ddd; 
-    //@include background(linear-gradient(#eff8fc, #d5e3ef));
-    background: -webkit-gradient(linear, left top, left bottom, from(#eff8fc), to(#d5e3ef));  
+    @include background(linear-gradient(#eff8fc, #d5e3ef));
     // If the item is a link, there should be a right arrow
     > a {
       position: relative;
+      width: 100%;
+      height: 100;
       @include bar_inner_base;
       > span {
         @include toggler_btn_icon;
@@ -93,6 +94,8 @@ body._home {
     color: #555;
     text-align: left;
     position: relative;
+    width: 100%;
+    height: 100;
     > span {
       @include toggler_btn_icon;
       @extend .sprites-blackArrowRight;

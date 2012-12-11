@@ -22,59 +22,59 @@ body._home {
   }
 
   // Styling the logo bar header
-  // #logo {
-  //   background: #F4F4F4;
-  //   border-bottom: 1px solid #c3c3c3;
-  //   overflow: hidden;
-  //   position: relative;
-  //   > a {
-  //     text-decoration: none;
-  //     font-size: 25px;
-  //     font-weight: 500;
-  //     font-family: serif;
-  //     line-height: 100%;
-  //     display: inline-block;
-  //     padding: 10px;
-  //   }
-  //   > div {
-  //     position: absolute;
-  //     bottom: 0;
-  //     right: 5px;
-  //     opacity: .8;
-  //     margin-bottom: -3px;
-  //     > div {
-  //       display: inline-block;
-  //       padding-top: 3px;
-  //     }
-  //   } 
-  // }
+  #logo {
+    background: #F4F4F4;
+    border-bottom: 1px solid #c3c3c3;
+    overflow: hidden;
+    position: relative;
+    > a {
+      text-decoration: none;
+      font-size: 25px;
+      font-weight: 500;
+      font-family: serif;
+      line-height: 100%;
+      display: inline-block;
+      padding: 10px;
+    }
+    > div {
+      position: absolute;
+      bottom: 0;
+      right: 5px;
+      opacity: .8;
+      margin-bottom: -3px;
+      > div {
+        display: inline-block;
+        padding-top: 3px;
+      }
+    } 
+  }
 
   // Styling the search tab
-  // #search {
-  //   padding: 10px;
-  //   font-weight: bold;
-  //   text-transform: capitalize;
-  //   color: #777;
-  //   background: #efefef;
-  //   border-bottom: 1px solid #c3c3c3;
-  //   select {
-  //     margin: 0 5px;
-  //   }
-  //   div {
-  //     padding-bottom: 5px;
-  //   }
-  // }
-  // #topban {
-  //   padding:10px;
-  //   h2 {
-  //     font-size: 16px;
-  //     display: inline;
-  //   }
-  //   .sublinks {
-  //     float: right;
-  //     a { 
-  //       margin: 0 5px;
-  //     }
-  //   }
-  // }
+  #search {
+    padding: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #777;
+    background: #efefef;
+    border-bottom: 1px solid #c3c3c3;
+    select {
+      margin: 0 5px;
+    }
+    div {
+      padding-bottom: 5px;
+    }
+  }
+  #topban {
+    padding:10px;
+    h2 {
+      font-size: 16px;
+      display: inline;
+    }
+    .sublinks {
+      float: right;
+      a { 
+        margin: 0 5px;
+      }
+    }
+  }
 }

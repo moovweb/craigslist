@@ -2,14 +2,11 @@
 // Stylesheets containing sprite-sheet info will be deposited into the 'globals' folder.
 // Include them below as needed; e.g.:
 @import "globals/_sprites";
-
 @import "globals/_reset.scss";
 
 // Base file contains all the global styles
 @import "globals/_base.scss";
 @import "globals/_lib.scss";
-
-
 
 // File for global Uranium stylings
 @import "globals/_uranium.scss";

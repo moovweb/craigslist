@@ -3,6 +3,16 @@ This project works with the MoovSDK.
 
 See detailed documentation for the MoovSDK at http://console.moovweb.com
 
+## TCS Training
+
+I remember some of you were running the project locally on port 8080. If you do that you need to go into your **config.json file** and replace line 50 where it says: 
+
+"$.sfbay.craigslist.org => sfbay.craigslist.org",
+
+to
+
+"$.sfbay.craigslist.org:8080 => sfbay.craigslist.org",
+
 ## Domains
 Remember to put all domains you're going to hit in your etc/hosts
 or to run your server with the `-auto-hosts=true` option.

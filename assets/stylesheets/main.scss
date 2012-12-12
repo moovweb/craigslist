@@ -1,0 +1,18 @@
+// Reset file for standardizing the page
+// @import "globals/_reset";
+
+// Base file contains all the global styles
+@import "globals/_base";
+
+// File for global Uranium stylings
+@import "globals/_uranium.scss";
+
+// Site wide variables
+@import "globals/_variables.scss";
+
+// Header & Footer
+@import "sections/_header";
+@import "sections/_footer";
+
+// Pages
+@import "pages/_home";

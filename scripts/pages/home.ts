@@ -7,7 +7,7 @@ $$("body") {
   table_dump(".//table")
 
   $$("#leftbar") {
-    attribute("data-ur-set", "tabs")
+    attributes(data-ur-set:"tabs", data-ur-closeable:"true")
     $$("#logo") {
       insert("div", class:"_icons_bar") {
         insert("div", class: "sprites-account", data-ur-tabs-component:"button", data-ur-tab-id: "account")
@@ -44,14 +44,14 @@ $$("body") {
       $$("h4") {
         attribute("class", "_category")
         attribute("data-ur-toggler-component", "button")
+        $$("a") {
+          name("div")
+        }
       }
       $$("ul") {
         attribute("data-ur-toggler-component", "content")
         $$("> li") {
           attribute("class", "_subcategory")
-          $$("a") {
-            name("div")
-          }
         }
       }
     }

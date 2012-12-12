@@ -1,0 +1,191 @@
+$sprites-url: url("http://localhost:3003/images/sprites.png");
+
+$sprites-width: 36px;
+$sprites-height: 329px;
+
+$sprites-account-x: 0px;
+$sprites-account-y: 0px;
+$sprites-account-width: 36px;
+$sprites-account-height: 35px;
+
+$sprites-blackArrowRight-x: 0px;
+$sprites-blackArrowRight-y: -35px;
+$sprites-blackArrowRight-width: 36px;
+$sprites-blackArrowRight-height: 36px;
+
+$sprites-blackMinus-x: 0px;
+$sprites-blackMinus-y: -71px;
+$sprites-blackMinus-width: 36px;
+$sprites-blackMinus-height: 36px;
+
+$sprites-blackPlus-x: 0px;
+$sprites-blackPlus-y: -107px;
+$sprites-blackPlus-width: 36px;
+$sprites-blackPlus-height: 36px;
+
+$sprites-blue-arrow-right-x: 0px;
+$sprites-blue-arrow-right-y: -143px;
+$sprites-blue-arrow-right-width: 36px;
+$sprites-blue-arrow-right-height: 36px;
+
+$sprites-calendar-x: 0px;
+$sprites-calendar-y: -179px;
+$sprites-calendar-width: 36px;
+$sprites-calendar-height: 35px;
+
+$sprites-info-x: 0px;
+$sprites-info-y: -214px;
+$sprites-info-width: 36px;
+$sprites-info-height: 35px;
+
+$sprites-search-x: 0px;
+$sprites-search-y: -249px;
+$sprites-search-width: 36px;
+$sprites-search-height: 35px;
+
+$sprites-white-arrow-right-x: 0px;
+$sprites-white-arrow-right-y: -284px;
+$sprites-white-arrow-right-width: 10px;
+$sprites-white-arrow-right-height: 15px;
+
+$sprites-white-minus-x: 0px;
+$sprites-white-minus-y: -299px;
+$sprites-white-minus-width: 12px;
+$sprites-white-minus-height: 15px;
+
+$sprites-white-plus-x: 0px;
+$sprites-white-plus-y: -314px;
+$sprites-white-plus-width: 12px;
+$sprites-white-plus-height: 15px;
+
+@mixin sprites-account() {
+  background: url("http://localhost:3003/images/sprites.png") no-repeat 0px 0px;
+  width: 36px;
+  height: 35px;
+}
+
+@mixin sprites-blackArrowRight() {
+  background: url("http://localhost:3003/images/sprites.png") no-repeat 0px -35px;
+  width: 36px;
+  height: 36px;
+}
+
+@mixin sprites-blackMinus() {
+  background: url("http://localhost:3003/images/sprites.png") no-repeat 0px -71px;
+  width: 36px;
+  height: 36px;
+}
+
+@mixin sprites-blackPlus() {
+  background: url("http://localhost:3003/images/sprites.png") no-repeat 0px -107px;
+  width: 36px;
+  height: 36px;
+}
+
+@mixin sprites-blue-arrow-right() {
+  background: url("http://localhost:3003/images/sprites.png") no-repeat 0px -143px;
+  width: 36px;
+  height: 36px;
+}
+
+@mixin sprites-calendar() {
+  background: url("http://localhost:3003/images/sprites.png") no-repeat 0px -179px;
+  width: 36px;
+  height: 35px;
+}
+
+@mixin sprites-info() {
+  background: url("http://localhost:3003/images/sprites.png") no-repeat 0px -214px;
+  width: 36px;
+  height: 35px;
+}
+
+@mixin sprites-search() {
+  background: url("http://localhost:3003/images/sprites.png") no-repeat 0px -249px;
+  width: 36px;
+  height: 35px;
+}
+
+@mixin sprites-white-arrow-right() {
+  background: url("http://localhost:3003/images/sprites.png") no-repeat 0px -284px;
+  width: 10px;
+  height: 15px;
+}
+
+@mixin sprites-white-minus() {
+  background: url("http://localhost:3003/images/sprites.png") no-repeat 0px -299px;
+  width: 12px;
+  height: 15px;
+}
+
+@mixin sprites-white-plus() {
+  background: url("http://localhost:3003/images/sprites.png") no-repeat 0px -314px;
+  width: 12px;
+  height: 15px;
+}
+
+.sprites-account {
+  background: url("http://localhost:3003/images/sprites.png") no-repeat 0px 0px;
+  width: 36px;
+  height: 35px;
+}
+
+.sprites-blackArrowRight {
+  background: url("http://localhost:3003/images/sprites.png") no-repeat 0px -35px;
+  width: 36px;
+  height: 36px;
+}
+
+.sprites-blackMinus {
+  background: url("http://localhost:3003/images/sprites.png") no-repeat 0px -71px;
+  width: 36px;
+  height: 36px;
+}
+
+.sprites-blackPlus {
+  background: url("http://localhost:3003/images/sprites.png") no-repeat 0px -107px;
+  width: 36px;
+  height: 36px;
+}
+
+.sprites-blue-arrow-right {
+  background: url("http://localhost:3003/images/sprites.png") no-repeat 0px -143px;
+  width: 36px;
+  height: 36px;
+}
+
+.sprites-calendar {
+  background: url("http://localhost:3003/images/sprites.png") no-repeat 0px -179px;
+  width: 36px;
+  height: 35px;
+}
+
+.sprites-info {
+  background: url("http://localhost:3003/images/sprites.png") no-repeat 0px -214px;
+  width: 36px;
+  height: 35px;
+}
+
+.sprites-search {
+  background: url("http://localhost:3003/images/sprites.png") no-repeat 0px -249px;
+  width: 36px;
+  height: 35px;
+}
+
+.sprites-white-arrow-right {
+  background: url("http://localhost:3003/images/sprites.png") no-repeat 0px -284px;
+  width: 10px;
+  height: 15px;
+}
+
+.sprites-white-minus {
+  background: url("http://localhost:3003/images/sprites.png") no-repeat 0px -299px;
+  width: 12px;
+  height: 15px;
+}
+
+.sprites-white-plus {
+  background: url("http://localhost:3003/images/sprites.png") no-repeat 0px -314px;
+  width: 12px;
+  height: 15px;
+}

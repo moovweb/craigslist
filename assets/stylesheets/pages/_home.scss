@@ -1,5 +1,51 @@
 // Every page should have a class on the body
 // Scope that in each file at the start
 ._home {
-  
+  ._category, ._subcategory, ._header_bar {
+    border-bottom: #fff;
+    border-top: 1px solid #ddd;
+    position: relative;
+    width: 100%;
+    height: 100;
+    background-position-x: right;
+    display: block;
+    font-size: 16px;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px;
+    > a {
+      display: block;
+      border-bottom: 0 !important;
+    }
+  }
+  ._category {
+    @include background(linear-gradient(#eff8fc, #d5e3ef));
+  }
+  #logo {
+    background: #F4F4F4;
+    border-bottom: 1px solid #c3c3c3;
+    overflow: hidden;
+    position: relative;
+    > a {
+      text-decoration: none;
+      font-size: 25px;
+      font-weight: 500;
+      font-family: serif;
+      line-height: 100%;
+      display: inline-block;
+      padding: 10px;
+    }
+    > div {
+      position: absolute;
+      bottom: 0;
+      right: 5px;
+      opacity: .8;
+      margin-bottom: -3px;
+      > div {
+        display: inline-block;
+        padding-top: 3px;
+      }
+    } 
+  }
 }
